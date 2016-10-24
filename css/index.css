@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    background : #000 url("../images/background.jpg") no-repeat center center;
+    background-size: cover;
+	height: 100%;
+	font-family: "Arial";
+	font-size: 1.5em;
+}
+
+body {
+	min-height: 100%;
+}
+
+#content-navbar{
+	position: fixed;
+	list-style-type: none;
+	width: 25%;
+}
+
+#content-navbar li{
+	border-left: solid thick transparent ;
+	transition: border-left .5s;
+}
+
+#content-navbar li:hover{
+	border-left: solid thick #333;
+}
+
+a{
+	padding: 1em;
+	display: block;
+	text-decoration: none;
+	color: #333;
+}
