@@ -16,23 +16,23 @@ body {
 }
 
 #content-navbar{
-	position: fixed;
 	list-style-type: none;
-	width: 25%;
+	text-align: center;
 }
 
 #content-navbar li{
-	border-left: solid thick transparent ;
-	transition: border-left .5s;
+	display: inline;
+	border-bottom: solid thick transparent ;
+	transition: border-bottom .5s;
 }
 
 #content-navbar li:hover{
-	border-left: solid thick #333;
+	border-bottom: solid thick #333;
 }
 
 a{
+	display: inline-block;
 	padding: 1em;
-	display: block;
 	text-decoration: none;
 	color: #333;
 }
