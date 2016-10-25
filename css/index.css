@@ -4,6 +4,7 @@
 }
 
 html {
+	width: 100%;
 	height: 100%;
 	font-family: "Arial", Sans-serif;
 	font-size: 1.5em;
@@ -12,18 +13,20 @@ html {
 }
 
 body {
-	background : #000 url("../images/background.jpg") no-repeat center center;
+	width: 100%;
+	height: 100%;
+	/*background : #000 url("../images/background.jpg") no-repeat center center;
     background-size: cover;
-	min-height: 100%;
+	height: 100%;*/
 }
 
 #navbar{
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	background: rgba(255,255,255,0.25);
 	list-style-type: none;
 	text-align: center;
-	box-shadow: 0 0 0.5em #888;
+	/*box-shadow: 0 0 0.5em #888;*/
 }
 
 	#navbar li{
@@ -32,7 +35,7 @@ body {
 
 		a{
 			display: block;
-			padding: 1em;
+			padding: 0.5em 1em;
 			text-decoration: none;
 			color: #555;
 			border-bottom: thick solid transparent;
@@ -44,3 +47,14 @@ li:nth-child(2) a.color, li:nth-child(2) a:hover { color: #54B585; border-bottom
 li:nth-child(3) a.color, li:nth-child(3) a:hover { color: #268BFF; border-bottom: thick solid #268BFF;}
 li:nth-child(4) a.color, li:nth-child(4) a:hover { color: #F9E53A; border-bottom: thick solid #F9E53A;}
 li:nth-child(5) a.color, li:nth-child(5) a:hover { color: #8F82E8; border-bottom: thick solid #8F82E8;}
+
+.page-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+#page1 { background: #F64E4E; }
+#page2 { background: #54B585; }
+#page3 { background: #268BFF; }
+#page4 { background: #F9E53A; }
+#page5 { background: #8F82E8; }
