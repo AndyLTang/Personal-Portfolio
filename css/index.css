@@ -37,16 +37,16 @@ body {
 			display: block;
 			padding: 0.5em 1em;
 			text-decoration: none;
-			color: #555;
-			border-bottom: thick solid transparent;
-			transition: color 0.3s, border-bottom 0.3s;
+			color: #ddd;
+			box-shadow: inset 0 0 0 0 #fff;
+			transition: color 0.3s, box-shadow 0.3s;
 		}
 
-li:nth-child(1) a.color, li:nth-child(1) a:hover { color: #F64E4E; border-bottom: thick solid #F64E4E;}
-li:nth-child(2) a.color, li:nth-child(2) a:hover { color: #54B585; border-bottom: thick solid #54B585;}
-li:nth-child(3) a.color, li:nth-child(3) a:hover { color: #268BFF; border-bottom: thick solid #268BFF;}
-li:nth-child(4) a.color, li:nth-child(4) a:hover { color: #F9E53A; border-bottom: thick solid #F9E53A;}
-li:nth-child(5) a.color, li:nth-child(5) a:hover { color: #8F82E8; border-bottom: thick solid #8F82E8;}
+li:nth-child(1) a.color, li:nth-child(1) a:hover { color: #F64E4E; box-shadow: inset 0 -5px 0px 0px #F64E4E;}
+li:nth-child(2) a.color, li:nth-child(2) a:hover { color: #54B585; box-shadow: inset 0 -5px 0px 0px #54B585;}
+li:nth-child(3) a.color, li:nth-child(3) a:hover { color: #268BFF; box-shadow: inset 0 -5px 0px 0px #268BFF;}
+li:nth-child(4) a.color, li:nth-child(4) a:hover { color: #F9E53A; box-shadow: inset 0 -5px 0px 0px #F9E53A;}
+li:nth-child(5) a.color, li:nth-child(5) a:hover { color: #8F82E8; box-shadow: inset 0 -5px 0px 0px #8F82E8;}
 
 .page-wrapper {
 	width: 100%;
