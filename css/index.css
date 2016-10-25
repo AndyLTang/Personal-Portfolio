@@ -4,35 +4,43 @@
 }
 
 html {
-    background : #000 url("../images/background.jpg") no-repeat center center;
-    background-size: cover;
 	height: 100%;
-	font-family: "Arial";
+	font-family: "Arial", Sans-serif;
 	font-size: 1.5em;
+	font-weight: bold;
+	color: #555;
 }
 
 body {
+	background : #000 url("../images/background.jpg") no-repeat center center;
+    background-size: cover;
 	min-height: 100%;
 }
 
-#content-navbar{
+#navbar{
+	position: absolute;
+	width: 100%;
+	background: rgba(255,255,255,0.25);
 	list-style-type: none;
 	text-align: center;
+	box-shadow: 0 0 0.5em #888;
 }
 
-#content-navbar li{
-	display: inline;
-	border-bottom: solid thick transparent ;
-	transition: border-bottom .5s;
-}
+	#navbar li{
+		display: inline-block;
+	}
 
-#content-navbar li:hover{
-	border-bottom: solid thick #333;
-}
+		a{
+			display: block;
+			padding: 1em;
+			text-decoration: none;
+			color: #555;
+			border-bottom: thick solid transparent;
+			transition: color 0.3s, border-bottom 0.3s;
+		}
 
-a{
-	display: inline-block;
-	padding: 1em;
-	text-decoration: none;
-	color: #333;
-}
+li:nth-child(1) a.color, li:nth-child(1) a:hover { color: #F64E4E; border-bottom: thick solid #F64E4E;}
+li:nth-child(2) a.color, li:nth-child(2) a:hover { color: #54B585; border-bottom: thick solid #54B585;}
+li:nth-child(3) a.color, li:nth-child(3) a:hover { color: #268BFF; border-bottom: thick solid #268BFF;}
+li:nth-child(4) a.color, li:nth-child(4) a:hover { color: #F9E53A; border-bottom: thick solid #F9E53A;}
+li:nth-child(5) a.color, li:nth-child(5) a:hover { color: #8F82E8; border-bottom: thick solid #8F82E8;}

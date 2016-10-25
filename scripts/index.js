@@ -1,14 +1,7 @@
 $(document).ready(function(){
-	$("li").hover(
-		/*
-		function() {
-			$(this).css({"background-color": "white"});
-		},
 
-		function() {
-			$(this).css({"background-color": "transparent"});
-		}
-		*/
-	);
+	$("li").click(function(){
+		$(this).children("a").toggleClass("color");
+	});
 
-});
+}); //EOF
