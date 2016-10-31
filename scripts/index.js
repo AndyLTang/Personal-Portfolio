@@ -5,22 +5,32 @@ $(document).ready(function(){
 		$('html,body').stop().animate({scrollTop: tag.offset().top}, 'slow');
 	}
 
+	/* First page animations */
+	
+	$("nav").hide();
+	$(".content-vertical-center p").css({opacity: 0});
+	$("h1").css({opacity: 0}).animate({opacity: 1}, 1500, function(){
+		$("p").animate({opacity: 1}, 1500, function(){
+			$("nav").fadeIn(1500);
+		});
+	}); 
+
+
 	/* Initialize navbar current link */
-	var previous = $("#page1");
-	previous.addClass("active");
+	var firstpage = $("#page1");
+	firstpage.children("a").addClass("active");
 
 	$("li").click(function(){
-			/* Scroll to location on page*/
-			var link = $(this).children("a").attr("href");
-			scrollTo(link);
+		/* Scroll to location on page*/
+		var link = $(this).children("a").attr("href");
+		scrollTo(link);
 
-			/* Stop link from jumping to the anchor first */
-			event.preventDefault();
-	  		event.stopPropagation();
+		/* Stop link from jumping to the anchor first */
+		event.preventDefault();
+  		event.stopPropagation();
 	}); //end click
 
 	/* Navigation highlight */
-
 	var aChildren = $("nav li").children();
 	var aArray = [];
 	for (var i=0; i < aChildren.length; i++){
@@ -47,7 +57,7 @@ $(document).ready(function(){
 
         if(windowPos + windowHeight == docHeight) {
             if (!$("nav li:last-child a").hasClass("active")) {
-                var navActiveCurrent = $(".nav-active").attr("href");
+                var navActiveCurrent = $(".active").attr("href");
                 $("a[href='" + navActiveCurrent + "']").removeClass("active");
                 $("nav li:last-child a").addClass("active");
             }
