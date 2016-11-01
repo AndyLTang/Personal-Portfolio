@@ -112,4 +112,13 @@ li:nth-child(5) a.active, li:nth-child(5) a:hover {
 .content-intro p {
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
+    margin: 0 0 10% 0;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+    border: thin solid white;
+    padding: 10px;
+    margin: 0 auto -10% auto;
 }
