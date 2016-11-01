@@ -118,7 +118,14 @@ li:nth-child(5) a.active, li:nth-child(5) a:hover {
 .button {
     color: white;
     text-decoration: none;
+    font-family: 'Raleway', sans-serif;
     border: thin solid white;
     padding: 10px;
     margin: 0 auto -10% auto;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
 }

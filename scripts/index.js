@@ -6,7 +6,6 @@ $(document).ready(function(){
 	}
 
 	/* First page animations */
-	
 	$("nav").hide();
     $(".button").css({opacity: 0});
 	$(".content-intro p").css({opacity: 0});
@@ -30,6 +29,16 @@ $(document).ready(function(){
 		event.preventDefault();
   		event.stopPropagation();
 	}); //end click
+    
+    $(".button").click(function(){
+        /* Scroll to location on page*/
+		var link = $(this).attr("href");
+		scrollTo(link);
+
+		/* Stop link from jumping to the anchor first */
+		event.preventDefault();
+  		event.stopPropagation();
+    });
 
 	/* Navigation highlight */
 	var aChildren = $("nav li").children();
