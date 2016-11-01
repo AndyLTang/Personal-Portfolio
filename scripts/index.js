@@ -15,7 +15,6 @@ $(document).ready(function(){
 		});
 	}); 
 
-
 	/* Initialize navbar current link */
 	var firstpage = $("#page1");
 	firstpage.children("a").addClass("active");
