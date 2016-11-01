@@ -8,10 +8,12 @@ $(document).ready(function(){
 	/* First page animations */
 	
 	$("nav").hide();
+    $(".button").css({opacity: 0});
 	$(".content-intro p").css({opacity: 0});
 	$("h1").css({opacity: 0}).animate({opacity: 1}, 1500, function(){
 		$("p").animate({opacity: 1}, 1500, function(){
 			$("nav").fadeIn(1500);
+            $(".button").animate({opacity: 1}, 1500);
 		});
 	}); 
 
