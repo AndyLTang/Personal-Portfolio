@@ -9,7 +9,7 @@ $(document).ready(function(){
 	$("nav").hide();
     $(".button").css({opacity: 0});
 	$(".content-intro p").css({opacity: 0});
-	$("h1").css({opacity: 0}).animate({opacity: 1}, 1500, function(){
+	$(".content-intro h1").css({opacity: 0}).animate({opacity: 1}, 1500, function(){
 		$("p").animate({opacity: 1}, 1500, function(){
 			$("nav").fadeIn(1500);
             $(".button").animate({opacity: 1}, 1500);
@@ -74,4 +74,31 @@ $(document).ready(function(){
         }
     });
 
+    /* Contact Form */
+    var $contactForm = $('#contact-form');
+    $contactForm.submit(function(e){
+        var addr = 'andy' + '.' + 'l' + '.' + 'tang' + '@' + 'outlook' + '.' + 'com';
+        var fulladdr = '//formspree' + '.' + 'io/' + addr;
+        $contactForm.attr('action', fulladdr);
+        
+        e.preventDefault();
+        $.ajax({
+            url: fulladdr,
+            method: 'POST',
+            data: $(this).serialize(),
+            dataType: 'json',
+            beforeSend: function() {
+                $contactForm.find(".response").text("Sending your message...");
+                },
+            success: function(data) {
+                $contactForm.find(".response").text("Message sent!");
+                $contactForm.find("#submit-btn").css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 300);
+                $contactForm.find("#submit-btn").prop("disabled", true);
+                },
+            error: function(err) {
+                $contactForm.find(".response").text("Oops, something went wrong.");
+                }
+        });
+    });
+    
 }); //EOF
