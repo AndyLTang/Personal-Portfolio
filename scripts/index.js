@@ -20,7 +20,7 @@ $(document).ready(function(){
 	var firstpage = $("#page1");
 	firstpage.children("a").addClass("active");
 
-	$("li").click(function(){
+	$("nav li").click(function(){
 		/* Scroll to location on page*/
 		var link = $(this).children("a").attr("href");
 		scrollTo(link);
@@ -73,7 +73,14 @@ $(document).ready(function(){
             }
         }
     });
-
+    
+    /* Skills */
+    $('#bargraph li div').each(function(key, bar){
+        var percent = $(this).data('percent');
+        
+        $(this).animate({'height' : percent + '%'}, 2000);
+    });
+    
     /* Contact Form */
     var $contactForm = $('#contact-form');
     $contactForm.submit(function(e){
