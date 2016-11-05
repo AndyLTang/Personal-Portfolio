@@ -46,7 +46,6 @@ nav{
 }
 
 nav span{
-    font-family: 'Montserrat', sans-serif;
 	float: left;
 	padding: 0.5em 1em;
 }
@@ -149,37 +148,47 @@ li:nth-child(5) a.active, li:nth-child(5) a:hover {
 
 /* Skills Page */
 
+#y-axis{
+    list-style-type: none;
+    float: left;
+    display: table-cell;
+}
+
 .content-skills{
     display: inline;
 }
 
 .wrap{
     text-align: center;
+    margin-bottom: 5%;
 }
 
 #bargraph{
     display: inline-block;
     list-style-type: none;
-    border-left: 1px white solid;
-    border-bottom: 1px white solid;
-    padding: 0 50px 0 0;
+    background: rgba(0,0,0,0.10);
+    border-spacing: 15px 15px;
 }
 
 #bargraph li{
     width: 150px;
-    height: 300px;
+    height: 400px;
     display: table-cell;
     position: relative;
+    border: thin white solid;
+    
 }
 
 .bars{
-    width: 70%;
+    width: 100%;
     display: inline-block;
     position: absolute;
     bottom: 0;
-    right: 0;
-    padding-top: 10px;
-    border-bottom: none;
+    left: 0;
+    padding: 10px 0 10px 0;
+    border: none;
+    color: #F64E4E;
+    background: white;
 }
 
 /* Contact Page */

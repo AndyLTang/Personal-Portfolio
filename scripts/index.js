@@ -75,10 +75,10 @@ $(document).ready(function(){
     });
     
     /* Skills */
-    $('#bargraph li div').each(function(key, bar){
+    $('#bargraph li div').delay(2000).each(function(key, bar){
         var percent = $(this).data('percent');
         
-        $(this).animate({'height' : percent + '%'}, 2000);
+        $(this).animate({'height' : percent + '%'}, 1500);
     });
     
     /* Contact Form */
