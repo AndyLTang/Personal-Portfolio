@@ -110,7 +110,6 @@ li:nth-child(5) a.active, li:nth-child(5) a:hover {
 }
 
 .content-intro p {
-
 	font-family: 'Raleway', sans-serif;
     margin: 0 0 10% 0;
 }
@@ -134,10 +133,54 @@ li:nth-child(5) a.active, li:nth-child(5) a:hover {
     padding: 4em 0 4em 4em;
 }
 
+/* Skills Page */
+.content-skills{
+    display: inline;
+}
+
+.wrap{
+    text-align: center;
+}
+
+#bargraph{
+    display: inline-block;
+    list-style-type: none;
+    border-left: 1px white solid;
+    border-bottom: 1px white solid;
+    padding: 0 50px 0 0;
+}
+
+#bargraph li{
+    width: 150px;
+    height: 300px;
+    display: table-cell;
+    position: relative;
+}
+
+.max-height{
+    width: 70%;
+    display: inline-block;
+}
+
+#bargraph li div{
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 10px;
+}
+
+.nine{height:90%;}
+.eight{height:80%;}
+.seven{height:70%;}
+
+#bargraph span{
+    color: black;
+}
 
 /* Contact Page */
 
-#contact h1{
+h2{
     padding: 3em 0 0.5em 0;
     text-align: center;
 }
@@ -149,18 +192,14 @@ form{
 
 .white-border{
     background-color: transparent;
-    border: 0;
     border: 1px white solid;
     color: white;
     font-size: 1em;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,1);
-    transition: box-shadow 0.5s;
 }
 
 .white-border:focus{
-    box-shadow: inset 5px 0 0 0 #fff;
     outline: none;
     color: #fff;
 }
@@ -169,6 +208,8 @@ input{
     width: 20em;
     margin: 0.5em 0;
     padding: 0.5em 1em;
+    box-shadow: none;
+    transition: box-shadow 0.5s;
 }
 
 textarea{
@@ -176,20 +217,29 @@ textarea{
     height: 5em;
     margin: 0.5em 0;
     padding: 0.5em 1em;
+    box-shadow: none;;
+    transition: box-shadow 0.5s;
+}
+
+input:hover, textarea:hover{
+    box-shadow: inset 5px 0 0 0 #fff;
+    outline: none;
+    color: white;
+}
+
+input:focus, textarea:focus{
+    box-shadow: inset 5px 0 0 0 #fff;
 }
 
 #submit-btn{
+    width: auto;
     margin: 0.5em;
     padding: 0.5em 1em;
-    width: auto;
+    box-shadow: none;
     transition: background-color 0.5s, color 0.5s;
 }
 
 #submit-btn:hover{
     background-color: white;
     color: black;
-}
-
-#submit-btn:focus{
-    box-shadow: none;
 }
