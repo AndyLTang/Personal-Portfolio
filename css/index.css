@@ -43,6 +43,7 @@ nav{
 	background: rgba(0,0,0,0.25); /* Use rgba() to prevent child from inheriting opacity */
 	list-style-type: none;
 	text-align: center;
+    z-index: 1;
 }
 
 nav span{
@@ -168,6 +169,7 @@ li:nth-child(5) a.active, li:nth-child(5) a:hover {
     list-style-type: none;
     background: rgba(0,0,0,0.10);
     border-spacing: 15px 15px;
+    z-index: -1;
 }
 
 #bargraph li{
