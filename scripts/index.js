@@ -23,9 +23,9 @@ $(document).ready(function(){
     /* Initialize navigation */
     $("nav li#page1").children("a").addClass("active");
     
-	$("nav li").click(function(){
+	$("nav a").click(function(){
 		/* Scroll to location on page*/
-		var link = $(this).children("a").attr("href");
+		var link = $(this).attr("href");
 		scrollTo(link);
 
 		/* Stop link from jumping to the anchor first */
@@ -44,7 +44,7 @@ $(document).ready(function(){
     });
 
 	/* Navigation highlight */
-	var aChildren = $("nav li").children();
+	var aChildren = $("#links li").children();
 	var aArray = [];
 	for (var i=0; i < aChildren.length; i++){
 		var aChild = aChildren[i];
