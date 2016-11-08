@@ -3,16 +3,23 @@
 form{
     text-align: center;
     display: block;
+    /* inherited values */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    box-shadow: none;
+    transition: box-shadow 0.5s;
+    outline: none;
 }
 
 input{
     width: 20em;
     margin: 0.5em 0;
     padding: 1em;
-    font-family: 'Raleway', sans-serif;
-    box-shadow: none;
-    transition: box-shadow 0.5s;
-    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    box-shadow: inherit;
+    transition: inherit;
+    outline: inherit;
 }
 
 textarea{
@@ -20,10 +27,11 @@ textarea{
     height: 8em;
     margin: 0.5em 0;
     padding: 1em;
-    font-family: 'Raleway', sans-serif;
-    box-shadow: none;
-    transition: box-shadow 0.5s;
-    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    box-shadow: inherit;
+    transition: inherit;
+    outline: inherit;
 }
 
 input:hover, textarea:hover{
@@ -39,7 +47,7 @@ input:focus, textarea:focus{
     width: auto;
     margin: 0.5em;
     padding: 1em;
-    box-shadow: none;
+    box-shadow: inherit;
     transition: background-color 0.5s, color 0.5s;
 }
 

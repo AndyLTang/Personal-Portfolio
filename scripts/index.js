@@ -21,7 +21,7 @@ $(document).ready(function(){
 	}); */
 
     /* Initialize navigation */
-    $("nav li#page1").children("a").addClass("active");
+    $("a[href='#intro']").addClass("active");
     
 	$("nav a").click(function(){
 		/* Scroll to location on page*/
