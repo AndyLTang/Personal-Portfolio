@@ -1,0 +1,38 @@
+/* Page Template */
+.red { background: #F64E4E; }
+.green { background: #54B585; }
+.blue { background: #268BFF; }
+.yellow { background: #D9A337; }
+.purple { background: #8F82E8; }
+.grey { background: #333; }
+
+.content{
+    display: table-cell;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.white-border{
+    color: white;
+    border: thin solid white;
+    background-color: transparent;
+}
+
+.button {
+    color: white;
+    width: 8em;
+    margin: 0 auto;
+    padding: 1em;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}

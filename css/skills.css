@@ -1,0 +1,33 @@
+/* Skills Page */
+.content-skills{
+    display: inline;
+}
+
+#bargraph{
+    display: inline-block;
+    list-style-type: none;
+    background: rgba(0,0,0,0.10);
+    border-spacing: 15px 15px;
+
+}
+
+#bargraph li{
+    width: 150px;
+    height: 400px;
+    display: table-cell;
+    position: relative;
+    border: thin white solid;
+}
+
+.bars{
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0 10px 0;
+    border: none;
+    color: #F64E4E;
+    background: white;
+}
+

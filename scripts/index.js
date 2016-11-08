@@ -4,22 +4,25 @@ $(document).ready(function(){
 		var tag = $(anchor_id);
 		$('html,body').stop().animate({scrollTop: tag.offset().top}, 'slow');
 	}
-
-	/* First page animations */
+    
+    /* Scroll page to top
+    $("body").stop().animate({ scrollTop: 0 }, 1);
+    */
+    
+	/* First page animations
 	$("nav").hide();
-    $(".button").css({opacity: 0});
-	$(".content-intro p").css({opacity: 0});
-	$(".content-intro h1").css({opacity: 0}).animate({opacity: 1}, 1500, function(){
-		$("p").animate({opacity: 1}, 1500, function(){
+    $("#intro .button").css({opacity: 0});
+	$("#intro p").css({opacity: 0});
+	$("#intro h1").css({opacity: 0}).animate({opacity: 1}, 1500, function(){
+		$("#intro p").animate({opacity: 1}, 1500, function(){
 			$("nav").fadeIn(1500);
-            $(".button").animate({opacity: 1}, 1500);
+            $("#intro .button").animate({opacity: 1}, 1500);
 		});
-	}); 
+	}); */
 
-	/* Initialize navbar current link */
-	var firstpage = $("#page1");
-	firstpage.children("a").addClass("active");
-
+    /* Initialize navigation */
+    $("nav li#page1").children("a").addClass("active");
+    
 	$("nav li").click(function(){
 		/* Scroll to location on page*/
 		var link = $(this).children("a").attr("href");
@@ -32,7 +35,7 @@ $(document).ready(function(){
     
     $(".button").click(function(){
         /* Scroll to location on page*/
-		var link = $(this).attr("href");
+		var link = $(this).parent().attr("href");
 		scrollTo(link);
 
 		/* Stop link from jumping to the anchor first */

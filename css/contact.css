@@ -1,0 +1,49 @@
+/* Contact Page */
+
+form{
+    text-align: center;
+    display: block;
+}
+
+input{
+    width: 20em;
+    margin: 0.5em 0;
+    padding: 1em;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: none;
+    transition: box-shadow 0.5s;
+    outline: none;
+}
+
+textarea{
+    width: 20em;
+    height: 8em;
+    margin: 0.5em 0;
+    padding: 1em;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: none;
+    transition: box-shadow 0.5s;
+    outline: none;
+}
+
+input:hover, textarea:hover{
+    color: white;
+    box-shadow: inset 4px 0 0 0 white;
+}
+
+input:focus, textarea:focus{
+    box-shadow: inset 4px 0 0 0 white;
+}
+
+#submit-btn{
+    width: auto;
+    margin: 0.5em;
+    padding: 1em;
+    box-shadow: none;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#submit-btn:hover{
+    color: black;
+    background-color: white;
+}
