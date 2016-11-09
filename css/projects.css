@@ -1,0 +1,23 @@
+.infobar{
+    float: left;
+    width: 50%;
+}
+
+.tiles{
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+
+.grid{
+    display: table;
+    height: 50%;
+    width: 100%;
+}
+
+.box{
+    border: thin solid white;
+    display: table-cell;
+    height: 50%;
+    width: 50%;
+}
