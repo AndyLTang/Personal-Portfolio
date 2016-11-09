@@ -9,7 +9,7 @@ $(document).ready(function(){
     $("body").stop().animate({ scrollTop: 0 }, 1);
     */
     
-	/* First page animations
+	/* First page animations */
 	$("nav").hide();
     $("#intro .button").css({opacity: 0});
 	$("#intro p").css({opacity: 0});
@@ -18,7 +18,7 @@ $(document).ready(function(){
 			$("nav").fadeIn(1500);
             $("#intro .button").animate({opacity: 1}, 1500);
 		});
-	}); */
+	});
 
     /* Initialize navigation */
     $("a[href='#intro']").addClass("active");
@@ -35,7 +35,7 @@ $(document).ready(function(){
     
     $(".button").click(function(){
         /* Scroll to location on page*/
-		var link = $(this).parent().attr("href");
+		var link = $(this).attr("href");
 		scrollTo(link);
 
 		/* Stop link from jumping to the anchor first */
