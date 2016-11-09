@@ -12,7 +12,7 @@ $(document).ready(function(){
 	/* First page animations */
 	$("nav").hide();
     $("#intro .button").css({opacity: 0});
-	$("#intro p").css({opacity: 0});
+    $("#intro p").css({opacity: 0});
 	$("#intro h1").css({opacity: 0}).animate({opacity: 1}, 1500, function(){
 		$("#intro p").animate({opacity: 1}, 1500, function(){
 			$("nav").fadeIn(1500);
