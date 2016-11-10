@@ -12,19 +12,18 @@
 
 .grid{
     display: table;
-    height: 50%;
+    height: 100%;
     width: 100%;
 }
 
 .box{
-    border: thin solid white;
     display: table-cell;
     max-height: 50%;
     max-width: 50%;
 }
 
 .img-wrapper{
-    display: inline-block;
+    display: block;
     overflow: hidden;
 }
 
