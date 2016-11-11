@@ -32,7 +32,7 @@
 
     <section class="red fullscreen" id="skills">
         <div class="content">
-            <h1>Technical Skills</h1>
+            <h2>Technical Skills</h2>
             <h3>Master</h3>
             <ul id="bargraph">
                 <li><div data-percent="80" class="white-border bars">Java</div></li>
@@ -42,46 +42,51 @@
                 <li><div data-percent="50" class="white-border bars">Design</div></li>
             </ul>
             <h3>Novice</h3>
+            
             <a href="#projects" class="white-border button">Next</a>
-        </div>
+        </div>        
 	</section>
     
 	<section class="green fullscreen" id="projects">
         <div class="content">
             <div class="infobar">
-		    <h1>Projects</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse diam urna, ultrices et arcu non, luctus efficitur nulla. Vivamus eleifend nunc et arcu porttitor, in vehicula eros facilisis. Praesent a turpis sollicitudin, rhoncus dolor non, blandit quam. Morbi cursus mi et urna euismod, vel commodo nunc blandit. Vestibulum sollicitudin et nunc a lacinia. Nullam ipsum massa, aliquam non mollis eget, scelerisque sit amet tortor. Mauris feugiat vehicula sapien sed pharetra. Ut ullamcorper fringilla sapien, tristique ultrices enim ullamcorper nec. Vestibulum sit amet nibh eget diam lobortis pulvinar ut et ante. Suspendisse blandit nibh dolor, sit amet vehicula lectus convallis eget. Aenean laoreet non elit in cursus.
-
-            Morbi pretium diam iaculis aliquam suscipit. Nulla commodo venenatis diam et consequat. Sed hendrerit tellus erat, a vehicula risus facilisis eu. Curabitur diam sapien, semper vitae efficitur non, commodo a mi. Nulla at lacus sollicitudin, posuere nulla nec, ultricies arcu. Vivamus rhoncus enim odio, vel accumsan lectus porttitor at. Vivamus sit amet odio eu turpis rutrum ullamcorper vitae a metus. Quisque laoreet in mauris eget dapibus. Sed auctor nunc at est egestas iaculis. Donec eu dui sed sem gravida pulvinar ac vitae orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum suscipit aliquet blandit. Aenean vitae nunc odio. Fusce dui mauris, maximus ullamcorper augue eget, commodo tincidunt nulla. Etiam et mollis ligula. Nullam at rhoncus lorem.</p>
-            <a href="#about" class="white-border button">Next</a>
+		    <h2>Projects</h2>
+                <div class="description">
+                    <p>Hover over one of the images on the right hand side to view them in detail.</p>
+                    <p class="projects-page 1">1</p>
+                    <p class="projects-page 2">2</p>
+                    <p class="projects-page 3">3</p>
+                    <p class="projects-page 4">4</p>
+                    <a href="#about" class="white-border button">Next</a>
+                </div>
             </div>
             
             <div class="tiles">
                 
                 <!-- row 1-->
-                <div class="grid">
-                    <div class="box">
-                        <div class="img-wrapper">
+                <div class="column">
+                    <div class="cell">
+                        <div class="img-wrapper" data-link="1">
                             <img src="../images/square2.jpg">
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="img-wrapper">
+                    <div class="cell">
+                        <div class="img-wrapper" data-link="2">
                             <img src="../images/square2.jpg">
                         </div>
                     </div>
                 </div>
                 
                 <!-- Row 2 -->
-                <div class="grid">
-                    <div class="box">
-                        <div class="img-wrapper">
+                <div class="column">
+                    <div class="cell">
+                        <div class="img-wrapper" data-link="3">
                             <img src="../images/square3.jpg">
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="img-wrapper">
-                            <img src="../images/square4.jpg">
+                    <div class="cell">
+                        <div class="img-wrapper" data-link="4">
+                            <img src="../images/square3.jpg">
                         </div>
                     </div>
                 </div>
@@ -103,7 +108,7 @@
     
 	<section class="grey fullscreen" id="contact">
         <div class="content footer">
-            <h1>Contact Me</h1>
+            <div class="wrapper"><h2>Contact Me</h2></div>
 
             <form id="contact-form" method="POST">
                 <input type="text" name="_gotcha" style="display:none">
@@ -135,7 +140,7 @@
 <link rel="stylesheet" type="text/css" href="css/projects.css">
 <link rel="stylesheet" type="text/css" href="css/about.css">
 <link rel="stylesheet" type="text/css" href="css/contact.css">    
-<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="scripts/index.js"></script>
 </body>

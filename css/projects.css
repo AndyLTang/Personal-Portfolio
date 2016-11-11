@@ -1,8 +1,25 @@
+#projects .tiles a{
+    display: inline;
+}
+
+/* Left hand side */
+
 .infobar{
     float: left;
     width: 40%;
     padding: 0 5%;
 }
+
+.projects-page{
+    display: none;
+    opacity: 0;
+}
+
+.description p{
+    padding: 0 0 1em 0;
+}
+
+/* Right hand side */
 
 .tiles{
     float: right;
@@ -10,21 +27,23 @@
     width: 50%;
 }
 
-.grid{
+.column{
     display: table;
     height: 100%;
     width: 100%;
 }
 
-.box{
+.cell{
     display: table-cell;
     max-height: 50%;
     max-width: 50%;
 }
 
 .img-wrapper{
-    display: block;
+    display: inline-block;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 img{
@@ -32,6 +51,7 @@ img{
     height: 100%;
     transition: all .5s ease;
     vertical-align: middle;
+    object-fit: cover;
 }
 
 img:hover {

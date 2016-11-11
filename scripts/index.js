@@ -84,6 +84,20 @@ $(document).ready(function(){
         $(this).animate({'height' : percent + '%'}, 1500);
     });
     
+    /* Projects */
+    $('.img-wrapper').hover(
+        function(){
+            $('.description').find('p.current').stop().animate({opacity:0}, 'fast');
+            
+            var selection = $(this).attr('data-link');
+            $('.description').find('p.' + selection).show().animate({opacity:1}, 'fast');
+        },
+        function(){
+            var selection = $(this).attr('data-link');
+            $('.description').find('p.' + selection).stop().hide().animate({opacity:0}, 'fast');
+        }
+    );
+    
     /* Contact Form */
     var $contactForm = $('#contact-form');
     $contactForm.submit(function(e){

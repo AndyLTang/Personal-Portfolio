@@ -7,7 +7,7 @@ form{
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     box-shadow: none;
-    transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s, border 0.5s;
     outline: none;
 }
 
@@ -40,7 +40,8 @@ input:hover, textarea:hover{
 }
 
 input:focus, textarea:focus{
-    box-shadow: inset 5px 0 0 0 white;
+    border: thin solid grey;
+    box-shadow: inset 5px 0 0 0 grey;
 }
 
 #submit-btn{
@@ -55,5 +56,5 @@ input:focus, textarea:focus{
 #submit-btn:hover{
     color: black;
     /*background-color: white;*/
-    box-shadow: inset 200px 0 0 0 white;
+    box-shadow: inset 105px 0 0 0 white;
 }

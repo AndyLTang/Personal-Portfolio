@@ -13,14 +13,14 @@
     vertical-align: middle;
 }
 
-h1 span{
-    font-size: 3.5em;
-    text-shadow: 2px 2px 2px black;
+.wrapper{
+    display: inline-block;
+    margin: 0 auto;
 }
 
 #intro p {
     margin: 0 0 2em 0;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 3px 4px rgba(0,0,0, 0.3);
 }
 
 .glass{
