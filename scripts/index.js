@@ -85,18 +85,13 @@ $(document).ready(function(){
     });
     
     /* Projects */
-    $('.img-wrapper').hover(
+    $('.img-wrapper').click(
         function(){
-            $('.description').find('p.current').stop().animate({opacity:0}, 'fast');
+            $('.description').find('p.current').removeClass('current').stop().animate({opacity:0}, 'slow').hide();
             
             var selection = $(this).attr('data-link');
-            $('.description').find('p.' + selection).show().animate({opacity:1}, 'fast');
-        },
-        function(){
-            var selection = $(this).attr('data-link');
-            $('.description').find('p.' + selection).stop().hide().animate({opacity:0}, 'fast');
-        }
-    );
+            $('.description').find('p.' + selection).addClass('current').stop().show().animate({opacity:1}, 'slow');
+        });
     
     /* Contact Form */
     var $contactForm = $('#contact-form');
