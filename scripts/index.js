@@ -91,7 +91,8 @@ $(document).ready(function(){
             
             var selection = $(this).attr('data-link');
             $('.description').find('p.' + selection).addClass('current').stop().show().animate({opacity:1}, 'slow');
-        });
+        }
+    );
     
     /* Contact Form */
     var $contactForm = $('#contact-form');

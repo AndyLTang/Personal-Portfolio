@@ -40,8 +40,8 @@ input:hover, textarea:hover{
 }
 
 input:focus, textarea:focus{
-    border: thin solid grey;
-    box-shadow: inset 5px 0 0 0 grey;
+    border: thin solid #777;
+    box-shadow: inset 5px 0 0 0 #777;
 }
 
 #submit-btn{
