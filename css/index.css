@@ -44,3 +44,26 @@ h2{
     padding: 0.5em 0;
     border-bottom: thin solid white;
 }
+
+.white-border{
+    color: white;
+    border: thin solid white;
+    background-color: transparent;
+}
+
+.button {
+    display: block;
+    width: 8em;
+    margin: 1em auto;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    /*transition: background-color 0.5s, color 0.5s;*/
+    transition: box-shadow 1s, color 1s;
+}
+
+.button:hover {
+    /*background-color: white;*/
+    box-shadow: inset 200px 0 0 0 white;
+    color: black;
+}

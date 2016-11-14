@@ -13,11 +13,6 @@
     vertical-align: middle;
 }
 
-.wrapper{
-    display: inline-block;
-    margin: 0 auto;
-}
-
 #intro p {
     margin: 0 0 2em 0;
     text-shadow: 2px 3px 4px rgba(0,0,0, 0.3);
@@ -28,28 +23,7 @@
     padding: 1em;
 }
 
-a{
+li a{
     display: inline-block;
     text-decoration: none;
-}
-
-.white-border{
-    color: white;
-    border: thin solid white;
-    background-color: transparent;
-}
-
-.button {
-    color: white;
-    width: 8em;
-    margin: 1em auto;
-    padding: 1em;
-    /*transition: background-color 0.5s, color 0.5s;*/
-    transition: box-shadow 1s, color 1s;
-}
-
-.button:hover {
-    /*background-color: white;*/
-    box-shadow: inset 200px 0 0 0 white;
-    color: black;
 }

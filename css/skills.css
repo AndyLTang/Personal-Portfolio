@@ -1,4 +1,10 @@
 /* Skills Page */
+
+.column{
+    display: inline-block;
+    width: 33%;
+}
+
 #bargraph{
     display: inline-block;
     list-style-type: none;
