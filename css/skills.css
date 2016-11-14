@@ -1,12 +1,42 @@
 /* Skills Page */
 
+
 .column{
     display: inline-block;
-    width: 33%;
+    width: 20%;
 }
 
 .column p{
     padding: 1em;
+}
+
+.column ul{
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+}
+
+.rotate-text-wrapper{
+    display: inline-block;
+    overflow: hidden;
+    width: 1.5em;
+    line-height: 1.5;
+    border-right: thin white solid;
+    padding: 0 .5em 0 0;
+    margin: 0 .5em 0 0;
+}
+
+.rotate-text{
+    display: inline-block;
+    white-space: nowrap;
+    transform: translate(0,100%) rotate(270deg);
+    transform-origin: 0 0;
+}
+
+.rotate-text:after{
+    content:"";
+    float: left;
+    margin-top: 100%;
 }
 
 #bargraph{
