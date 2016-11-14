@@ -5,6 +5,10 @@
     width: 33%;
 }
 
+.column p{
+    padding: 1em;
+}
+
 #bargraph{
     display: inline-block;
     list-style-type: none;

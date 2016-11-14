@@ -67,3 +67,10 @@ h2{
     box-shadow: inset 200px 0 0 0 white;
     color: black;
 }
+
+footer div{
+    padding: 1em;
+    color: grey;
+    background-color: rgba(0,0,0,0.1);
+    text-align: center;
+}
