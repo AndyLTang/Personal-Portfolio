@@ -1,9 +1,15 @@
 /* Skills Page */
 
+.table{
+    text-align: center;
+    white-space: nowrap;
+}
+
 .column{
     display: inline-block;   
     vertical-align: top;
-    width: 20%;
+    margin: 0 auto;
+    width: 33%;
 }
 
 .column p{

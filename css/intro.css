@@ -6,10 +6,6 @@
 .purple { background: #8F82E8; }
 .grey { background: #333; }
 
-.heee{
-    display: table-cell;
-}
-
 .content{
     display: table-cell;
     height: 100%;
