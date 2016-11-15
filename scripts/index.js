@@ -84,6 +84,13 @@ $(document).ready(function(){
         $(this).animate({'height' : percent + '%'}, 1500);
     });
     
+    $('.column span').hide();
+    $('.column ul').hide();
+    $('.column span').hide().animate({opacity: 'toggle'}, 1000).promise().done(function(){
+        
+        $('.column ul').animate({opacity: 'toggle', width:'toggle'}, 1000);
+    });
+    
     /* Projects */
     $('.img-wrapper').click(
         function(){
