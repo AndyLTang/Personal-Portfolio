@@ -21,6 +21,7 @@ section#projects{
 
 .description p{
     padding: 0 0 1em 0;
+    color: white;
 }
 
 /* Right hand side */
@@ -44,7 +45,7 @@ section#projects{
     width: 50%;
 }
 
-.img-wrapper{
+.project-img-wrapper{
     display: inline-block;
     overflow: hidden;
     width: 100%;

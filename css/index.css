@@ -27,7 +27,7 @@ html {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
     font-size: 1.2em;
-	color: white;
+	color: #444;
 }
 
 body {
@@ -49,6 +49,8 @@ h2{
     margin: 0 auto 1em auto;
     padding: 0.5em 0;
     border-bottom: thin solid white;
+    color: white;
+    font-size: 2em;
 }
 
 .white-border{

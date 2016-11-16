@@ -5,12 +5,17 @@
 .yellow { background: #D9A337; }
 .purple { background: #8F82E8; }
 .grey { background: #333; }
+.white { background: white;}
 
 .content{
     display: table-cell;
     height: 100%;
     text-align: center;
     vertical-align: middle;
+}
+
+#intro {
+    color: white;
 }
 
 #intro p {

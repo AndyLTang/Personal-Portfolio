@@ -2,10 +2,12 @@
 
 nav{
 	position: fixed;
-	width: 100%;
-	background: rgba(0,0,0,0.3); /* Use rgba() to prevent child from inheriting opacity */
+    padding: 0 10%;
+	width: 80%;
+	background: rgba(255,255,255,0.9); /* Use rgba() to prevent child from inheriting opacity */
 	list-style-type: none;
     z-index: 1;
+    box-shadow: 0px 0px 5px grey;
 }
 
 nav ul#logo{
@@ -13,7 +15,7 @@ nav ul#logo{
 }
 
 nav ul#logo span{
-    font-weight: 300;
+    font-weight: 400;
 }
 
 nav ul#links{
@@ -26,13 +28,16 @@ nav ul li{
 
 nav ul li a{
 	padding: 1.5em;
-	color: white;
 	text-decoration: none;
-	box-shadow: inset 0 0 0 0 white;
+	box-shadow: inset 0 0 0 0 #444;
 	transition: color 0.3s, box-shadow 0.3s;
+    font-weight: 400;
 }
 
 li a.active, li a:hover{
-    color: white;
-    box-shadow: inset 0 -4px 0 0 white;
+    box-shadow: inset 0 -4px 0 0 #444;
+}
+
+li a:link, li a:visited{
+    color: #444;
 }

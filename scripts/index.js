@@ -86,13 +86,13 @@ $(document).ready(function(){
     
     $('.column span').hide();
     $('.column ul').hide();
-    $('.column span').hide().animate({opacity: 'toggle'}, 1000).promise().done(function(){
+    $('.column span').animate({opacity: 'toggle'}, 1000).promise().done(function(){
         
         $('.column ul').animate({opacity: 'toggle', width:'toggle'}, 1000);
     });
     
     /* Projects */
-    $('.img-wrapper').click(
+    $('.project-img-wrapper').click(
         function(){
             $('.description').find('p.current').removeClass('current').stop().animate({opacity:0}, 'slow').hide();
             

@@ -1,5 +1,10 @@
 /* Skills Page */
 
+#skills h2{
+    color: #444;
+    border-color: #444
+}
+
 .table{
     text-align: center;
     white-space: nowrap;
@@ -9,7 +14,7 @@
     display: inline-block;   
     vertical-align: top;
     margin: 0 auto;
-    width: 33%;
+    width: 25%;
 }
 
 .column p{
@@ -28,9 +33,11 @@
     overflow: hidden;
     width: 1.5em;
     line-height: 1.5;
-    border-right: thin white solid;
+    border-right: thin solid  #444;
     padding: 0 .5em 0 0;
     margin: 0 .5em 0 0;
+    font-size: 1.4em;
+    font-weight: bold;
 }
 
 .rotate-text{
@@ -46,12 +53,24 @@
     margin-top: 100%;
 }
 
+.skills-img-wrapper{
+    padding-bottom: 1em;
+    transform: scale(0.7);
+    transition: all 0.5s;
+}
+
+.skills-img-wrapper:hover{
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+/* Bargraph */
+
 #bargraph{
     display: inline-block;
     list-style-type: none;
     background: rgba(0,0,0,0.10);
     border-spacing: 15px 15px;
-
 }
 
 #bargraph li{
