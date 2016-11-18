@@ -26,7 +26,7 @@
 		<div class="content">
             <div class="glass">
 			<h1><span>Andy Tang</span></h1>
-			<p>Software Developer | Software Engineer | Web Developer | Graphics Designer</p>
+			<p>Software Developer | Software Engineer | Web Developer</p>
             <a href="#skills" class="white-border button">Learn more</a>
             </div>
         </div>
@@ -35,8 +35,10 @@
     <!-- Skills page -->
     <section class="white screen" id="skills">
         <div class="content">
-        <h2>Skills</h2>
-            <p>A list of the different areas of my expertise.</p>
+        <div class="heading">
+            <h2>Skills</h2>
+            <p>What I can do</p>
+        </div>
             
             <div class="table">
             <div class="column">
@@ -120,14 +122,16 @@
     <!-- Projects page -->
 	<section class="white screen" id="projects">
         <div class="content">
-            
+        <div class="heading">
+            <h2>Projects</h2>
+            <p>What I have done</p>
+        </div>  
         <!-- left hand side -->
         <div class="infobar">
-            <h2>Projects</h2>
             <div class="description">
-                <p>Click the images on the right hand side to view them in detail.</p>
+                <p>Click the images on the right to view my past works in detail.</p>
                 
-                <div class="projects-page 1">
+                <article class="projects-page 1">
                     <h3>Hybrid Image</h3>
                     <p>About: An offline Java application which allowed users to upload a pair of pictures in order to create the hybrid image effect.</p>
                     <p>Date: ?</p>
@@ -136,9 +140,9 @@
                         <li>Implemented the user interface using Java's Swing Library which allows users to upload their own pair of photos to create a hybridized image.</li>
                         
                     </ul>
-                </div>
+                </article>
                     
-                <div class="projects-page 2">
+                <article class="projects-page 2">
                     <h3>Watchermelon</h3>
                     <p>About: An iPhone app which allows local neighborhood blockwatchers to send reports to a database where the police processes the information.</p>
                     <p>Date: ?</p>
@@ -147,9 +151,9 @@
                         <li>Drew the interface elements as scalable vectors using Illustrator</li>
                         <li>Mocked a demo screenshot of the app icon created in Photoshop using smart objects</li>
                     </ul>
-                </div>
+                </article>
                 
-                <div class="projects-page 3">
+                <article class="projects-page 3">
                     <h3>Amazon Web Services</h3>
                     <p>About: Team project in which we used Amazon's web services to implement the REST API to simulate a server processing client requests and handling erroneous cases. </p>
                     <p>Date: ?</p>
@@ -157,9 +161,9 @@
                         <li>Connected to the servers using Python's boto interface to gain access to features including Elastic Compute Cloud (EC2) and DynamoDB</li>
                         <li>Implemented a scheduling algorithm with zookeeper to keep the message order consistent across EC2 instances.</li>
                     </ul>
-                </div>
+                </article>
                 
-                <div class="projects-page 4">
+                <article class="projects-page 4">
                     <h3>SideTube</h3>
                     <p>About: A personal project to improve YouTube's user interface. It is used in conjunction with any Javascript  injecting browser (such as Tampermonkey for Chrome) extension to modify the appearance of the site.</p>
                     <p>Date: ?</p>
@@ -167,7 +171,7 @@
                         <li>Manipulated CSS of Youtube's webpage using JQuery to rearrange elements to visually flowing positions.</li>
                         <li>Hosted script on GitHub to remotely distribute the script.</li>
                     </ul>
-                </div>
+                </article>
             </div>
                 <a href="#about" class="grey-border button">Next</a>
         </div>
@@ -213,7 +217,10 @@
     <!-- About page -->
 	<section class="white screen" id="about">
         <div class="content">
-		<h2>About Me</h2>
+            <div class="heading">
+		        <h2>About</h2>
+                <p>Who I am</p>
+            </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse diam urna, ultrices et arcu non, luctus efficitur nulla. Vivamus eleifend nunc et arcu porttitor, in vehicula eros facilisis. Praesent a turpis sollicitudin, rhoncus dolor non, blandit quam. Morbi cursus mi et urna euismod, vel commodo nunc blandit. Vestibulum sollicitudin et nunc a lacinia. Nullam ipsum massa, aliquam non mollis eget, scelerisque sit amet tortor. Mauris feugiat vehicula sapien sed pharetra. Ut ullamcorper fringilla sapien, tristique ultrices enim ullamcorper nec. Vestibulum sit amet nibh eget diam lobortis pulvinar ut et ante. Suspendisse blandit nibh dolor, sit amet vehicula lectus convallis eget. Aenean laoreet non elit in cursus.
 
             Morbi pretium diam iaculis aliquam suscipit. Nulla commodo venenatis diam et consequat. Sed hendrerit tellus erat, a vehicula risus facilisis eu. Curabitur diam sapien, semper vitae efficitur non, commodo a mi. Nulla at lacus sollicitudin, posuere nulla nec, ultricies arcu. Vivamus rhoncus enim odio, vel accumsan lectus porttitor at. Vivamus sit amet odio eu turpis rutrum ullamcorper vitae a metus. Quisque laoreet in mauris eget dapibus. Sed auctor nunc at est egestas iaculis. Donec eu dui sed sem gravida pulvinar ac vitae orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum suscipit aliquet blandit. Aenean vitae nunc odio. Fusce dui mauris, maximus ullamcorper augue eget, commodo tincidunt nulla. Etiam et mollis ligula. Nullam at rhoncus lorem.</p>
@@ -224,7 +231,10 @@
     <!-- Contacts page -->
 	<section class="grey screen" id="contact">
         <div class="content footer">
-            <div class="form-wrapper"><h2>Contact Me</h2></div>
+            <div class="form-wrapper">
+                <h2>Contact Me</h2>
+                <p>How to find me</p>
+            </div>
 
             <form id="contact-form" method="POST">
                 <input type="text" name="_gotcha" style="display:none">

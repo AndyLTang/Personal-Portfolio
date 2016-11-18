@@ -5,6 +5,12 @@
     border-color: #444
 }
 
+#skills p.caption{
+    text-align: left;
+    border-left: transparent 11px solid;
+    padding-left: 1.6em;
+}
+
 .table{
     text-align: center;
     white-space: nowrap;
@@ -13,8 +19,7 @@
 .column{
     display: inline-block;   
     vertical-align: top;
-    margin: 0 auto;
-    width: 25%;
+    width: 30%;
 }
 
 .column p{

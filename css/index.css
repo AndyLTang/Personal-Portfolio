@@ -9,10 +9,10 @@
 }
 
 .fullscreen{
-    width: 80%;
+    width: 72%;
     height: 100%;
     display: table;
-    padding: 4.2em 10% 4.2em 10%;
+    padding: 4.2em 14% 4.2em 14%;
 }
 
 .screen{
@@ -45,12 +45,21 @@ h1 span{
 }
 
 h2{
-    display: table;
-    margin: 0 auto 1em auto;
-    padding: 0.5em 0;
-    border-bottom: thin solid #444;
+    /* margin: 0 auto 1em auto; */
     color: #444;
-    font-size: 2em;
+    font-size: 3em;
+}
+
+.heading{
+    display: table;
+    border-left: 10px solid #444;
+    padding: 0 0 0 2em;
+}
+
+.content{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .white-border{
