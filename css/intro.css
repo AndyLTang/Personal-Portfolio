@@ -6,6 +6,7 @@
 .purple { background: #8F82E8; }
 .grey { background: #333; }
 .white { background: white;}
+.white {background: #26C6DA ;}
 
 .content{
     display: table-cell;
@@ -20,15 +21,21 @@
 
 #intro p {
     margin: 0 0 2em 0;
-    text-shadow: 2px 3px 4px rgba(0,0,0, 0.3);
+    padding-top: 1em;
+    text-shadow: 5px 5px 0px rgba(0,0,0, 0.3);
 }
 
 .glass{
-    background-color: rgba(1,1,1,0.3);
+    background-color: rgba(0,0,0,0.3);
     padding: 1em;
 }
 
 li a{
     display: inline-block;
     text-decoration: none;
+}
+
+#intro .button:hover{
+    color: #444;
+    box-shadow: inset 200px 0 0 0 white;
 }

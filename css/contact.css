@@ -1,10 +1,15 @@
 /* Contact Page */
+#contact h2{
+    color: white;
+    border-color: white;
+}
+
 
 .form-wrapper{
     display: inline-block;
     margin: 0 auto;
 }
-
+ 
 form{
     text-align: center;
     display: block;
@@ -62,4 +67,10 @@ input:focus, textarea:focus{
     color: black;
     /*background-color: white;*/
     box-shadow: inset 105px 0 0 0 white;
+}
+
+#contact img{
+    display: block;
+    margin: 0 auto;
+    filter: invert(100%);
 }

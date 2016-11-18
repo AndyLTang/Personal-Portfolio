@@ -7,7 +7,8 @@
 
 <body>
 <div id="container">
-	<nav>
+    <!-- Navigation -->
+    <nav>
 		<ul id="logo">
             <li><a href=""><strong>Andy</strong>Tang</a></li>
         </ul>
@@ -20,24 +21,27 @@
 		</ul>
 	</nav>
 
+    <!-- Front page -->
 	<section class="fullscreen" id="intro">
 		<div class="content">
             <div class="glass">
-			<h1><span>Hello World.</span></h1>
-			<p>I'm Andy, a unique blend of 1 part seasoned software developer &amp; 1 part aspiring web designer.</p>
+			<h1><span>Andy Tang</span></h1>
+			<p>Software Developer | Software Engineer | Web Developer | Graphics Designer</p>
             <a href="#skills" class="white-border button">Learn more</a>
             </div>
         </div>
 	</section>
 
-    <section class="white fullscreen" id="skills">
+    <!-- Skills page -->
+    <section class="white screen" id="skills">
         <div class="content">
         <h2>Skills</h2>
+            <p>A list of the different areas of my expertise.</p>
             
             <div class="table">
             <div class="column">
                 <div class="skills-img-wrapper">
-                    <img src="images/code.svg" width="150px" height="150px">
+                    <img src="images/code.svg" width="180px" height="180px">
                 </div>
                 
                 <span class="rotate-text-wrapper">
@@ -58,26 +62,29 @@
             
             <div class="column">
                 <div class="skills-img-wrapper">
-                    <img src="images/software.svg" width="150px" height="150px">
+                    <img src="images/software.svg" width="180px" height="180px">
                 </div>
                 <span class="rotate-text-wrapper">
                     <span class="rotate-text">
-                        Software Skills
+                        Software &amp; Tools
                     </span>
                 </span>
                 <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript/JQuery</li>
-                    <li>SQL</li>
+                    <li>Windows</li>
+                    <li>Linux</li>
+                    <li>Git Version Control</li>
+                    <li>Amazon Web Services</li>
+                    <li>Eclipse IDE</li>
+                    <li>Microsoft Office</li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>After Effects</li>
                 </ul>
             </div>
             
             <div class="column">
                 <div class="skills-img-wrapper">
-                    <img src="images/bubble.svg" width="150px" height="150px">
+                    <img src="images/bubble.svg" width="180px" height="180px">
                 </div>
                 <span class="rotate-text-wrapper">
                     <span class="rotate-text">
@@ -85,12 +92,11 @@
                     </span>
                 </span>
                 <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript/JQuery</li>
-                    <li>SQL</li>
+                    <li>Problem Solving</li>
+                    <li>Communication</li>
+                    <li>Team Player</li>
+                    <li>Leadership</li>
+                    <li>Work under pressure</li>
                 </ul>
             </div>
             </div>
@@ -107,11 +113,12 @@
             <h3>Novice</h3>
             -->
 
-            <a href="#projects" class="white-border button">Next</a>
+            <a href="#projects" class="grey-border button">Next</a>
         </div>        
 	</section>
     
-	<section class="grey screen-noMargin" id="projects">
+    <!-- Projects page -->
+	<section class="white screen" id="projects">
         <div class="content">
             
         <!-- left hand side -->
@@ -119,12 +126,50 @@
             <h2>Projects</h2>
             <div class="description">
                 <p>Click the images on the right hand side to view them in detail.</p>
-                <p class="projects-page 1">111111111111111</p>
-                <p class="projects-page 2">222222222222222222222222222222</p>
-                <p class="projects-page 3">33333333</p>
-                <p class="projects-page 4">4</p>
+                
+                <div class="projects-page 1">
+                    <h3>Hybrid Image</h3>
+                    <p>About: An offline Java application which allowed users to upload a pair of pictures in order to create the hybrid image effect.</p>
+                    <p>Date: ?</p>
+                    <ul>
+                        <li>Developed the algorithm to create Hybrid Images</li>
+                        <li>Implemented the user interface using Java's Swing Library which allows users to upload their own pair of photos to create a hybridized image.</li>
+                        
+                    </ul>
+                </div>
+                    
+                <div class="projects-page 2">
+                    <h3>Watchermelon</h3>
+                    <p>About: An iPhone app which allows local neighborhood blockwatchers to send reports to a database where the police processes the information.</p>
+                    <p>Date: ?</p>
+                    <ul>
+                        <li>Prototyped the user interface on Fluid UI</li>
+                        <li>Drew the interface elements as scalable vectors using Illustrator</li>
+                        <li>Mocked a demo screenshot of the app icon created in Photoshop using smart objects</li>
+                    </ul>
+                </div>
+                
+                <div class="projects-page 3">
+                    <h3>Amazon Web Services</h3>
+                    <p>About: Team project in which we used Amazon's web services to implement the REST API to simulate a server processing client requests and handling erroneous cases. </p>
+                    <p>Date: ?</p>
+                    <ul>
+                        <li>Connected to the servers using Python's boto interface to gain access to features including Elastic Compute Cloud (EC2) and DynamoDB</li>
+                        <li>Implemented a scheduling algorithm with zookeeper to keep the message order consistent across EC2 instances.</li>
+                    </ul>
+                </div>
+                
+                <div class="projects-page 4">
+                    <h3>SideTube</h3>
+                    <p>About: A personal project to improve YouTube's user interface. It is used in conjunction with any Javascript  injecting browser (such as Tampermonkey for Chrome) extension to modify the appearance of the site.</p>
+                    <p>Date: ?</p>
+                    <ul>
+                        <li>Manipulated CSS of Youtube's webpage using JQuery to rearrange elements to visually flowing positions.</li>
+                        <li>Hosted script on GitHub to remotely distribute the script.</li>
+                    </ul>
+                </div>
             </div>
-                <a href="#about" class="white-border button">Next</a>
+                <a href="#about" class="grey-border button">Next</a>
         </div>
 
         <!-- right hand side -->
@@ -134,7 +179,7 @@
             <div class="row">
                 <div class="cell">
                     <div class="project-img-wrapper" data-link="1">
-                        <img src="../images/square2.jpg" class="project-img">
+                        <img src="../images/linkedin.svg" class="project-img">
                     </div>
                 </div>
                 
@@ -165,17 +210,19 @@
         </div> <!-- end content -->
 	</section>
 
-	<section class="blue fullscreen" id="about">
+    <!-- About page -->
+	<section class="white screen" id="about">
         <div class="content">
 		<h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse diam urna, ultrices et arcu non, luctus efficitur nulla. Vivamus eleifend nunc et arcu porttitor, in vehicula eros facilisis. Praesent a turpis sollicitudin, rhoncus dolor non, blandit quam. Morbi cursus mi et urna euismod, vel commodo nunc blandit. Vestibulum sollicitudin et nunc a lacinia. Nullam ipsum massa, aliquam non mollis eget, scelerisque sit amet tortor. Mauris feugiat vehicula sapien sed pharetra. Ut ullamcorper fringilla sapien, tristique ultrices enim ullamcorper nec. Vestibulum sit amet nibh eget diam lobortis pulvinar ut et ante. Suspendisse blandit nibh dolor, sit amet vehicula lectus convallis eget. Aenean laoreet non elit in cursus.
 
             Morbi pretium diam iaculis aliquam suscipit. Nulla commodo venenatis diam et consequat. Sed hendrerit tellus erat, a vehicula risus facilisis eu. Curabitur diam sapien, semper vitae efficitur non, commodo a mi. Nulla at lacus sollicitudin, posuere nulla nec, ultricies arcu. Vivamus rhoncus enim odio, vel accumsan lectus porttitor at. Vivamus sit amet odio eu turpis rutrum ullamcorper vitae a metus. Quisque laoreet in mauris eget dapibus. Sed auctor nunc at est egestas iaculis. Donec eu dui sed sem gravida pulvinar ac vitae orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum suscipit aliquet blandit. Aenean vitae nunc odio. Fusce dui mauris, maximus ullamcorper augue eget, commodo tincidunt nulla. Etiam et mollis ligula. Nullam at rhoncus lorem.</p>
-            <a href="#contact" class="white-border button">Next</a>
+            <a href="#contact" class="grey-border button">Next</a>
         </div>
 	</section>
     
-	<section class="grey fullscreen" id="contact">
+    <!-- Contacts page -->
+	<section class="grey screen" id="contact">
         <div class="content footer">
             <div class="form-wrapper"><h2>Contact Me</h2></div>
 
@@ -196,11 +243,13 @@
 
                 <input type="submit" id="submit-btn" class="white-border">
 
-                <div class="response"></div>
+                <div class="response"> </div>
             </form>
+            
         </div>
 	</section>
     
+    <!-- Footer -->
     <footer class="grey">
         <div>© 2016 Andy Tang</div>
     </footer>

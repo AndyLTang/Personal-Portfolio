@@ -94,10 +94,10 @@ $(document).ready(function(){
     /* Projects */
     $('.project-img-wrapper').click(
         function(){
-            $('.description').find('p.current').removeClass('current').stop().animate({opacity:0}, 'slow').hide();
+            $('.description').find('.current').removeClass('current').stop().animate({opacity:0}, 'slow').hide();
             
             var selection = $(this).attr('data-link');
-            $('.description').find('p.' + selection).addClass('current').stop().show().animate({opacity:1}, 'slow');
+            $('.description').find('.' + selection).addClass('current').stop().show().animate({opacity:1}, 'slow');
         }
     );
     
