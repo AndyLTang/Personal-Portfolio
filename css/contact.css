@@ -1,13 +1,14 @@
 /* Contact Page */
-#contact h2{
+.form-wrapper{
+    display: table;
+    margin: 0 auto;
+    text-align: center;
     color: white;
-    border-color: white;
+    padding-bottom: 1em;
 }
 
-
-.form-wrapper{
-    display: inline-block;
-    margin: 0 auto;
+.form-wrapper h2{
+    color: white;
 }
  
 form{

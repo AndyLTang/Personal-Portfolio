@@ -47,7 +47,7 @@ h1 span{
 h2{
     /* margin: 0 auto 1em auto; */
     color: #444;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .heading{
@@ -83,6 +83,7 @@ h2{
     text-decoration: none;
     /*transition: background-color 0.5s, color 0.5s;*/
     transition: box-shadow 1s, color 1s;
+    text-align: center; 
 }
 
 .button:hover {
