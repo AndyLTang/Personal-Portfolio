@@ -13,13 +13,13 @@
 
 .table{
     text-align: center;
-    white-space: nowrap;
 }
 
 .column{
     display: inline-block;   
     vertical-align: top;
-    width: 30%;
+    width: 33%;
+    min-width: 15em;
 }
 
 .column p{
@@ -31,6 +31,7 @@
     list-style: none;
     text-align: left;
     vertical-align: top;
+    white-space: nowrap;
 }
 
 .rotate-text-wrapper{
@@ -43,6 +44,7 @@
     margin: 0 .5em 0 0;
     font-size: 1.4em;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .rotate-text{

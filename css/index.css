@@ -1,32 +1,18 @@
 *{
+    box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+    border: 0;
 }
 
-#container{
-    width: 100%;
-    height: 100%;
-}
-
-.fullscreen{
-    width: 72%;
-    height: 100%;
-    display: table;
-    padding: 4.2em 14% 4.2em 14%;
-}
-
-.screen{
-    width: 80%;
-    display: table;
-    padding: 4.2em 10% 4.2em 10%;
-}
 
 html {
 	width: 100%;
+    min-width: 780px;
 	height: 100%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
-    font-size: 1.2em;
+    font-size: 16px;
 	color: #444;
 }
 
@@ -40,6 +26,24 @@ body {
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 0 0 100em black;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen{
+    width: 100%;
+    height: 100%;
+    display: table;
+    padding: 4.2em 14% 4.2em 14%;
+}
+
+.screen{
+    width: 100%;
+    display: table;
+    padding: 4.2em 10% 4.2em 10%;
 }
 
 h1 span{
@@ -63,6 +67,7 @@ h2{
 .content{
     display: table-cell;
     height: 100%;
+    width: 100%;
     vertical-align: middle;
 }
 

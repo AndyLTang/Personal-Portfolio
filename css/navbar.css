@@ -3,7 +3,7 @@
 nav{
 	position: fixed;
     padding: 0 10%;
-	width: 80%;
+	width: 100%;
 	background: rgba(255,255,255,0.9); /* Use rgba() to prevent child from inheriting opacity */
 	list-style-type: none;
     z-index: 1;
@@ -11,8 +11,7 @@ nav{
 }
 
 nav ul#logo{
-    float: left;
-    white-space: nowrap;
+    display: inline-block;
 }
 
 nav ul#logo span{
@@ -20,11 +19,15 @@ nav ul#logo span{
 }
 
 nav ul#links{
+    display: inline-block;
+    list-style-type: none;
 	float: right;
+    text-align: right;   
 }
 
 nav ul li{
     display: inline-block;
+    white-space: nowrap;
 }
 
 nav ul li a{
@@ -43,6 +46,27 @@ li a:link, li a:visited{
     color: #444;
 }
 
-#menu-icon{
+
+#collapsed{
     display: none;
+    text-align: right;
+    width: 100%;
+}
+
+@media only screen and (max-width: 780px){
+    nav #links li:not(:first-child){
+        display: none;
+    }
+    
+    nav #links li:not(:first-child) a:hover{
+        box-shadow: inset -4px 0 0 0 #444;
+    }
+    
+    nav #links #collapsed{display: inline-block;}
+}
+
+@media only screen and (min-width: 790px){
+    nav #links li:not(:first-child){
+        display: inline-block !important;
+    }
 }
