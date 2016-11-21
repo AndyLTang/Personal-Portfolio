@@ -1,4 +1,10 @@
 /* Contact Page */
+#contact{
+    display: table;
+    width: 100%;
+    padding: 4em 0 4em 0;
+}
+
 .form-wrapper{
     display: table;
     margin: 0 auto;

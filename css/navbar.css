@@ -53,7 +53,7 @@ li a:link, li a:visited{
     width: 100%;
 }
 
-@media only screen and (max-width: 780px){
+@media only screen and (max-width: 990px){
     nav #links li:not(:first-child){
         display: none;
     }
@@ -65,7 +65,7 @@ li a:link, li a:visited{
     nav #links #collapsed{display: inline-block;}
 }
 
-@media only screen and (min-width: 781px){
+@media only screen and (min-width: 991px){
     nav #links li:not(:first-child){
         display: inline-block !important;
     }

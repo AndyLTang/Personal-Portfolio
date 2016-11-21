@@ -1,4 +1,29 @@
+#about{
+    padding-bottom: 7%;
+}
+
 #about h2{
     color: #444;
     border-color : #444;
+}
+
+#about .img-wrapper, #about .about-description{
+    text-align: center;
+}
+
+#about .about-description h3{
+    font-size: 2em;
+    font-weight: bold;
+}
+#about img{
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    border-radius: 50%;
+    border: 14px solid #444;
+    margin: 2em;
+    margin-top: 0em;
+}
+
+#about article{
+    margin: 1em 15%;
 }
