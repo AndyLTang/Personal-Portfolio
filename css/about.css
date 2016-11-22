@@ -2,11 +2,6 @@
     padding-bottom: 7%;
 }
 
-#about h2{
-    color: #444;
-    border-color : #444;
-}
-
 #about .img-wrapper, #about .about-description{
     text-align: center;
 }
@@ -14,6 +9,7 @@
 #about .about-description h3{
     font-size: 2em;
     font-weight: bold;
+    color: #1E84B6;
 }
 #about img{
     -webkit-clip-path: circle(50% at 50% 50%);
