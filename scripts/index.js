@@ -26,6 +26,8 @@ $(document).ready(function(){
     $("a[href='#intro']").addClass("active");
     */
     
+    $(".heading").hide().toggle("drop", {direction: 'up'}, 500);
+    
 	$("nav a").click(function(){
 		/* Scroll to location on page*/
 		var link = $(this).attr("href");
@@ -52,14 +54,16 @@ $(document).ready(function(){
     
     
 	/* Navigation highlight */
-	var aChildren = $("#links li").children();
+    /*
+    var aChildren = $("#links li").children();
 	var aArray = [];
 	for (var i=0; i < aChildren.length; i++){
 		var aChild = aChildren[i];
 		var ahref = $(aChild).attr('href');
 		aArray.push(ahref);
 	}
-
+    
+    
 	$(window).scroll(function(){
         var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
         var windowHeight = $(window).height(); // get the height of the window
@@ -84,14 +88,9 @@ $(document).ready(function(){
             }
         }
     });
+    */
     
     /* Skills */
-    $('#bargraph li div').delay(2000).each(function(key, bar){
-        var percent = $(this).data('percent');
-        
-        $(this).animate({'height' : percent + '%'}, 1500);
-    });
-    
     $('.column span').hide();
     $('.column ul').hide();
     $('.column span').animate({opacity: 'toggle'}, 1000).promise().done(function(){
@@ -135,5 +134,14 @@ $(document).ready(function(){
                 }
         });
     });
+    
+    
+    /*
+    $('#bargraph li div').delay(2000).each(function(key, bar){
+        var percent = $(this).data('percent');
+        
+        $(this).animate({'height' : percent + '%'}, 1500);
+    });
+    */
     
 }); //EOF
