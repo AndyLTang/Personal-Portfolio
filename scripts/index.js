@@ -52,6 +52,7 @@ $(document).ready(function(){
        $("nav #links li:not(:first-child)").slideToggle('fast');
     });
     
+    $("#about article").hide().toggle("drop", {direction: 'up'}, 500);
     
 	/* Navigation highlight */
     /*
