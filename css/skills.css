@@ -57,17 +57,13 @@
 }
 
 .skills-img-wrapper{
-    width: 250px;
-    height: 250px;
     padding-bottom: 1em;
     margin: 0 auto;
-    transform: scale(0.7);
-    transition: all 0.5s;
 }
 
-.skills-img-wrapper:hover{
-    transition: all 0.5s;
-    transform: scale(1);
+.skills-img-wrapper img{
+    width: 150px;
+    height: 150px;
 }
 
 /* Bargraph */
