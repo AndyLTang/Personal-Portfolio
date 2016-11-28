@@ -5,52 +5,11 @@ $(document).ready(function(){
 		$('html,body').stop().animate({scrollTop: tag.offset().top}, 'slow');
 	}
     
-    function check_if_in_view() {
-      var window_height = $window.height();
-      var window_top_position = $window.scrollTop();
-      var window_bottom_position = (window_top_position + window_height);
-
-      $.each($animation_elements, function() {
-        var $element = $(this);
-        var element_height = $element.outerHeight();
-        var element_top_position = $element.offset().top;
-        var element_bottom_position = (element_top_position + element_height);
-
-        //check to see if this current container is within viewport
-        if ((element_bottom_position >= window_top_position) &&
-            (element_top_position <= window_bottom_position)) {
-          $element.addClass('in-view');
-        } else {
-          $element.removeClass('in-view');
-        }
-      });
-    }
-    
-    var $animation_elements = $('.heading');
-    var $window = $(window);
-    $window.on('scroll', check_if_in_view);
-    
     /* Scroll page to top
     $("body").stop().animate({ scrollTop: 0 }, 1);
     */
     
-	/* First page animations 
-	$("nav").hide();
-    $("#intro .button").css({opacity: 0});
-    $("#intro p").css({opacity: 0});
-	$("#intro h1").css({opacity: 0}).animate({opacity: 1}, 1500, function(){
-		$("#intro p").animate({opacity: 1}, 1500, function(){
-			$("nav").fadeIn(1500);
-            $("#intro .button").animate({opacity: 1}, 1500);
-		});
-	});
-    */
-
-    /* Initialize navigation */
-    /*
-    $("a[href='#intro']").addClass("active");
-    */
-    
+    var $navlinks = $('nav a');
 	$("nav a").click(function(){
 		/* Scroll to location on page*/
 		var link = $(this).attr("href");
@@ -61,7 +20,8 @@ $(document).ready(function(){
   		event.stopPropagation();
 	}); //end click
     
-    $(".button").click(function(){
+    var $nextbuttons = $('.button');
+    $nextbuttons.click(function(){
         /* Scroll to location on page*/
 		var link = $(this).attr("href");
 		scrollTo(link);
@@ -71,7 +31,8 @@ $(document).ready(function(){
   		event.stopPropagation();
     });
 
-    $("nav #collapsed").click(function(){
+    var $responsivenav = $('#collapsed');
+    $responsivenav.click(function(){
        $("nav #links li:not(:first-child)").slideToggle('fast');
     });
     
@@ -113,12 +74,34 @@ $(document).ready(function(){
     */
 
     /* Projects */
+    var $description = $('.description');
+    var project = $('#projects');
+    
     $('.project-img-wrapper').click(
         function(){
-            $('.description').find('.current').removeClass('current').stop().animate({opacity:0}, 'slow').hide();
+            //find the current article and remove it
+            $description.find('.current').removeClass('current').stop().animate({opacity:0}, 'slow').hide();
             
+            //change current to the article according to clicked image
             var selection = $(this).attr('data-link');
-            $('.description').find('.' + selection).addClass('current').stop().show().animate({opacity:1}, 'slow');
+            $("article[data-link=" + selection + "]").addClass('current').stop().show().animate({opacity:1}, 'slow');
+
+            switch (selection){
+                case '1':
+                    project.css({'background-image':'url("/images/project1.jpg")'});
+                    break;
+                case '2':
+                     project.css({'background-image':'url("/images/project2.jpg")'});
+                    break;
+                case '3':
+                     project.css({'background-image':'url("/images/project3.jpg")'});
+                    break;
+                case '4':
+                     project.css({'background-image':'url("/images/project4.jpg")'});
+                    break;
+                default:
+                    break;
+            }
         }
     );
     
