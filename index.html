@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Andy Tang | Portfolio</title>
+<head>	
+    <title>Andy Tang | Portfolio</title>
 	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/intro.css">
+    <link rel="stylesheet" type="text/css" href="css/skills.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500">
 </head>
 
 <body>
@@ -12,7 +20,7 @@
             <li><a href=""><strong>Andy</strong>Tang</a></li>
         </ul>
 		<ul id="links">
-            <li id="collapsed"><a>&#9776;</a></li>
+            <!-- <li id="collapsed"><a>&#9776;</a></li> -->
 			<li id="page1"><a href="#intro">Intro</a></li>
 			<li id="page2"><a href="#skills">Skills</a></li>
 			<li id="page3"><a href="#projects">Projects</a></li>
@@ -21,6 +29,7 @@
 		</ul>
 	</nav>
 
+    
     <!-- Front page -->
 	<section class="fullscreen" id="intro">
 		<div class="content">
@@ -30,6 +39,7 @@
         </div>
 	</section>
 
+    
     <!-- Skills page -->
     <section class="screen" id="skills">
         <div class="content">
@@ -124,7 +134,6 @@
         </div>        
 	</section>
     
-    <hr>
     
     <!-- Projects page -->
 	<section class="screen" id="projects">
@@ -141,18 +150,15 @@
                 <article class="projects-page" data-link="1">
                     <h3>Hybrid Image</h3>
                     <p>About | An offline Java application which allowed users to upload a pair of pictures in order to create the hybrid image effect.</p>
-                    <p>Date | ?</p>
                     <ul>
                         <li>Developed the algorithm to create Hybrid Images</li>
-                        <li>Implemented the user interface using Java's Swing Library which allows users to upload their own pair of photos to create a hybridized image.</li>
-                        
+                        <li>Implemented the user interface using Java's Swing Library which allows users to upload their own pair of photos to create a hybridized image.</li>              
                     </ul>
                 </article>
                     
                 <article class="projects-page 2" data-link="2">
                     <h3>Watchermelon</h3>
                     <p>About | An iPhone app which allows local neighborhood blockwatchers to send reports to a database where the police processes the information.</p>
-                    <p>Date | ?</p>
                     <ul>
                         <li>Prototyped the user interface on Fluid UI</li>
                         <li>Drew the interface elements as scalable vectors using Illustrator</li>
@@ -163,7 +169,6 @@
                 <article class="projects-page 3" data-link="3">
                     <h3>Amazon Web Services</h3>
                     <p>About | Team project in which we used Amazon's web services to implement the REST API to simulate a server processing client requests and handling erroneous cases. </p>
-                    <p>Date | ?</p>
                     <ul>
                         <li>Connected to the servers using the Python boto interface to gain access to features including Elastic Compute Cloud (EC2), DynamoDB, and Simple Queue Service (SQS).</li>
                         <li>Implemented a scheduling algorithm with zookeeper to keep the message order consistent across EC2 instances.</li>
@@ -173,7 +178,6 @@
                 <article class="projects-page 4" data-link="4">
                     <h3>SideTube</h3>
                     <p>About | A personal project to improve YouTube's user interface. It is used in conjunction with any Javascript injecting browser (such as Tampermonkey for Chrome) extension to modify the appearance of the site.</p>
-                    <p>Date | ?</p>
                     <ul>
                         <li>Manipulated CSS of Youtube's webpage using JQuery to rearrange elements to visually flowing positions.</li>
                         <li>Hosted script on GitHub to remotely distribute the script.</li>
@@ -191,13 +195,13 @@
             <div class="row">
                 <div class="cell">
                     <div class="project-img-wrapper" data-link="1">
-                        <img src="../images/linkedin.svg" class="project-img">
+                        <img src="images/linkedin.svg" class="project-img">
                     </div>
                 </div>
                 
                 <div class="cell">
                     <div class="project-img-wrapper" data-link="2">
-                        <img src="../images/square2.jpg" class="project-img">
+                        <img src="images/square2.jpg" class="project-img">
                     </div>
                 </div>
             </div>
@@ -206,13 +210,13 @@
             <div class="row">
                 <div class="cell">
                     <div class="project-img-wrapper" data-link="3">
-                        <img src="../images/square3.jpg" class="project-img">
+                        <img src="images/square3.jpg" class="project-img">
                     </div>
                 </div>
                 
                 <div class="cell">
                     <div class="project-img-wrapper" data-link="4">
-                        <img src="../images/square3.jpg" class="project-img">
+                        <img src="images/square3.jpg" class="project-img">
                     </div>
                 </div>
             </div>
@@ -222,8 +226,7 @@
         </div> <!-- end content -->
 	</section>
 
-    <hr>
-    
+        
     <!-- About page -->
 	<section class="screen" id="about">
         <div class="content">
@@ -243,6 +246,7 @@
         </div>
 	</section>
     
+        
     <!-- Contacts page -->
 	<section class="grey" id="contact">
         <div class="content footer">
@@ -274,20 +278,14 @@
         </div>
 	</section>
     
+        
     <!-- Footer -->
     <footer class="grey">
         <div>© 2016 Andy Tang</div>
     </footer>
-
-<link rel="stylesheet" type="text/css" href="css/index.css">
-<link rel="stylesheet" type="text/css" href="css/navbar.css">
-<link rel="stylesheet" type="text/css" href="css/intro.css">
-<link rel="stylesheet" type="text/css" href="css/skills.css">
-<link rel="stylesheet" type="text/css" href="css/projects.css">
-<link rel="stylesheet" type="text/css" href="css/about.css">
-<link rel="stylesheet" type="text/css" href="css/contact.css">    
-<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      
+        
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="scripts/index.js"></script>
 <link rel="stylesheet" href="css/animate.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script><script>new WOW().init();</script>

@@ -1,16 +1,26 @@
 $(document).ready(function(){
-
+    
 	function scrollTo(anchor_id){
 		var tag = $(anchor_id);
 		$('html,body').stop().animate({scrollTop: tag.offset().top}, 'slow');
 	}
     
-    /* Scroll page to top
-    $("body").stop().animate({ scrollTop: 0 }, 1);
-    */
-    
+    var $nav = $('nav');
     var $navlinks = $('nav a');
-	$("nav a").click(function(){
+    
+    $(window).scroll(function(){
+        if ($(document).scrollTop() <= 0){
+            $nav.removeClass('drop-shadow');
+            $nav.removeClass('invert-nav');
+            $navlinks.removeClass('inverted');
+        } else {
+            $nav.addClass('drop-shadow');
+            $nav.addClass('invert-nav');
+            $navlinks.addClass('inverted');
+        }   
+    });
+    
+	$navlinks.click(function(){
 		/* Scroll to location on page*/
 		var link = $(this).attr("href");
 		scrollTo(link);
@@ -141,4 +151,5 @@ $(document).ready(function(){
     });
     */
     
-}); //EOF
+}); 
+//EOF

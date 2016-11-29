@@ -33,7 +33,7 @@
 
 .infobar{
     float: left;
-    width: 40%;
+    width: 48%;
     padding: 1em;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -46,17 +46,21 @@
 }
 
 .description h3{
-    padding: 0 0 1em 1em;
+    padding: 0 1em 0 1em;
     color: #1E84B6;
 }
 
 .description p{
-    padding: 0 0 1em 1em;
+    padding: 1em 1em 1em 1em;
 }
 
-.description li{
-    list-style-type: none;
-    padding: 0 0 1em 1em;
+.description ul{
+    list-style-position: outside;
+    padding: 0 1em 0 1em;
+}
+
+.infobar a{
+    margin-bottom: 1em;
 }
 
 /* Right hand side */
@@ -65,7 +69,7 @@
     display: table;
     float: right;
     height: 100%;
-    width: 50%;
+    width: 48%;
 }
 
 .row{
