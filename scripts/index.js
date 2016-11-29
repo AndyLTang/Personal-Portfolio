@@ -8,6 +8,13 @@ $(document).ready(function(){
     var $nav = $('nav');
     var $navlinks = $('nav a');
     
+    var preloadImgs = new Array();
+    for(i=0; i < 4; i++){
+        var tmpImg = new Image();
+        tmpImg.src = "images/project" + (i+1) + ".jpg";
+        preloadImgs[i] = tmpImg;
+    }
+    
     $(window).scroll(function(){
         if ($(document).scrollTop() <= 0){
             $nav.removeClass('drop-shadow');
@@ -85,7 +92,7 @@ $(document).ready(function(){
 
     /* Projects */
     var $description = $('.description');
-    var project = $('#projects');
+    var $project = $('#projects');
     
     $('.project-img-wrapper').click(
         function(){
@@ -98,18 +105,19 @@ $(document).ready(function(){
 
             switch (selection){
                 case '1':
-                    project.css({'background-image':'url("/images/project1.jpg")'});
+                    $project[0].style.backgroundImage = 'url("' + preloadImgs[0].src + '")';
                     break;
                 case '2':
-                     project.css({'background-image':'url("/images/project2.jpg")'});
+                    $project[0].style.backgroundImage = 'url("' + preloadImgs[1].src + '")';
                     break;
                 case '3':
-                     project.css({'background-image':'url("/images/project3.jpg")'});
+                    $project[0].style.backgroundImage = 'url("' + preloadImgs[2].src + '")';
                     break;
                 case '4':
-                     project.css({'background-image':'url("/images/project4.jpg")'});
+                    $project[0].style.backgroundImage = 'url("' + preloadImgs[3].src + '")';
                     break;
                 default:
+                    alert('error!');
                     break;
             }
         }

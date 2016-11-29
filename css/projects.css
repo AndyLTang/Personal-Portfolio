@@ -70,6 +70,29 @@
     float: right;
     height: 100%;
     width: 48%;
+    animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight{
+0%{
+    opacity: 0;
+    transform: translateX(100px);
+}
+100%{
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft{
+0%{
+    opacity: 0;
+    transform: translateX(-100px);
+}
+100%{
+    opacity: 1;
+    transform: translateX(0);
+    }
 }
 
 .row{
