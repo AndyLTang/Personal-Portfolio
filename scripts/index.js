@@ -94,7 +94,7 @@ $(document).ready(function(){
     var $description = $('.description');
     var $project = $('#projects');
     
-    $('.project-img-wrapper').click(
+    $('.tile-wrapper').click(
         function(){
             //find the current article and remove it
             $description.find('.current').removeClass('current').stop().animate({opacity:0}, 'slow').hide();

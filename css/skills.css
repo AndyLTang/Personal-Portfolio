@@ -1,11 +1,5 @@
 /* Skills Page */
 
-#skills p.caption{
-    text-align: left;
-    border-left: transparent 11px solid;
-    padding-left: 1.6em;
-}
-
 .table{
     text-align: center;
 }
@@ -19,14 +13,21 @@
     margin-right: 1em;
 }
 
-.column p{ 
-}
-
 .column ul{
     display: inline-block;
     list-style: none;
     text-align: left;
     vertical-align: top;
+}
+
+.img-wrapper{
+    padding-bottom: 1em;
+    margin: 0 auto;
+}
+
+.img-wrapper img{
+    width: 175px;
+    height: 175px;
 }
 
 .rotate-text-wrapper{
@@ -56,18 +57,8 @@
     margin-top: 100%;
 }
 
-.skills-img-wrapper{
-    padding-bottom: 1em;
-    margin: 0 auto;
-}
 
-.skills-img-wrapper img{
-    width: 150px;
-    height: 150px;
-}
-
-/* Bargraph */
-
+/* Bargraph
 #bargraph{
     display: inline-block;
     list-style-type: none;
@@ -93,5 +84,5 @@
     border: none;
     color: #F64E4E;
     background: white;
-}
+} */
 
