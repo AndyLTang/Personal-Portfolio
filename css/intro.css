@@ -9,11 +9,11 @@
 
 #intro {
     color: white;
+    text-align: center;
 }
 
-#intro p {
-    margin: 0 0 2em 0;
-    padding-top: 1em;
+#intro h1{
+    margin-top: 10%;
 }
 
 #intro .button:hover{
@@ -21,7 +21,9 @@
     box-shadow: inset 200px 0 0 0 white;
 }
 
-.no-center{
-    margin: 0;
-    margin-top: 10%;
+.white-bar{
+    border-left: thin white solid;
+    margin: 2em auto;
+    width: 1px;
+    height: 20%;
 }
