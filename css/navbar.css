@@ -28,11 +28,11 @@ nav ul#links{
     list-style-type: none;
 	float: right;
     text-align: right;   
+    white-space: nowrap;
 }
 
 nav ul li{
     display: inline-block;
-    white-space: nowrap;
 }
 
 nav ul li a{
@@ -40,7 +40,6 @@ nav ul li a{
 	text-decoration: none;
 	box-shadow: inset 0 0 0 0 #444;
 	transition: color 0.3s, box-shadow 0.3s;
-    font-weight: bold;
     display: inline-block;
     text-decoration: none;
 }
@@ -51,8 +50,8 @@ li a:link, li a:visited{
 }
 
 li a:hover{
-    color: #E93E51;
-    box-shadow: inset 0 -4px 0 0 #E93E51;
+    color: white;
+    box-shadow: inset 0 -4px 0 0 white;
 }
 
 /* Inverted navbar style */
@@ -61,7 +60,8 @@ li a.inverted:link, li a.inverted:visited{
 }
 
 li a.inverted:hover{
-    color: #E93E51;
+    color: #03A9F4;
+    box-shadow: inset 0 -4px 0 0 #03A9F4;
 }
 
 #collapsed{

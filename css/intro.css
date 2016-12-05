@@ -1,7 +1,7 @@
 /* Page Template */
 .red { background: #F64E4E; }
 .green { background: #54B585; }
-.blue { background: #268BFF; }
+.blue { background: #03A9F4; }
 .yellow { background: #D9A337; }
 .purple { background: #8F82E8; }
 .grey { background: #333; }
@@ -21,9 +21,23 @@
     box-shadow: inset 200px 0 0 0 white;
 }
 
-.white-bar{
+.white-vert-bar{
     border-left: thin white solid;
     margin: 2em auto;
     width: 1px;
     height: 20%;
+}
+
+.white-horiz-bar{
+    border-bottom: thin white solid;
+    margin: 2em auto;
+    width: 100px;
+    height: 1px;
+}
+
+.black-horiz-bar{
+    border-bottom: thin black solid;
+    margin: 2em auto;
+    width: 100px;
+    height: 1px;
 }

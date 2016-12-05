@@ -16,11 +16,13 @@
 
 .infobar{
     float: left;
-    width: 48%;
+    width: 45%;
     padding: 1em;
+    margin-left: 2.5em;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     background-color: rgba(255,255,255, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .projects-page{
@@ -94,6 +96,7 @@
 .tile-wrapper{
     display: block;
     overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .tile-img{
