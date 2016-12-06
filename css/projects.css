@@ -8,10 +8,6 @@
     text-align: left;
 }
 
-#projects .tiles a{
-    display: inline;
-}
-
 /* Left hand side */
 
 .infobar{
@@ -30,13 +26,15 @@
     opacity: 0;
 }
 
-.description p{
-    padding: 1em 1em 1em 1em;
+.infobar-margin{
+    padding: 0 1em 1em 1em;
 }
 
 .description h3{
     padding: 0 1em 0 1em;
-    color: #1E84B6;
+    color: #03A9F4;
+    text-align: center;
+    letter-spacing: 5px;
 }
 
 .description ul{
@@ -45,6 +43,11 @@
 }
 
 .infobar a.button{
+    margin-bottom: 1em;
+}
+
+.less-margin{
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
@@ -110,8 +113,4 @@
 .tile-img:hover {
     transform: scale(1.5);
     filter: grayscale(100%);
-}
-
-.tiles p{
-    background-color: rgba(0,0,0,0.3);
 }

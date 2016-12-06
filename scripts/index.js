@@ -8,6 +8,7 @@ $(document).ready(function(){
     var $nav = $('nav');
     var $navlinks = $('nav a');
     
+    /* Image preloading */
     var preloadImgs = new Array();
     for(i=0; i < 4; i++){
         var tmpImg = new Image();
@@ -15,6 +16,7 @@ $(document).ready(function(){
         preloadImgs[i] = tmpImg;
     }
     
+    /* Change navbar behaviour when scrolled */
     $(window).scroll(function(){
         if ($(document).scrollTop() <= 0){
             $nav.removeClass('drop-shadow');
@@ -27,6 +29,7 @@ $(document).ready(function(){
         }   
     });
     
+    /* Bind links to scrollTo */
 	$navlinks.click(function(){
 		/* Scroll to location on page*/
 		var link = $(this).attr("href");
@@ -48,6 +51,7 @@ $(document).ready(function(){
   		event.stopPropagation();
     });
 
+    /* Responsive Navigation */
     var $responsivenav = $('#collapsed');
     $responsivenav.click(function(){
        $("nav #links li:not(:first-child)").slideToggle('fast');

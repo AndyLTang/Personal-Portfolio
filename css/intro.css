@@ -36,7 +36,7 @@
 }
 
 .black-horiz-bar{
-    border-bottom: thin black solid;
+    border-bottom: thin grey solid;
     margin: 2em auto;
     width: 100px;
     height: 1px;

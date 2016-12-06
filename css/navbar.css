@@ -3,10 +3,10 @@ nav{
 	position: fixed;
     padding: 0 14%;
 	width: 100%;
-	background: transparent; /* Use rgba() to prevent child from inheriting opacity */
+	background: transparent;
 	list-style-type: none;
-    z-index: 1;
     transition: background 0.5s;
+    z-index: 1;
 }
 
 .drop-shadow{
@@ -33,10 +33,11 @@ nav ul#links{
 
 nav ul li{
     display: inline-block;
+    padding: 1em 1em 0em 1em;
 }
 
 nav ul li a{
-	padding: 1.4em;
+    padding-bottom: 1em;
 	text-decoration: none;
 	box-shadow: inset 0 0 0 0 #444;
 	transition: color 0.3s, box-shadow 0.3s;
@@ -47,6 +48,7 @@ nav ul li a{
 /* Default navbar style */
 li a:link, li a:visited{
     color: white;
+    box-shadow: inset 0 0 0 0 white;
 }
 
 li a:hover{
@@ -57,6 +59,7 @@ li a:hover{
 /* Inverted navbar style */
 li a.inverted:link, li a.inverted:visited{
     color: #444;
+    box-shadow: inset 0 0 0 0 #03A9F4;
 }
 
 li a.inverted:hover{
@@ -64,14 +67,13 @@ li a.inverted:hover{
     box-shadow: inset 0 -4px 0 0 #03A9F4;
 }
 
+/* Collapsable navbar
 #collapsed{
     display: none;
     text-align: right;
     width: 100%;
 }
 
-
-/* Collapsable navbar
 @media only screen and (max-width: 990px){
     nav #links li:not(:first-child){
         display: none;
