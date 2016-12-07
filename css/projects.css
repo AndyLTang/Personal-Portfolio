@@ -4,16 +4,13 @@
     transition: all 0.5s linear;
 }
 
-#projects .content{
-    text-align: left;
-}
-
-/* Left hand side */
+/* === Left hand side === */
 
 .infobar{
     float: left;
     width: 45%;
     padding: 1em;
+    padding-top: 1.5em;
     margin-left: 2.5em;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -21,37 +18,33 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.projects-page{
+.infobar-instruction{
+    margin-bottom: 1em;
+}
+
+.project-page{
     display: none;
     opacity: 0;
 }
 
-.infobar-margin{
-    padding: 0 1em 1em 1em;
-}
-
-.description h3{
-    padding: 0 1em 0 1em;
-    color: #03A9F4;
+.project-title{
+    margin: 0em 1em;
     text-align: center;
     letter-spacing: 5px;
+    color: #03A9F4;
 }
 
-.description ul{
+.project-description{
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.project-highlights{
+    margin: 0 1em;
     list-style-position: outside;
-    padding: 0 1em 0 1em;
 }
 
-.infobar a.button{
-    margin-bottom: 1em;
-}
-
-.less-margin{
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-/* Right hand side */
+/* === Right hand side === */
 
 .tiles{
     display: table;
@@ -83,13 +76,13 @@
     }
 }
 
-.row{
+.tiles-row{
     display: table-row;
     height: 50%;
     width: 100%;
 }
 
-.cell{
+.tiles-cell{
     display: table-cell;
     height: 25%;
     width: 25%;

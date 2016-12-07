@@ -93,13 +93,13 @@ $(document).ready(function(){
     */
 
     /* Projects */
-    var $description = $('.description');
+    var $infobar = $('.infobar');
     var $project = $('#projects');
     
     $('.tile-wrapper').click(
         function(){
             //find the current article and remove it
-            $description.find('.current').removeClass('current').stop().animate({opacity:0}, 'slow').hide();
+            $infobar.find('.current').removeClass('current').stop().animate({opacity:0}, 'slow').hide();
             
             //change current to the article according to clicked image
             var selection = $(this).attr('data-link');

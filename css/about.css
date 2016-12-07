@@ -1,15 +1,8 @@
 #about{
-    padding-bottom: 7%;
     text-align: center;
 }
 
-.about-greeting{
-    font-size: 2em;
-    font-weight: bold;
-    color: #03A9F4;
-}
-
-.about-profileImg{
+.profileImg{
     width: 256px;
     height: 256px;
     margin-bottom: 0.5em;
@@ -19,6 +12,12 @@
     border-radius: 50%;
 }
 
-.about-bio{
+.greeting{
+    font-size: 2em;
+    font-weight: bold;
+    color: #03A9F4;
+}
+
+.bio{
     margin: 1em 20%;
 }
