@@ -1,3 +1,5 @@
+/* ==== Base Styles === */
+
 *{
     box-sizing: border-box;
 	margin: 0;
@@ -5,11 +7,8 @@
     border: 0;
 }
 
-
 html {
 	width: 100%;
-    min-width: 990px;
-    max-width: 100%;
 	height: 100%;
 	font-family: 'Lato', sans-serif;
     font-size: 1.2em;
@@ -18,13 +17,28 @@ html {
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    width: inherit;
+    height: inherit;
     /*background: url('../images/background.jpg');*/
     background-color: grey;
     background-size: cover;
     background-attachment: fixed;
 }
+
+h1{
+    font-size: 4.5em;
+}
+
+h2{
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+/* === Class Styles === */
 
 .fullscreen{
     width: 100%;
@@ -38,15 +52,6 @@ body {
     display: table;
     padding: 7% 10% 7% 10%;
     background-color: #f6f6f6;
-}
-
-h1 span{
-    font-size: 3.5em;
-}
-
-h2{
-    font-size: 2em;
-    letter-spacing: 5px;
 }
 
 .heading{
@@ -88,14 +93,6 @@ h2{
     font-weight: 300;
 }
 
-.kerning-tight{
-    letter-spacing: -2px;
-}
-
-.bolder{
-    font-weight: bolder;
-}
-
 .button {
     display: block;
     width: 8em;
@@ -111,7 +108,7 @@ h2{
     color: white;
 }
 
-footer div{
+.copyright{
     padding: 1em;
     color: grey;
     background-color: #222;
