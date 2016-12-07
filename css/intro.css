@@ -3,11 +3,6 @@
     text-align: center;
 }
 
-#intro h1{
+.brandname{
     margin-top: 10%;
-}
-
-#intro .button:hover{
-    color: #444;
-    box-shadow: inset 200px 0 0 0 white;
 }

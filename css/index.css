@@ -40,7 +40,7 @@ h3{
 
 /* === Structure Styles === */
 
-.fullscreen{
+.intro-page{
     display: table;
     width: 100%;
     height: 100%;
@@ -63,10 +63,11 @@ h3{
 
 .heading{
     display: table;
-    border-left: 10px solid #444;
     padding: 0 0 0 2em;
     margin-bottom: 2em;
+    text-align: left;
     color: #03A9F4;
+    border-left: 10px solid #444;
 }
 
 .heading em{
@@ -88,6 +89,11 @@ h3{
 .button:hover {
     color: white;
     box-shadow: inset 200px 0 0 0 #444;
+}
+
+.button--invert:hover {
+    color: #444;
+    box-shadow: inset 200px 0 0 0 white;
 }
 
 .border--white{
@@ -135,7 +141,8 @@ h3{
 .bg-white { background: white; }
 
 /* === Typography === */
-.weight300{ font-weight: 300; }
+.weight200 { font-weight: 200; }
+.weight300 { font-weight: 300; }
 
 /* === Footer === */
 .copyright{

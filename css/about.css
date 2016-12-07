@@ -1,27 +1,24 @@
 #about{
     padding-bottom: 7%;
-}
-
-#about .img-wrapper, #about h3, #about .about-description{
     text-align: center;
 }
 
-#about h3{
+.about-greeting{
     font-size: 2em;
     font-weight: bold;
     color: #03A9F4;
 }
 
-#about img{
+.about-profileImg{
+    width: 256px;
+    height: 256px;
+    margin-bottom: 0.5em;
+    border: 10px solid #444;
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     border-radius: 50%;
-    border: 14px solid #444;
-    margin-top: 0em;
-    height: 256px;
-    width: 256px;
 }
 
-#about article{
+.about-bio{
     margin: 1em 20%;
 }

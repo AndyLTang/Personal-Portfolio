@@ -3,22 +3,18 @@
     display: table;
     width: 100%;
     padding: 4em 0 4em 0;
+    text-align: center;
 }
 
 /* === Heading === */
 
 .form-header{
     margin: 0 auto;
-    text-align: center;
     color: #03A9F4;
     letter-spacing: 10px;
 }
  
 /* === Textbox === */
-
-.form-body{
-    text-align: center;
-}
 
 .form-textbox{
     display: block;
