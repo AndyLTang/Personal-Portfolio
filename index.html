@@ -31,18 +31,18 @@
 
     
     <!-- Intro page -->
-	<section class="fullscreen blue" id="intro">
+	<section class="fullscreen bg-blue" id="intro">
 		<div class="content">
             <h1 class="large-font-size wow fadeInDown">ANDY <span class="weight200">TANG</span></h1>
             <p class="wow fadeInDown" data-wow-delay="0.7s">Software Developer &#8212; Software Engineer &#8212; Web Developer</p>
-            <hr class="white-vert-bar">
-            <a href="#skills" class="white-border button">Learn more</a>
+            <hr class="divider-vert divider-vert--white">
+            <a href="#skills" class="button border--white">Learn more</a>
         </div>
 	</section>
 
     
     <!-- Skills page -->
-    <section class="screen" id="skills">
+    <section class="page" id="skills">
         <div class="content">
             
         <div class="heading wow fadeInDown">
@@ -120,7 +120,7 @@
                 </div>
             </div>
 
-            <a href="#projects" class="grey-border button">Next</a>
+            <a href="#projects" class="button border--grey">Next</a>
             </div> <!-- end table -->
             
         </div>
@@ -128,7 +128,7 @@
     
     
     <!-- Projects page -->
-	<section class="screen" id="projects">
+	<section class="page" id="projects">
         <div class="content">
             <div class="heading wow fadeInDown">
                 <h2>PROJECTS</h2>
@@ -141,7 +141,7 @@
 
                     <article class="projects-page" data-link="1">
                         <h3>Hybrid Image</h3>
-                        <hr class="black-horiz-bar less-margin">
+                        <hr class="divider-horiz divider-horiz--grey less-margin">
                         <p class="infobar-margin">About | An offline Java application which allowed users to upload a pair of pictures in order to create the hybrid image effect.</p>
                         <ul>
                             <li>Developed the algorithm to create Hybrid Images</li>
@@ -151,7 +151,7 @@
 
                     <article class="projects-page" data-link="2">
                         <h3>Watchermelon</h3>
-                        <hr class="black-horiz-bar less-margin">
+                        <hr class="divider-horiz divider-horiz--grey less-margin">
                         <p class="infobar-margin">About | An iPhone app which allows local neighborhood blockwatchers to send reports to a database where the police processes the information.</p>
                         <ul>
                             <li>Prototyped the user interface on Fluid UI</li>
@@ -162,7 +162,7 @@
 
                     <article class="projects-page" data-link="3">
                         <h3>Amazon Web Services</h3>
-                        <hr class="black-horiz-bar less-margin">
+                        <hr class="divider-horiz divider-horiz--grey less-margin">
                         <p class="infobar-margin">About | Team project in which we used Amazon's web services to implement the REST API to simulate a server processing client requests and handling erroneous cases. </p>
                         <ul>
                             <li>Connected to the servers using the Python boto interface to gain access to features including Elastic Compute Cloud (EC2), DynamoDB, and Simple Queue Service (SQS).</li>
@@ -172,7 +172,7 @@
 
                     <article class="projects-page" data-link="4">
                         <h3>SideTube</h3>
-                        <hr class="black-horiz-bar less-margin">
+                        <hr class="divider-horiz divider-horiz--grey less-margin">
                         <p class="infobar-margin">About | A personal project to improve YouTube's user interface. It is used in conjunction with any Javascript injecting browser (such as Tampermonkey for Chrome) extension to modify the appearance of the site.</p>
                         <ul>
                             <li>Manipulated CSS of Youtube's webpage using JQuery to rearrange elements to visually flowing positions.</li>
@@ -181,7 +181,7 @@
                     </article>
                 </div>
 
-                <a href="#about" class="grey-border button">Next</a>
+                <a href="#about" class="button border--grey">Next</a>
             </div>
 
             <!-- right hand side -->
@@ -224,7 +224,7 @@
 
         
     <!-- About page -->
-	<section class="screen" id="about">
+	<section class="page" id="about">
         <div class="content">
             <div class="heading wow fadeInDown">
 		        <h2>ABOUT ME</h2>
@@ -234,44 +234,39 @@
             <div class="img-wrapper wow bounceIn"><img src="images/profile.png" alt="Profile Picture"></div>
             <h3>Hello, I am Andy Tang.</h3>
             
-            <hr class="black-horiz-bar">
+            <hr class="divider-horiz divider-horiz--grey">
             
             <article class="about-description wow fadeInUp">
                 <p>I am a software developer. I graduated from Simon Fraser University with a Bachelor of Science in Computing Science. However, having deep interest in digital art from a young age, I have a history of small personal creations in digital art. This other half of me has compelled me to mix together the two things I love: coding and digital art. Many see computers as logical pieces of electronic, but to me they are a canvas where we paint with 1's and 0's instead of a paintbrush.</p>
             </article>
             
-            <a href="#contact" class="grey-border button">Next</a>
+            <a href="#contact" class="button border--grey">Next</a>
         </div>
 	</section>
     
         
     <!-- Contacts page -->
-	<section class="grey" id="contact">
+	<section class="bg-grey" id="contact">
         <div class="content footer">
             
-            <div class="form-wrapper">
-                <h2>CONTACT ME</h2>
-                <hr class="white-horiz-bar">
-            </div>
+            <h3 class="form-header">CONTACT ME</h3>
+            
+            <hr class="divider-horiz divider-horiz--white">
 
-            <form id="contact-form" method="POST">
+            <form class="form-body" method="POST">
                 <input type="text" name="_gotcha" style="display:none">
 
-                <input type="text" name="Name" class="white-border" placeholder="Name" required>
-                <br>
+                <input class="form-textbox border--white" type="text" name="Name" placeholder="Name" required>
 
-                <input type="email" name="Email" class="white-border" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
-                <br>
+                <input class="form-textbox border--white" type="email" name="Email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
 
-                <input type="text" name="Subject" class="white-border" placeholder="Subject">
-                <br>
+                <input class="form-textbox border--white" type="text" name="Subject" placeholder="Subject">
 
-                <textarea name="Message" class="white-border" placeholder="Your message here" required></textarea>
-                <br>
+                <textarea class="form-textbox form-textbox--large border--white" name="Message" placeholder="Your message here" required></textarea>
 
-                <input type="submit" id="submit-btn" class="white-border">
+                <input class="form-submit border--white" type="submit">
 
-                <div class="response"> </div>
+                <div class="form-response"> </div>
             </form>
             
         </div>
@@ -279,7 +274,7 @@
     
         
     <!-- Footer -->
-    <footer class="footer grey">
+    <footer class="footer bg-darkgrey">
         <div class="copyright">© 2016 Andy Tang</div>
     </footer>
       

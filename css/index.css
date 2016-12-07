@@ -10,19 +10,19 @@
 html {
 	width: 100%;
 	height: 100%;
+	color: #444;
 	font-family: 'Lato', sans-serif;
     font-size: 1.2em;
     font-weight: 300;
-	color: #444;
 }
 
 body {
-    width: inherit;
-    height: inherit;
-    /*background: url('../images/background.jpg');*/
-    background-color: grey;
+    width: 100%;
+    height: 100%;
+    /*background: url('../images/background.jpg');
     background-size: cover;
     background-attachment: fixed;
+    */
 }
 
 h1{
@@ -38,20 +38,27 @@ h3{
     font-size: 1.5em;
 }
 
-/* === Class Styles === */
+/* === Structure Styles === */
 
 .fullscreen{
+    display: table;
     width: 100%;
     height: 100%;
-    display: table;
     padding: 4.2em 14% 4.2em 14%;
 }
 
-.screen{
-    width: 100%;
+.page{
     display: table;
+    width: 100%;
     padding: 7% 10% 7% 10%;
-    background-color: #f6f6f6;
+    background-color: white;
+}
+
+.content{
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
 }
 
 .heading{
@@ -66,51 +73,73 @@ h3{
     color: #444;
 }
 
-.content{
-    display: table-cell;
-    height: 100%;
-    width: 100%;
-    vertical-align: middle;
-}
-
-.white-border{
-    color: white;
-    border: thin solid white;
-    background-color: transparent;
-}
-
-.grey-border{
-    color: #444;
-    border: thin solid #444;
-    background-color: transparent;
-}
-
-.weight200{
-    font-weight: 200;
-}
-
-.weight300{
-    font-weight: 300;
-}
+/* === Button Styles === */
 
 .button {
     display: block;
     width: 8em;
     margin: 2em auto;
     padding: 1em;
+    text-align: center; 
     text-decoration: none;
     transition: box-shadow 1s, color 1s;
-    text-align: center; 
 }
 
 .button:hover {
-    box-shadow: inset 200px 0 0 0 #444;
     color: white;
+    box-shadow: inset 200px 0 0 0 #444;
 }
 
+.border--white{
+    color: white;
+    border: thin solid white;
+    background-color: transparent;
+}
+
+.border--grey{
+    color: #444;
+    border: thin solid #444;
+    background-color: transparent;
+}
+
+/* === Divider Styles === */
+
+.divider-horiz{
+    width: 100px;
+    height: 1px;
+    margin: 2em auto;
+}
+
+.divider-vert{
+    width: 1px;
+    height: 20%;
+    margin: 2em auto;
+}
+
+.divider-vert--white{
+    border-left: thin solid white;
+}
+
+.divider-horiz--white{
+    border-bottom: thin solid white;
+}
+
+.divider-horiz--grey{
+    border-bottom: thin solid #444;
+}
+
+/* === Colors === */
+.bg-grey { background: #333; }
+.bg-darkgrey { background: #222; }
+.bg-blue { background: #03A9F4; }
+.bg-white { background: white; }
+
+/* === Typography === */
+.weight300{ font-weight: 300; }
+
+/* === Footer === */
 .copyright{
     padding: 1em;
     color: grey;
-    background-color: #222;
     text-align: center;
 }

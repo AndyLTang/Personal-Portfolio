@@ -19,13 +19,11 @@ $(document).ready(function(){
     /* Change navbar behaviour when scrolled */
     $(window).scroll(function(){
         if ($(document).scrollTop() <= 0){
-            $nav.removeClass('drop-shadow');
-            $nav.removeClass('invert-nav');
-            $navlinks.removeClass('inverted');
+            $nav.removeClass('navbar--inverted');
+            $navlinks.removeClass('navbar-link--inverted');
         } else {
-            $nav.addClass('drop-shadow');
-            $nav.addClass('invert-nav');
-            $navlinks.addClass('inverted');
+            $nav.addClass('navbar--inverted');
+            $navlinks.addClass('navbar-link--inverted');
         }   
     });
     
