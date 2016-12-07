@@ -1,10 +1,12 @@
-/* Skills Page */
+/* === Skills Page styles === */
+
+/* === Table Column style === */
 
 .table{
     text-align: center;
 }
 
-.column{
+.table-column{
     display: inline-block;   
     vertical-align: top;
     width: 25%;
@@ -13,22 +15,21 @@
     margin-right: 1em;
 }
 
-.column ul{
+.table-column ul{
     display: inline-block;
     list-style: none;
     text-align: left;
     vertical-align: top;
 }
 
-.img-wrapper{
-    padding-bottom: 1em;
+.skill-icon{
+    width: 160px;
+    height: 160px;
     margin: 0 auto;
+    padding-bottom: 1em;
 }
 
-.img-wrapper img{
-    width: 175px;
-    height: 175px;
-}
+/* === Rotate Text === */
 
 .rotate-text-wrapper{
     display: inline-block;
