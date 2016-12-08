@@ -134,11 +134,19 @@ h3{
     border-bottom: thin solid #444;
 }
 
+.card-dropshadow{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
 /* === Colors === */
 .bg-grey { background: #333; }
 .bg-darkgrey { background: #222; }
 .bg-blue { background: #03A9F4; }
 .bg-white { background: white; }
+
+.color-grey { color: #444; }
+.color-blue { color: #03A9F4; }
+.color-white { color: white; }
 
 /* === Typography === */
 .weight200 { font-weight: 200; }

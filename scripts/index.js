@@ -5,9 +5,6 @@ $(document).ready(function(){
 		$('html,body').stop().animate({scrollTop: tag.offset().top}, 'slow');
 	}
     
-    var $nav = $('nav');
-    var $navlinks = $('nav a');
-    
     /* Image preloading */
     var preloadImgs = new Array();
     for(i=0; i < 4; i++){
@@ -16,7 +13,11 @@ $(document).ready(function(){
         preloadImgs[i] = tmpImg;
     }
     
+    
     /* Change navbar behaviour when scrolled */
+    var $nav = $('.navbar');
+    var $navlinks = $('.navbar-link');
+    
     $(window).scroll(function(){
         if ($(document).scrollTop() <= 0){
             $nav.removeClass('navbar--inverted');
@@ -26,6 +27,7 @@ $(document).ready(function(){
             $navlinks.addClass('navbar-link--inverted');
         }   
     });
+    
     
     /* Bind links to scrollTo */
 	$navlinks.click(function(){
@@ -38,6 +40,7 @@ $(document).ready(function(){
   		event.stopPropagation();
 	}); //end click
     
+    /* Bind buttons to scrollTo */
     var $nextbuttons = $('.button');
     $nextbuttons.click(function(){
         /* Scroll to location on page*/
@@ -49,22 +52,22 @@ $(document).ready(function(){
   		event.stopPropagation();
     });
 
+    
     /* Responsive Navigation */
     var $responsivenav = $('#collapsed');
     $responsivenav.click(function(){
        $("nav #links li:not(:first-child)").slideToggle('fast');
     });
     
+    
 	/* Navigation highlight */
-    /*
-    var aChildren = $("#links li").children();
+    var aChildren = $(".navbar-item").children(".navbar-link");
 	var aArray = [];
 	for (var i=0; i < aChildren.length; i++){
 		var aChild = aChildren[i];
 		var ahref = $(aChild).attr('href');
 		aArray.push(ahref);
 	}
-    
     
 	$(window).scroll(function(){
         var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
@@ -73,7 +76,7 @@ $(document).ready(function(){
 
         for (var i=0; i < aArray.length; i++) {
             var theID = aArray[i];
-            var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+            var divPos = $(theID).offset().top - 1; // get the offset of the div from the top of page
             var divHeight = $(theID).height(); // get the height of the div in question
             if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
                 $("a[href='" + theID + "']").addClass("active");
@@ -82,19 +85,20 @@ $(document).ready(function(){
             }
         }
 
+        // if window is at bottom of page, set active to last link
         if(windowPos + windowHeight == docHeight) {
-            if (!$("nav li:last-child a").hasClass("active")) {
+            if (!$(".navbar-item:last-child a").hasClass("active")) {
                 var navActiveCurrent = $(".active").attr("href");
                 $("a[href='" + navActiveCurrent + "']").removeClass("active");
-                $("nav li:last-child a").addClass("active");
+                $(".navbar-item:last-child a").addClass("active");
             }
-        }
+        } 
     });
-    */
 
+    
     /* Projects */
-    var $infobar = $('.infobar');
     var $project = $('#projects');
+    var $infobar = $('.infobar');
     
     $('.tile-wrapper').click(
         function(){
@@ -125,6 +129,7 @@ $(document).ready(function(){
         }
     );
     
+    
     /* Contact Form */
     var $contactForm = $('#contact-form');
     $contactForm.submit(function(e){
@@ -152,14 +157,6 @@ $(document).ready(function(){
         });
     });
     
-    
-    /*
-    $('#bargraph li div').delay(2000).each(function(key, bar){
-        var percent = $(this).data('percent');
-        
-        $(this).animate({'height' : percent + '%'}, 1500);
-    });
-    */
     
 }); 
 //EOF
