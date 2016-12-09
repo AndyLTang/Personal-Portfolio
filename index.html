@@ -21,7 +21,7 @@
             <li class="navbar-item color-white"><strong>ANDY</strong> <span class="weight300">TANG</span></li>
         </ul>
 		<ul class="navbar-list">
-			<li class="navbar-item"><a class="navbar-link active" href="#intro">INTRO</a></li>
+			<li class="navbar-item"><a class="navbar-link" href="#intro">INTRO</a></li>
 			<li class="navbar-item"><a class="navbar-link" href="#skills">SKILLS</a></li>
 			<li class="navbar-item"><a class="navbar-link" href="#projects">PROJECTS</a></li>
 			<li class="navbar-item"><a class="navbar-link" href="#about">ABOUT</a></li>
@@ -31,7 +31,8 @@
 
     
     <!-- Intro page -->
-	<section class="intro-page bg-blue" id="intro">
+    <div class="section-wrapper height100" id="intro">
+	<section class="intro-page bg-blue">
 		<div class="content">
             <h1 class="brandname wow fadeInDown">ANDY <span class="weight200">TANG</span></h1>
             <p class="wow fadeInDown" data-wow-delay="0.7s">Software Developer &#8212; Software Engineer &#8212; Web Developer</p>
@@ -39,9 +40,10 @@
             <a href="#skills" class="button button--invert border--white">Learn more</a>
         </div>
 	</section>
-
+    </div>
     
     <!-- Skills page -->
+    <div class="section-wrapper" id="skills">
     <section class="page" id="skills">
         <div class="content">
             
@@ -55,17 +57,19 @@
                 <img class="skill-icon wow bounceIn" src="images/code.svg" alt="Code">
                 
                 <div class="wow fadeInUp">
+                <h4>
                 <span class="rotate-text-wrapper">
                     <span class="rotate-text">PROGRAM LANGUAGES</span>
                 </span>
+                </h4>    
                     
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript/JQuery</li>
-                    <li>SQL</li>
+                <ul class="skill-list">
+                    <li class="skill-item width90">Java</li>
+                    <li class="skill-item width80">HTML</li>
+                    <li class="skill-item width80">CSS</li>
+                    <li class="skill-item width70">Python</li>
+                    <li class="skill-item width70">Javascript</li>
+                    <li class="skill-item width60">SQL</li>
                 </ul>
                 </div>
             </div>
@@ -75,20 +79,19 @@
                 <img class="skill-icon wow bounceIn" src="images/software.svg" alt="Software">
                 
                 <div class="wow fadeInUp">
+                <h4>
                 <span class="rotate-text-wrapper">
                     <span class="rotate-text">SOFTWARE &amp; TOOLS</span>
                 </span>
+                </h4>    
                     
-                <ul>
+                <ul class="skill-list">
                     <li>Windows</li>
                     <li>Linux</li>
                     <li>Git Version Control</li>
                     <li>Amazon Web Services</li>
-                    <li>Eclipse IDE</li>
                     <li>Microsoft Office</li>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>After Effects</li>
+                    <li>Adobe Creative Suite</li>
                 </ul>
                 </div>    
             </div>
@@ -98,11 +101,13 @@
                 <img class="skill-icon wow bounceIn" src="images/bubble.svg" alt="Soft Skills">
                 
                 <div class="wow fadeInUp">
+                <h4>
                 <span class="rotate-text-wrapper">
                     <span class="rotate-text">INTERPERSONAL</span>
                 </span>
+                </h4>
                     
-                <ul>
+                <ul class="skill-list">
                     <li>Problem Solving</li>
                     <li>Communication</li>
                     <li>Team Player</li>
@@ -117,10 +122,12 @@
             
         </div>
 	</section>
+    </div>
     
     
     <!-- Projects page -->
-	<section class="page" id="projects">
+    <div class="section-wrapper" id="projects">
+	<section class="page projects-bg">
         <div class="content">
             <div class="heading wow fadeInDown">
                 <h2>PROJECTS</h2>
@@ -212,10 +219,12 @@
 
         </div> <!-- end content -->
 	</section>
+    </div>
 
         
     <!-- About page -->
-	<section class="page" id="about">
+    <div class="section-wrapper" id="about">
+	<section class="page">
         <div class="content">
             <div class="heading wow fadeInDown">
 		        <h2>ABOUT ME</h2>
@@ -234,6 +243,7 @@
             <a href="#contact" class="button border--grey">Next</a>
         </div>
 	</section>
+    </div>
     
         
     <!-- Contacts page -->
@@ -262,7 +272,6 @@
             
         </div>
 	</section>
-    
         
     <!-- Footer -->
     <footer class="footer bg-darkgrey">

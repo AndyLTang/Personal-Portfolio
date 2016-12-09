@@ -2,7 +2,7 @@ $(document).ready(function(){
     
 	function scrollTo(anchor_id){
 		var tag = $(anchor_id);
-		$('html,body').stop().animate({scrollTop: tag.offset().top}, 'slow');
+		$('html,body').stop().animate({scrollTop: tag.offset().top +2}, 'slow');
 	}
     
     /* Image preloading */
@@ -61,6 +61,7 @@ $(document).ready(function(){
     
     
 	/* Navigation highlight */
+    $(".navbar-link[href='#intro']").addClass('active');
     var aChildren = $(".navbar-item").children(".navbar-link");
 	var aArray = [];
 	for (var i=0; i < aChildren.length; i++){
@@ -76,14 +77,19 @@ $(document).ready(function(){
 
         for (var i=0; i < aArray.length; i++) {
             var theID = aArray[i];
-            var divPos = $(theID).offset().top - 1; // get the offset of the div from the top of page
+            var divPos = $(theID).offset().top; // get the offset of the div from the top of page
             var divHeight = $(theID).height(); // get the height of the div in question
             if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
                 $("a[href='" + theID + "']").addClass("active");
             } else {
                 $("a[href='" + theID + "']").removeClass("active");
             }
+            console.log(divHeight);
+            console.log(divPos);
+            console.log('--');
         }
+        
+        console.log('XXXXXXXX');
 
         // if window is at bottom of page, set active to last link
         if(windowPos + windowHeight == docHeight) {
@@ -97,17 +103,17 @@ $(document).ready(function(){
 
     
     /* Projects */
-    var $project = $('#projects');
+    var $project = $('.projects-bg');
     var $infobar = $('.infobar');
     
     $('.tile-wrapper').click(
         function(){
             //find the current article and remove it
-            $infobar.find('.current').removeClass('current').stop().animate({opacity:0}, 'slow').hide();
+            $infobar.find('.current').removeClass('current').animate({opacity:0}, 'slow').hide();
             
             //change current to the article according to clicked image
             var selection = $(this).attr('data-link');
-            $("article[data-link=" + selection + "]").addClass('current').stop().show().animate({opacity:1}, 'slow');
+            $("article[data-link=" + selection + "]").addClass('current').show().animate({opacity:1}, 'slow');
 
             switch (selection){
                 case '1':

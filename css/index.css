@@ -32,11 +32,19 @@ h1{
 h2{
     font-size: 2em;
     letter-spacing: 5px;
+    color: #03A9F4;
 }
 
 h3{
     font-size: 1.5em;
+    color: #03A9F4;
 }
+
+h4{
+    display: inline-block;
+    color: #03A9F4;
+}
+
 
 /* === Structure Styles === */
 
@@ -46,6 +54,12 @@ h3{
     height: 100%;
     padding: 4.2em 14% 4.2em 14%;
 }
+
+.section-wrapper{
+    width: 100%;
+}
+
+.height100 { height: 100%; }
 
 .page{
     display: table;
@@ -66,12 +80,7 @@ h3{
     padding: 0 0 0 2em;
     margin-bottom: 2em;
     text-align: left;
-    color: #03A9F4;
     border-left: 10px solid #444;
-}
-
-.heading em{
-    color: #444;
 }
 
 /* === Button Styles === */

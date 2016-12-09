@@ -12,7 +12,6 @@
     width: 25%;
     min-width: 14em;
     white-space: nowrap;
-    margin-right: 1em;
 }
 
 .table-column ul{
@@ -29,6 +28,43 @@
     padding-bottom: 1em;
 }
 
+.skill-list{
+    width: 80%;
+}
+
+.skill-item{
+    position: relative;
+    width: 100%;
+    padding: 4px;
+}
+
+.skill-item:after{
+    content: "";
+    background: #03A9F4;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+}
+
+.width90{
+    width: 90%;
+}
+
+.width80{
+    width: 80%;
+}
+
+.width70{
+    width: 70%;
+}
+
+.width60{
+    width: 60%;
+}
+
 /* === Rotate Text === */
 
 .rotate-text-wrapper{
@@ -39,7 +75,6 @@
     border-right: thin solid #444;
     padding: 0 .5em 0 0;
     margin: 0 .5em 0 0;
-    font-size: 1.4em;
     font-weight: bold;
     white-space: nowrap;
 }
@@ -49,7 +84,6 @@
     white-space: nowrap;
     transform: translate(0,100%) rotate(270deg);
     transform-origin: 0 0;
-    color: #03A9F4;
 }
 
 .rotate-text:after{
