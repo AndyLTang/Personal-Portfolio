@@ -43,11 +43,7 @@
 .navbar-menu{
     display: inline-block;
     padding: 1em;
-}
-
-.navbar-menu a:visited, .navbar-menu a:link{
     color: white;
-    text-decoration: none;
 }
 
 /* === Default navbar style === */

@@ -48,18 +48,22 @@ h4{
 
 /* === Structure Styles === */
 
+.section-wrapper{
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+
+.height100{
+    height: 100%;
+}
+
 .intro-page{
     display: table;
     width: 100%;
     height: 100%;
     padding: 4.2em 14% 4.2em 14%;
 }
-
-.section-wrapper{
-    width: 100%;
-}
-
-.height100 { height: 100%; }
 
 .page{
     display: table;
