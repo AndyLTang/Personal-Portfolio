@@ -28,6 +28,10 @@ $(document).ready(function(){
         }   
     });
     
+    $('.navbar-menu').click(function(){
+       $('.navbar-item').slideToggle('fast'); 
+    });
+    
     
     /* Bind links to scrollTo */
 	$navlinks.click(function(){

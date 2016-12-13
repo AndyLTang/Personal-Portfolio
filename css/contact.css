@@ -30,13 +30,14 @@
 }
 
 .form-textbox:hover, .form-textbox:hover{
-    color: white;
-    box-shadow: inset 5px 0 0 0 white;
+    color: #4682b4;
+    box-shadow: inset 5px 0 0 0 #4682b4;
+    border-color: #4682b4;
 }
 
 .form-textbox:focus{
-    border: thin solid #03A9F4;
-    box-shadow: inset 5px 0 0 0 #03A9F4;
+    border: thin solid #4682b4;
+    box-shadow: inset 5px 0 0 0 #4682b4;
 }
 
 .form-textbox--large{
@@ -50,6 +51,8 @@
     font-size: inherit;
     box-shadow: inset 0 0 0 0 white;
     transition: box-shadow 1s, color 1s;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 .form-submit:hover{
