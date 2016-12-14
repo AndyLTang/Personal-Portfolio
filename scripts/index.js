@@ -17,18 +17,21 @@ $(document).ready(function(){
     /* Change navbar behaviour when scrolled */
     var $nav = $('.navbar');
     var $navlinks = $('.navbar-link');
+    var $navmenu = $('.navbar-menu');
     
     $(window).scroll(function(){
         if ($(document).scrollTop() <= 0){
             $nav.removeClass('navbar--inverted');
             $navlinks.removeClass('navbar-link--inverted');
+            $navmenu.removeClass('navbar-menu--inverted');
         } else {
             $nav.addClass('navbar--inverted');
             $navlinks.addClass('navbar-link--inverted');
+            $navmenu.addClass('navbar-menu--inverted');
         }   
     });
     
-    $('.navbar-menu').click(function(){
+    $navmenu.click(function(){
        $('.navbar-item').slideToggle('fast'); 
     });
     
@@ -141,7 +144,7 @@ $(document).ready(function(){
     
     
     /* Contact Form */
-    var $contactForm = $('#contact-form');
+    var $contactForm = $('.form');
     $contactForm.submit(function(e){
         var addr = 'andy' + '.' + 'l' + '.' + 'tang' + '@' + 'outlook' + '.' + 'com';
         var fulladdr = '//formspree' + '.' + 'io/' + addr;
@@ -154,12 +157,12 @@ $(document).ready(function(){
             data: $(this).serialize(),
             dataType: 'json',
             beforeSend: function() {
-                $contactForm.find(".response").text("Sending your message...");
+                $contactForm.find(".form-response").text("Sending your message...");
                 },
             success: function(data) {
-                $contactForm.find(".response").text("Message sent!");
-                $contactForm.find("#submit-btn").css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 300);
-                $contactForm.find("#submit-btn").prop("disabled", true);
+                $contactForm.find(".form-response").text("Message sent!");
+                $contactForm.find(".form-submit").css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 300);
+                $contactForm.find(".form-submit").prop("disabled", true);
                 },
             error: function(err) {
                 $contactForm.find(".response").text("Oops, something went wrong.");

@@ -46,6 +46,10 @@
     color: white;
 }
 
+.navbar-menu--inverted{
+    color: #444;
+}
+
 /* === Default navbar style === */
 .navbar-link{
     color: white;
@@ -86,7 +90,7 @@
 }
 
 /* === Responsive Nav bar === */
-@media (max-width: 1100px) {
+@media (max-width: 850px) {
   .navbar-menu {
     display: inline-block;
     }
@@ -96,7 +100,7 @@
   }
 }
 
-@media (min-width: 1101px){
+@media (min-width: 851px){
     .navbar-menu {
         display: none;
     }
