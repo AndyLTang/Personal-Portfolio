@@ -20,7 +20,7 @@ $(document).ready(function(){
     var $navmenu = $('.navbar-menu');
     
     $(window).scroll(function(){
-        if ($(document).scrollTop() <= 0){
+        if ($(document).scrollTop() <= 2){
             $nav.removeClass('navbar--inverted');
             $navlinks.removeClass('navbar-link--inverted');
             $navmenu.removeClass('navbar-menu--inverted');
@@ -91,12 +91,9 @@ $(document).ready(function(){
             } else {
                 $("a[href='" + theID + "']").removeClass("active");
             }
-            console.log(divHeight);
-            console.log(divPos);
-            console.log('--');
+
         }
-        
-        console.log('XXXXXXXX');
+
 
         // if window is at bottom of page, set active to last link
         if(windowPos + windowHeight == docHeight) {

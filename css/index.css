@@ -12,13 +12,14 @@ html {
 	height: 100%;
 	color: #444;
 	font-family: 'Lato', sans-serif;
-    font-size: 1em;
     font-weight: 300;
+    -webkit-text-size-adjust: auto;
 }
 
 body {
     width: 100%;
     height: 100%;
+    font-size: 1em;
     /*background: url('../images/background.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -26,7 +27,7 @@ body {
 }
 
 h1{
-    font-size: 4.5em;
+    font-size: 4.5rem;
 }
 
 h2{
@@ -68,7 +69,7 @@ h4{
 .page{
     display: table;
     width: 100%;
-    padding: 7% 10% 7% 10%;
+    padding: 5% 10% 5% 10%;
     background-color: white;
 }
 

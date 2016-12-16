@@ -44,6 +44,13 @@
     display: inline-block;
     padding: 1em;
     color: white;
+    transition: font-weight 0.5s;
+}
+
+.navbar-menu:hover{
+    cursor: pointer;
+    cursor: hand;
+    font-weight: bold;
 }
 
 .navbar-menu--inverted{
