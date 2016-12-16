@@ -8,6 +8,17 @@
     color: white;
 }
 
+.branding{
+    margin: 0;
+    padding: 0.5em;
+    list-style-type: none;
+    transition: all 0.5s;
+}
+
+.branding--inverted{
+    filter: invert(100%);
+}
+
 .brandname{
-    margin-top: 10%;
+    line-height: 90%;
 }

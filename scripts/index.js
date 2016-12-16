@@ -18,16 +18,19 @@ $(document).ready(function(){
     var $nav = $('.navbar');
     var $navlinks = $('.navbar-link');
     var $navmenu = $('.navbar-menu');
+    var $brandname= $('.branding');
     
     $(window).scroll(function(){
         if ($(document).scrollTop() <= 2){
             $nav.removeClass('navbar--inverted');
             $navlinks.removeClass('navbar-link--inverted');
             $navmenu.removeClass('navbar-menu--inverted');
+            $brandname.removeClass('branding--inverted');
         } else {
             $nav.addClass('navbar--inverted');
             $navlinks.addClass('navbar-link--inverted');
             $navmenu.addClass('navbar-menu--inverted');
+            $brandname.addClass('branding--inverted');
         }   
     });
     
