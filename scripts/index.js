@@ -1,5 +1,22 @@
 $(document).ready(function(){
     
+    var mobileWindow = true;
+    
+    /* detect screen size */
+    if($(window).width() > 850){
+        mobileWindow = false;
+    }else{
+            mobileWindow = true;
+    }
+    
+    $(window).resize(function(){
+        if($(window).width() > 850){
+            mobileWindow = false;
+        } else{
+            mobileWindow = true;
+        }
+    });
+    
 	function scrollTo(anchor_id){
 		var tag = $(anchor_id);
 		$('html,body').stop().animate({scrollTop: tag.offset().top +2}, 'slow');
@@ -43,7 +60,9 @@ $(document).ready(function(){
     });
     
     $navlinks.click(function(){
-        $navitem.slideToggle('fast');
+        if (mobileWindow == true){
+            $navitem.slideToggle('fast');
+        }
     })
     
     
