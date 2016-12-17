@@ -37,10 +37,10 @@
     <div class="section-wrapper height100" id="intro">
 	<section class="intro-page">
 		<div class="content">
-            <img src="images/logo-final.svg" alt="my logo" style="filter:invert(100%)">
+            <img class="branding-logo" src="images/logo-final.svg" alt="my logo" style="filter:invert(100%)">
             <h1 class="brandname wow fadeInDown">ANDY <span class="weight200">TANG</span></h1>
-            <p class="wow fadeInDown" data-wow-delay="0.7s">Software Developer &#8212; Software Engineer &#8212; Web Developer</p>
-            <hr class="divider-vert divider-vert--white">
+            <p class="branding-title" class="wow fadeInDown" data-wow-delay="0.7s">Software Developer // Software Engineer // Web Developer</p>
+            <!-- <hr class="divider-vert divider-vert--white"> -->
             <a href="#projects" class="button button--invert border--white">See my work</a>
         </div>
 	</section>
@@ -141,54 +141,6 @@
                 <em>What I have done</em>
             </div>
             
-            <!-- left hand side -->
-            <div class="infobar card-dropshadow wow fadeInLeft">
-                <p class="infobar-instruction"><em>Click the images on the right to view some of my past works.</em></p>
-
-                <article class="project-page" data-link="1">
-                    <h3 class="project-title">Hybrid Image</h3>
-                    <hr class="divider-horiz divider-horiz--grey">
-                    <p class="project-description">About | An offline Java application which allowed users to upload a pair of pictures in order to create the hybrid image effect.</p>
-                    <ul class="project-highlights">
-                        <li>Developed the algorithm to create Hybrid Images</li>
-                        <li>Implemented the user interface using Java's Swing Library which allows users to upload their own pair of photos to create a hybridized image.</li>              
-                    </ul>
-                </article>
-
-                <article class="project-page" data-link="2">
-                    <h3 class="project-title">Watchermelon</h3>
-                    <hr class="divider-horiz divider-horiz--grey">
-                    <p class="project-description">About | An iPhone app which allows local neighborhood blockwatchers to send reports to a database where the police processes the information.</p>
-                    <ul class="project-highlights">
-                        <li>Prototyped the user interface on Fluid UI</li>
-                        <li>Drew the interface elements as scalable vectors using Illustrator</li>
-                        <li>Mocked a demo screenshot of the app icon created in Photoshop using smart objects</li>
-                    </ul>
-                </article>
-
-                <article class="project-page" data-link="3">
-                    <h3 class="project-title">Amazon Web Services</h3>
-                    <hr class="divider-horiz divider-horiz--grey">
-                    <p class="project-description">About | Team project in which we used Amazon's web services to implement the REST API to simulate a server processing client requests and handling erroneous cases. </p>
-                    <ul class="project-highlights">
-                        <li>Connected to the servers using the Python boto interface to gain access to features including Elastic Compute Cloud (EC2), DynamoDB, and Simple Queue Service (SQS).</li>
-                        <li>Implemented a scheduling algorithm with zookeeper to keep the message order consistent across EC2 instances.</li>
-                    </ul>
-                </article>
-
-                <article class="project-page" data-link="4">
-                    <h3 class="project-title">SideTube</h3>
-                    <hr class="divider-horiz divider-horiz--grey">
-                    <p class="project-description">About | A personal project to improve YouTube's user interface. It is used in conjunction with any Javascript injecting browser (such as Tampermonkey for Chrome) extension to modify the appearance of the site.</p>
-                    <ul class="project-highlights">
-                        <li>Manipulated CSS of Youtube's webpage using JQuery to rearrange elements to visually flowing positions.</li>
-                        <li>Hosted script on GitHub to remotely distribute the script.</li>
-                    </ul>
-                </article>
-
-                <a href="#about" class="button border--grey">Next</a>
-            </div>
-
             <!-- right hand side -->
             <div class="tiles wow fadeInRight">
 
@@ -214,7 +166,7 @@
                             <img src="images/square3.jpg" class="tile-img" alt="Project 3">
                         </div>
                     </div>
-
+ 
                     <div class="tiles-cell">
                         <div class="tile-wrapper card-dropshadow" data-link="4">
                             <img src="images/square3.jpg" class="tile-img" alt="Project 4">
@@ -223,6 +175,55 @@
                 </div>
 
             </div> <!-- end tiles -->
+            
+            <!-- left hand side -->
+            <div class="infobar card-dropshadow wow fadeInLeft">
+                <p class="infobar-instruction"><em>Click the images to view some of my past works.</em></p>
+
+                <article class="project-page" data-link="1">
+                    <h3 class="project-title">Hybrid Image</h3>
+                    <hr class="divider-horiz divider-horiz--grey">
+                    <p class="project-description">About // An offline Java application which allowed users to upload a pair of pictures in order to create the hybrid image effect.</p>
+                    <ul class="project-highlights">
+                        <li>Developed the algorithm to create Hybrid Images</li>
+                        <li>Implemented the user interface using Java's Swing Library which allows users to upload their own pair of photos to create a hybridized image.</li>              
+                    </ul>
+                </article>
+
+                <article class="project-page" data-link="2">
+                    <h3 class="project-title">Watchermelon</h3>
+                    <hr class="divider-horiz divider-horiz--grey">
+                    <p class="project-description">About // An iPhone app which allows local neighborhood blockwatchers to send reports to a database where the police processes the information.</p>
+                    <ul class="project-highlights">
+                        <li>Prototyped the user interface on Fluid UI</li>
+                        <li>Drew the interface elements as scalable vectors using Illustrator</li>
+                        <li>Mocked a demo screenshot of the app icon created in Photoshop using smart objects</li>
+                    </ul>
+                </article>
+
+                <article class="project-page" data-link="3">
+                    <h3 class="project-title">Amazon Web Services</h3>
+                    <hr class="divider-horiz divider-horiz--grey">
+                    <p class="project-description">About // Team project in which we used Amazon's web services to implement the REST API to simulate a server processing client requests and handling erroneous cases. </p>
+                    <ul class="project-highlights">
+                        <li>Connected to the servers using the Python boto interface to gain access to features including Elastic Compute Cloud (EC2), DynamoDB, and Simple Queue Service (SQS).</li>
+                        <li>Implemented a scheduling algorithm with zookeeper to keep the message order consistent across EC2 instances.</li>
+                    </ul>
+                </article>
+
+                <article class="project-page" data-link="4">
+                    <h3 class="project-title">SideTube</h3>
+                    <hr class="divider-horiz divider-horiz--grey">
+                    <p class="project-description">About // A personal project to improve YouTube's user interface. It is used in conjunction with any Javascript injecting browser (such as Tampermonkey for Chrome) extension to modify the appearance of the site.</p>
+                    <ul class="project-highlights">
+                        <li>Manipulated CSS of Youtube's webpage using JQuery to rearrange elements to visually flowing positions.</li>
+                        <li>Hosted script on GitHub to remotely distribute the script.</li>
+                    </ul>
+                </article>
+
+                <a href="#about" class="button border--grey">Next</a>
+            </div>
+
 
         </div> <!-- end content -->
 	</section>

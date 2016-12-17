@@ -105,6 +105,44 @@
   .navbar-item {
       display: none;
   }
+    
+    .page{
+        padding-left: 5% ;
+        padding-right: 5%;
+    }
+    
+    .infobar{
+        margin-left: 0 !important;  
+        padding: 2% !important;
+        display: block !important;
+        float: none !important;
+        width: 100% !important;
+    }
+    
+    .tiles{
+        display: block;
+        float: none !important;
+        width: 100% !important;
+    }
+    
+    .tiles-row{
+        display: inline-block !important;
+        height: 100% !important;
+        width: 50% !important;
+    }
+    
+    .tiles-cell{
+        height: 20% !important;
+    }
+    
+    .bio{
+        margin: 0 !important;
+    }
+    
+    .profileImg{
+        width: 150px !important;
+        height: 150px !important;
+    }
 }
 
 @media (min-width: 851px){

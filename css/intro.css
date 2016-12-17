@@ -19,6 +19,14 @@
     filter: invert(100%);
 }
 
+.branding-logo{
+    padding: 2em;
+}
+
 .brandname{
     line-height: 90%;
+}
+
+.branding-title{
+    padding-bottom: 2em;
 }
