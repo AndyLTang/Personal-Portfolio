@@ -17,6 +17,8 @@ $(document).ready(function(){
         }
     });
     
+    alert($(window).height());
+    
 	function scrollTo(anchor_id){
 		var tag = $(anchor_id);
 		$('html,body').stop().animate({scrollTop: tag.offset().top +2}, 'slow');
