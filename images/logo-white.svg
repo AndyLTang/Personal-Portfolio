@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px"
+	 height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<g id="Guides" display="none">
+	<g id="Bg" display="inline">
+		<rect fill="#FFFFFF" width="128" height="128"/>
+	</g>
+</g>
+<g id="Layer_2">
+	<circle id="Outer_Ring" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="64" cy="64" r="61.167"/>
+	<g>
+		<path fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M91.664,63.339v3.923H80.521v30.563h-4.668V67.262h-11.19v-3.923
+			H91.664z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 63.9897 97.824)" display="none" font-family="'Lato-Regular'" font-size="48.1298">T</text>
+	<g>
+		<path fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M26.582,26.582c-20.665,20.665-20.665,54.17,0,74.835
+			l74.835-74.835C80.753,5.917,47.247,5.917,26.582,26.582z M60.208,63.037c-0.245-0.199-0.428-0.452-0.551-0.758l-3.076-7.943
+			h-14.76l-3.076,7.943c-0.107,0.275-0.291,0.52-0.551,0.734c-0.26,0.214-0.582,0.322-0.964,0.322h-3.443L46.94,30.441h4.522
+			l13.153,32.894h-3.444C60.774,63.335,60.453,63.236,60.208,63.037z"/>
+		<path fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M49.19,34.641c-0.168,0.628-0.333,1.205-0.493,1.733
+			c-0.161,0.528-0.318,0.991-0.471,1.389l-5.165,13.36h12.281L50.177,37.74C49.84,36.914,49.511,35.881,49.19,34.641z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 26.1617 63.21)" display="none" fill="#FFFFFF" font-family="'Lato-Regular'" font-size="57.2937">A</text>
+	<g id="Inner_Ring">
+		<path fill="#FFFFFF" d="M64,15.083c26.973,0,48.917,21.944,48.917,48.917S90.973,112.917,64,112.917S15.083,90.973,15.083,64
+			S37.027,15.083,64,15.083 M64,11.083c-29.225,0-52.917,23.692-52.917,52.917S34.775,116.917,64,116.917S116.917,93.225,116.917,64
+			S93.225,11.083,64,11.083L64,11.083z"/>
+	</g>
+</g>
+</svg>

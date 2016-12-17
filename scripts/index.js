@@ -34,9 +34,17 @@ $(document).ready(function(){
         }   
     });
     
+    
+    /* Toggle hamburger menu */
+    var $navitem = $('.navbar-item');
+    
     $navmenu.click(function(){
-       $('.navbar-item').slideToggle('fast'); 
+       $navitem.slideToggle('fast'); 
     });
+    
+    $navlinks.click(function(){
+        $navitem.slideToggle('fast');
+    })
     
     
     /* Bind links to scrollTo */
