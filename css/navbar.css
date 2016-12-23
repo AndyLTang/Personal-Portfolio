@@ -97,7 +97,11 @@
 }
 
 /* === Responsive Nav bar === */
-@media (max-width: 850px) {
+@media (max-width: 664px ) {
+    .navbar{
+        padding: 0 10% !important;
+    }
+    
   .navbar-menu {
     display: inline-block;
     }
@@ -107,7 +111,7 @@
   }
     
     .page{
-        padding: 10%;
+        padding: 5%;
     }
     
     .infobar{
@@ -144,7 +148,7 @@
     }
 }
 
-@media (min-width: 851px){
+@media (min-width: 665px){
     .navbar-menu {
         display: none;
     }
