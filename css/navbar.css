@@ -43,8 +43,7 @@
 .navbar-menu{
     display: inline-block;
     padding: 1em;
-    color: white;
-    transition: font-weight 0.5s;
+    filter: invert(100%);
 }
 
 .navbar-menu:hover{
@@ -54,7 +53,7 @@
 }
 
 .navbar-menu--inverted{
-    color: #444;
+    filter: invert(0%);
 }
 
 /* === Default navbar style === */
