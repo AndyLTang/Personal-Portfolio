@@ -73,18 +73,18 @@ h4{
 }
 
 .content{
-    display: table-cell;
-    height: auto;
+    display: table;
+    height: 100%;
     width: 100%;
     vertical-align: middle;
 }
 
 .heading{
-    display: table;
-    padding: 0 0 0 2em;
+    padding-left: 2em;
     margin-bottom: 2em;
-    text-align: left;
     border-left: 10px solid #444;
+    text-align: left;
+    vertical-align: top;
 }
 
 /* === Button Styles === */

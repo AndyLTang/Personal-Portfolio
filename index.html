@@ -9,10 +9,11 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/intro.css">
-    <link rel="stylesheet" type="text/css" href="css/skills.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/skills.css"> -->
     <link rel="stylesheet" type="text/css" href="css/projects.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">    
+    <link rel="stylesheet" type="text/css" href="css/mq.css">    
     <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
 </head>
 
@@ -37,111 +38,30 @@
     <div class="section-wrapper height100" id="intro">
 	<section class="intro-page">
 		<div class="content">
-            <img class="branding-logo" src="images/logo-white.svg" alt="my logo">
-            <h1 class="brandname wow fadeInDown">ANDY <span class="weight200">TANG</span></h1>
-            <p class="branding-title wow fadeInDown" data-wow-delay="0.7s">Software Developer // Software Engineer // Web Developer</p>
-            <!-- <hr class="divider-vert divider-vert--white"> -->
-            <a href="#projects" class="button button--invert border--white">See my work</a>
+            <div class="vertical-align--middle">
+                <img class="branding-logo" src="images/logo-white.svg" alt="my logo">
+                <h1 class="brandname wow fadeInDown">ANDY <span class="weight200">TANG</span></h1>
+                <p class="branding-title wow fadeInDown" data-wow-delay="0.7s">Software Developer // Software Engineer // Web Developer</p>
+                <!-- <hr class="divider-vert divider-vert--white"> -->
+                <a href="#projects" class="button button--invert border--white">See my work</a>
+            </div>
         </div>
 	</section>
     </div>
-    
-    <!-- 
-    Skills page
-    <div class="section-wrapper" id="skills">
-    <section class="page" id="skills">
-        <div class="content">
-            
-        <div class="heading wow fadeInDown">
-            <h2>SKILLS</h2>
-            <em>What I can do</em>
-        </div>
-            
-        <div class="table">
-            <div class="table-column">
-                <img class="skill-icon wow bounceIn" src="images/code.svg" alt="Code">
-                
-                <div class="wow fadeInUp">
-                <h4>
-                <span class="rotate-text-wrapper">
-                    <span class="rotate-text">PROGRAM LANGUAGES</span>
-                </span>
-                </h4>    
-                    
-                <ul class="skill-list">
-                    <li class="skill-item width90">Java</li>
-                    <li class="skill-item width80">HTML</li>
-                    <li class="skill-item width80">CSS</li>
-                    <li class="skill-item width70">Python</li>
-                    <li class="skill-item width70">Javascript</li>
-                    <li class="skill-item width60">SQL</li>
-                </ul>
-                </div>
-            </div>
-
-            
-            <div class="table-column">
-                <img class="skill-icon wow bounceIn" src="images/software.svg" alt="Software">
-                
-                <div class="wow fadeInUp">
-                <h4>
-                <span class="rotate-text-wrapper">
-                    <span class="rotate-text">SOFTWARE &amp; TOOLS</span>
-                </span>
-                </h4>    
-                    
-                <ul class="skill-list">
-                    <li>Windows</li>
-                    <li>Linux</li>
-                    <li>Git Version Control</li>
-                    <li>Amazon Web Services</li>
-                    <li>Microsoft Office</li>
-                    <li>Adobe Creative Suite</li>
-                </ul>
-                </div>    
-            </div>
-            
-            
-            <div class="table-column">
-                <img class="skill-icon wow bounceIn" src="images/bubble.svg" alt="Soft Skills">
-                
-                <div class="wow fadeInUp">
-                <h4>
-                <span class="rotate-text-wrapper">
-                    <span class="rotate-text">INTERPERSONAL</span>
-                </span>
-                </h4>
-                    
-                <ul class="skill-list">
-                    <li>Problem Solving</li>
-                    <li>Communication</li>
-                    <li>Team Player</li>
-                    <li>Leadership</li>
-                    <li>Work under pressure</li>
-                </ul>
-                </div>
-            </div>
-
-            <a href="#projects" class="button border--grey">Next</a>
-        </div> <!-- end table -->
-      
-    <!--
-        </div>
-	</section>
-    </div>
-    -->
     
     
     <!-- Projects page -->
     <div class="section-wrapper" id="projects">
-	<section class="page projects-bg">
-        <div class="content">
+        <section class="page projects-bg">
+        
             <div class="heading wow fadeInDown">
                 <h2>PROJECTS</h2>
                 <em>What I have done</em>
             </div>
+            <div class="content">
             
-            <!-- right hand side -->
+                
+                        <!-- right hand side -->
             <div class="tiles">
 
                 <!-- Row 1-->
@@ -174,11 +94,11 @@
                     </div>
                 </div>
 
-            </div> <!-- end tiles -->
-            
+            </div> <!-- end tiles -->    
+                
             <!-- left hand side -->
             <div class="infobar card-dropshadow wow fadeInLeft">
-                <p class="infobar-instruction"><em>Click the images to view some of my past works.</em></p>
+                <!-- <p class="infobar-instruction"><em>Click the images to view some of my past works.</em></p> -->
 
                 <article class="project-page" data-link="1">
                     <h3 class="project-title">Hybrid Image</h3>
@@ -222,11 +142,12 @@
                     </ul>
                 </article>
 
-                <a href="#about" class="button border--grey">Next</a>
             </div>
-
-
+            
         </div> <!-- end content -->
+        
+        <a href="#about" class="button border--grey">Next</a>
+            
 	</section>
     </div>
 
@@ -234,11 +155,13 @@
     <!-- About page -->
     <div class="section-wrapper" id="about">
 	<section class="page">
+
+        <div class="heading wow fadeInDown">
+            <h2>ABOUT ME</h2>
+            <em>Who I am</em>
+        </div>
+
         <div class="content">
-            <div class="heading wow fadeInDown">
-		        <h2>ABOUT ME</h2>
-                <em>Who I am</em>
-            </div>
             
             <img class="profileImg wow bounceIn" src="images/profile.png" alt="Profile Picture">
             <h3 class="">Hi, I am Andy Tang.</h3>

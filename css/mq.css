@@ -1,0 +1,75 @@
+/* === Media Queries === */
+@media (max-width: 665px ) {
+    
+    /* navbar */
+    .navbar{
+        padding: 0 5% !important;
+    }
+    
+   .navbar-menu {
+        display: inline-block;
+    }
+    
+   .navbar-item {
+      display: none;
+   }
+    
+    .page{
+        padding: 5%;
+    }
+    
+    .profileImg{
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+
+@media (max-width: 1000px){
+    
+    /* Leave enough space for navbar */
+    .page{
+        padding-top: 80px;
+    }
+    
+    /* Project Page */
+    
+    .infobar{
+        display: block;
+        width: 100%;
+    }
+    
+    .project-page{
+        overflow: hidden;
+    }
+    
+    .tiles{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .tiles-row{
+        display: inline-block;
+        width: 49%;
+    }
+    
+    .tiles-cell{
+        height: 20%;
+    }
+    
+    /* About page */
+    
+    .bio{
+        margin: 5% !important;
+    }
+}
+
+@media (min-width: 666px){
+    .navbar-menu {
+        display: none;
+    }
+    
+    .navbar-item{
+        display: inline-block !important;
+    }
+}

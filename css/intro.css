@@ -34,3 +34,8 @@
 .branding-title{
     padding-bottom: 2em;
 }
+
+.vertical-align--middle{
+    display: table-cell;
+    vertical-align: middle;
+}
