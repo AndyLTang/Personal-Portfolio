@@ -151,16 +151,16 @@ $(document).ready(function(){
 
             switch (selection){
                 case '1':
-                    $project[0].style.backgroundImage = 'url("' + preloadImgs[0].src + '")';
+                    $infobar[0].style.backgroundImage = 'url("' + preloadImgs[0].src + '")';
                     break;
                 case '2':
-                    $project[0].style.backgroundImage = 'url("' + preloadImgs[1].src + '")';
+                    $infobar[0].style.backgroundImage = 'url("' + preloadImgs[1].src + '")';
                     break;
                 case '3':
-                    $project[0].style.backgroundImage = 'url("' + preloadImgs[2].src + '")';
+                    $infobar[0].style.backgroundImage = 'url("' + preloadImgs[2].src + '")';
                     break;
                 case '4':
-                    $project[0].style.backgroundImage = 'url("' + preloadImgs[3].src + '")';
+                    $infobar[0].style.backgroundImage = 'url("' + preloadImgs[3].src + '")';
                     break;
                 default:
                     alert('error!');
