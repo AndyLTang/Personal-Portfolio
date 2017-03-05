@@ -3,14 +3,14 @@ $(document).ready(function(){
     var mobileWindow = true;
     
     /* detect screen size */
-    if($(window).width() > 850){
+    if($(window).width() > 666){
         mobileWindow = false;
     }else{
-            mobileWindow = true;
+        mobileWindow = true;
     }
     
     $(window).resize(function(){
-        if($(window).width() > 850){
+        if($(window).width() > 666){
             mobileWindow = false;
         } else{
             mobileWindow = true;
@@ -93,7 +93,7 @@ $(document).ready(function(){
     /* Responsive Navigation */
     var $responsivenav = $('#collapsed');
     $responsivenav.click(function(){
-       $("nav #links li:not(:first-child)").slideToggle('fast');
+        $("nav #links li:not(:first-child)").slideToggle('fast');
     });
     
     

@@ -14,10 +14,6 @@
       display: none;
    }
     
-    .page{
-        padding: 5%;
-    }
-    
     .profileImg{
         width: 150px !important;
         height: 150px !important;
@@ -28,6 +24,7 @@
     
     /* Leave enough space for navbar */
     .page{
+        padding: 5%;
         padding-top: 80px;
     }
     
@@ -63,6 +60,7 @@
         margin: 5% !important;
     }
 }
+
 
 @media (min-width: 666px){
     .navbar-menu {
