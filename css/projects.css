@@ -35,7 +35,6 @@
 .project-title{
     margin: 0em 1em;
     text-align: center;
-    letter-spacing: 5px;
 }
 
 .project-description{
@@ -96,6 +95,7 @@
 .tile-wrapper{
     display: block;
     overflow: hidden;
+    border-radius: 42px;
 }
 
 .tile-img{
