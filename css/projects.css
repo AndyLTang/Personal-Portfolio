@@ -95,7 +95,6 @@
 .tile-wrapper{
     display: block;
     overflow: hidden;
-    border-radius: 42px;
 }
 
 .tile-img{
