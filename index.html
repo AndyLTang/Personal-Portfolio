@@ -63,7 +63,7 @@
             <div class="content">
             
                 
-                        <!-- right hand side -->
+            <!-- right hand side -->
             <div class="tiles">
 
                 <!-- Row 1-->
@@ -105,19 +105,30 @@
                 <article class="project-page" data-link="1">
                     <h3 class="project-title">Hybrid Image</h3>
                     <hr class="divider-horiz divider-horiz--grey">
-                    <p class="project-description">About // An offline Java application which allowed users to upload a pair of pictures in order to create the hybrid image effect.</p>
-                    <p class="project-description">Date // 2016</p>
+                    <p class="project-description">About // A graphical Java application which allows users to upload a pair of pictures in order to create the hybrid image illusion effect.</p>
+                    <p class="project-description">Date // Mar - Apr 2016</p>
+                    <p class="project-description">Technologies // 
+                        <span class="tags bg-blue color-white">Java</span>
+                        <span class="tags bg-blue color-white">Object Oriented</span> 
+                        <span class="tags bg-blue color-white">Java Swing</span>
+                        <span class="tags bg-blue color-white">GUI</span>
+                        <span class="tags bg-blue color-white">Event-based</span>
+                        <span class="tags bg-blue color-white">Image Processing</span> 
+                    </p>
                     <p class="project-description">Tasks //</p>
                     <ul class="project-highlights">
-                        <li>Developed the algorithm to create Hybrid Images</li>
-                        <li>Implemented the user interface using Java's Swing Library which allows users to upload their own pair of photos to create a hybridized image.</li>              
+                        <li>Implemented the algorithm to create Hybrid Images.</li>
+                        <li>Designed the user interface using Java's Swing Library which allows users to upload their own pair of photos to create a hybridized image.</li>
+                        <li>Incorporated ActionListeners to correctly update the associated images.</li>
+                        <li>Improved the effectiveness of the illusion by experimenting with various high and low pass filters.</li>
                     </ul>
                 </article>
-
+                
+                <!-- OLD PROJECT
                 <article class="project-page" data-link="2">
                     <h3 class="project-title">Watchermelon</h3>
                     <hr class="divider-horiz divider-horiz--grey">
-                    <p class="project-description">About     // An iPhone app which allows local neighborhood blockwatchers to send reports to a database where the police processes the information.</p>
+                    <p class="project-description">About // An iPhone app which allows local neighborhood blockwatchers to send reports to a database where the police processes the information.</p>
                     <p class="project-description">Date // 2014</p>
                     <p class="project-description">Tasks //</p>
                     <ul class="project-highlights">
@@ -126,29 +137,77 @@
                         <li>Mocked a demo screenshot of the app icon created in Photoshop using smart objects</li>
                     </ul>
                 </article>
+                --> 
+                
+                <article class="project-page" data-link="2">
+                    <h3 class="project-title">ShadowPoll</h3>
+                    <hr class="divider-horiz divider-horiz--grey">
+                    <p class="project-description">About // A web app written in Ruby on Rails that allows users to create accounts to generate, view, and vote on polls to share with other players in a game called Shadowverse.</p>
+                    <p class="project-description">Date // Feb 2017 - Current</p>
+                    <p class="project-description">Technologies // 
+                        <span class="tags bg-blue color-white">Ruby on Rails</span>
+                        <span class="tags bg-blue color-white">Devise</span>
+                        <span class="tags bg-blue color-white">MVC</span>
+                        <span class="tags bg-blue color-white">HTML</span>
+                        <span class="tags bg-blue color-white">CSS</span>
+                        <span class="tags bg-blue color-white">Bootstrap</span>
+                        <span class="tags bg-blue color-white">Javascript</span>
+                        <span class="tags bg-blue color-white">JQuery</span>
+                    </p>
+                    <p class="project-description">Tasks //</p>
+                    <ul class="project-highlights">
+                        <li>Developed a web app using the Ruby on Rails MVC web framework to dynamically generate the content of each page.</li>
+                        <li>Created custom forms for polls which allow users to add/remove any number of nested resources of a poll as they want (limited to 15) by dynamically adding the nested forms.</li>
+                        <li>Incorporated the Devise gem to allow users to create accounts to prevent bots from spamming the polls.</li>
+                        <li>Seeded the necessary data in the database by parsing a JSON file as well as removing any invalid entries before adding it as a record.</li>
+                    </ul>
+                </article>
 
                 <article class="project-page" data-link="3">
                     <h3 class="project-title">Amazon Web Services</h3>
                     <hr class="divider-horiz divider-horiz--grey">
-                    <p class="project-description">About // Team project in which we used Amazon's web services to implement the REST API to simulate a server processing client requests and handling erroneous cases. </p>
-                    <p class="project-description">Date // 2016</p>
+                    <p class="project-description">About // A RESTful web service deployed using Amazon Web Services to simulate a server processing client requests and handling erroneous cases. </p>
+                    <p class="project-description">Date // Jun- Aug 2016</p>
+                    <p class="project-description">Technologies // 
+                        <span class="tags bg-blue color-white">AWS</span>
+                        <span class="tags bg-blue color-white">EC2</span>
+                        <span class="tags bg-blue color-white">Python</span> 
+                        <span class="tags bg-blue color-white">boto</span> 
+                        <span class="tags bg-blue color-white">DynamoDB</span>
+                        <span class="tags bg-blue color-white">SQS</span>
+                        <span class="tags bg-blue color-white">CloudWatch</span>
+                        <span class="tags bg-blue color-white">REST API</span>
+                        <span class="tags bg-blue color-white">auto scaling</span>
+                        <span class="tags bg-blue color-white">load balancer</span>
+                        <span class="tags bg-blue color-white">zookeeper</span>
+                    </p>
                     <p class="project-description">Tasks //</p>
                     <ul class="project-highlights">
-                        <li>Connected to the servers using the Python boto interface to gain access to features including Elastic Compute Cloud (EC2), DynamoDB, and Simple Queue Service (SQS).</li>
-                        <li>Implemented a scheduling algorithm with zookeeper to keep the message order consistent across EC2 instances.</li>
+                        <li>Managed the EC2 virtual machines’ CPU activities by auto scaling and using the load balancer to enhance availability.</li>
+                        <li>Organized a system using CloudWatch where problems in the virtual machines would generate a notification and log it in SQS.</li>
+                        <li>Wrote a RESTful web service supporting JSON to perform tasks such as storing, editing, and deleting records in DynamoDB. </li>
+                        <li>Implemented a scheduling algorithm with zookeeper to keep the message order consistent across EC2 instances by detecting duplicated and out-of-order messages.</li>
                     </ul>
                 </article>
 
                 <article class="project-page" data-link="4">
                     <h3 class="project-title">SFU Channel</h3>
                     <hr class="divider-horiz divider-horiz--grey">
-                    <p class="project-description">About // A team project where we developed a board messaging site for Simon Fraser University. Since the school does not have a single site where students can chat or ask questions online, our goal was to have a site where students of all faculties can communicate.</p>
-                    <p class="project-description">Date // 2015</p>
+                    <p class="project-description">About // A messaging board site for Simon Fraser University where students of all faculties can join and chat in different topics since most discussion boards were confined to students within the same course.</p>
+                    <p class="project-description">Technologies // 
+                        <span class="tags bg-blue color-white">MVC</span> 
+                        <span class="tags bg-blue color-white">HTML</span>
+                        <span class="tags bg-blue color-white">CSS</span>
+                        <span class="tags bg-blue color-white">Javascript</span>
+                        <span class="tags bg-blue color-white">JQuery</span>
+                        <span class="tags bg-blue color-white">Bootstrap</span>
+                    </p>
+                    <p class="project-description">Date // Jun - Aug 2015</p>
                     <p class="project-description">Tasks //</p>
                     <ul class="project-highlights">
-                        <li>Developed front end (HTML, CSS, and Javascript) of the site.</li>
-                        <li>Incorporated aesthetics of features such as log-in and navigation using JQuery and Bootstrap</li>
-                        <li>Version controlled by the team using Simon Fraser University's GitLab repository.</li>
+                        <li>Developed front-end (HTML, CSS, and Javascript) of the site.</li>
+                        <li>Used JQuery to allow users to display or hide elements on the page.</li>
+                        <li>Animated elements to improve the aesthetics of the site.</li>
                     </ul>
                 </article>
 
@@ -175,7 +234,7 @@
         <div class="content">
             
             <img class="profileImg wow bounceIn" src="images/profile.png" alt="Profile Picture">
-            <h3 class="">Hi, I am Andy Tang and I write software.</h3>
+            <h3 class=""><span>Hi, I am Andy Tang and</span> <span>I write software.</span></h3>
             
             <!--<hr class="divider-horiz divider-horiz--grey">-->
             

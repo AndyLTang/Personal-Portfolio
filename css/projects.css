@@ -44,7 +44,12 @@
 
 .project-highlights{
     margin: 0 1em;
-    list-style-position: outside;
+}
+
+.project-highlights > li {
+    list-style-position: inside;
+    padding-left: 2em;
+    text-indent: -2em;   
 }
 
 /* === Right hand side === */
@@ -108,4 +113,12 @@
 .tile-img:hover {
     transform: scale(1.5);
     filter: grayscale(100%);
+}
+
+.tags {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #4682b4;
+    padding: 2px;
+    margin-bottom: 2px;
 }
