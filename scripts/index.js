@@ -56,11 +56,17 @@ $(document).ready(function(){
     var $navitem = $('.navbar-item');
     
     $navmenu.click(function(){
+        if (!$navmenu.hasClass('rotated')){
+            $navmenu.addClass('rotated');
+        } else {
+            $navmenu.removeClass('rotated');
+        }
        $navitem.slideToggle('fast'); 
     });
     
     $navlinks.click(function(){
         if (mobileWindow == true){
+            $navmenu.removeClass('rotated');
             $navitem.slideToggle('fast');
         }
     })
