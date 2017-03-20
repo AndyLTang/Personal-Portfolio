@@ -46,6 +46,20 @@ span{
     display: inline-block;
 }
 
+a:link, a:visited{
+    color: #4682b4;
+    font-weight: bold;
+    transition: color, 0.5s;
+}
+
+a:hover{
+    color: #7eaacd;
+}
+
+button{
+    font-family: 'Lato', sans-serif;
+}
+
 /* === Structure Styles === */
 
 .section-wrapper{
@@ -148,6 +162,10 @@ span{
 
 .card-dropshadow{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.text-center{
+    text-align: center;
 }
 
 /* === Colors === */

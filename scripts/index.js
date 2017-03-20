@@ -26,7 +26,7 @@ $(document).ready(function(){
     var preloadImgs = new Array();
     for(i=0; i < 4; i++){
         var tmpImg = new Image();
-        tmpImg.src = "images/project" + (i+1) + ".png";
+        tmpImg.src = "images/project-bg-" + (i+1) + ".png";
         preloadImgs[i] = tmpImg;
     }
     

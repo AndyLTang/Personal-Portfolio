@@ -15,6 +15,7 @@
     width: 45%;
     background: url("../images/project0.png");
     background-size: cover;
+    background-position: center center;
     text-align: left;
     vertical-align: top;
     transition: all 0.5s linear;
