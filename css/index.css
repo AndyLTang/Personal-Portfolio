@@ -56,10 +56,6 @@ a:hover{
     color: #7eaacd;
 }
 
-button{
-    font-family: 'Lato', sans-serif;
-}
-
 /* === Structure Styles === */
 
 .section-wrapper{
@@ -102,19 +98,25 @@ button{
 
 /* === Button Styles === */
 
-.button {
+.button:link {
     display: block;
     width: 8em;
     margin: 2em auto;
     padding: 1em;
     text-align: center; 
     text-decoration: none;
+    font-weight: 400;
+    color: #444;
     transition: box-shadow 1s, color 1s;
 }
 
 .button:hover {
     color: white;
     box-shadow: inset 200px 0 0 0 #444;
+}
+
+.button--invert:link{
+    color: white;
 }
 
 .button--invert:hover {
