@@ -8,35 +8,19 @@
     color: white;
 }
 
-.branding{
-    margin: 0;
-    padding: 1em;
-    list-style-type: none;
-    transition: all 0.5s;
-}
-
-.branding--inverted{
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-}
-
-.branding-logo{
+.brand-logo{
     width: 85px;
     height: 85px;
     margin: 0.5em;
 }
 
-.brandname{
+.brand-name{
     line-height: 90%;
     margin: 0;
 }
 
-.branding-title{
+.brand-occupation{
     padding-bottom: 2em;
-}
-
-.branding-title span{
-    white-space: nowrap;
 }
 
 .vertical-align--middle{

@@ -9,12 +9,11 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/intro.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/skills.css"> -->
     <link rel="stylesheet" type="text/css" href="css/projects.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">    
     <link rel="stylesheet" type="text/css" href="css/mq.css">    
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 
@@ -22,12 +21,11 @@
     <!-- Navigation -->
     <nav class="navbar">
 		<ul class="navbar-branding">
-            <li class="branding"><a href="http://github.com/AndyLTang"><img width="30" height="30" src="images/logo-white.svg" alt="my logo"></a></li>
+            <li class="navbar-logo"><a href="http://github.com/AndyLTang"><img width="30" height="30" src="images/logo-white.svg" alt="my logo"></a></li>
         </ul>
 		<ul class="navbar-list">
             <li class="navbar-menu"><img width="30" height="30" src="images/hamburger.svg" alt="hamburger menu"></li>
 			<li class="navbar-item"><a class="navbar-link" href="#intro">INTRO</a></li>
-			<!--<li class="navbar-item"><a class="navbar-link" href="#skills">SKILLS</a></li>-->
 			<li class="navbar-item"><a class="navbar-link" href="#projects">PROJECTS</a></li>
 			<li class="navbar-item"><a class="navbar-link" href="#about">ABOUT</a></li>
 			<li class="navbar-item"><a class="navbar-link" href="#contact">CONTACT</a></li>
@@ -40,10 +38,9 @@
 	<section class="intro-page">
 		<div class="content">
             <div class="vertical-align--middle">
-                <img class="branding-logo" src="images/logo-white.svg" alt="my logo">
-                <h1 class="brandname wow fadeInDown">ANDY <span class="weight200">TANG</span></h1>
-                <p class="branding-title weight300 wow fadeInDown" data-wow-delay="0.7s"><span>Software Engineer //</span> <span>Web Developer //</span> <span>Web Designer</span></p>
-                <!-- <hr class="divider-vert divider-vert--white"> -->
+                <img class="brand-logo" src="images/logo-white.svg" alt="my logo">
+                <h1 class="brand-name wow fadeInDown">ANDY TANG</h1>
+                <p class="brand-occupation weight300 wow fadeInDown" data-wow-delay="0.7s"><span>Software Engineer //</span> <span>Web Developer //</span> <span>Web Designer</span></p>
                 <a href="#projects" class="button button--invert border--white">See my work</a>
             </div>
         </div>
@@ -99,7 +96,7 @@
             </div> <!-- end tiles -->    
                 
             <!-- left hand side -->
-            <div class="infobar card-dropshadow wow fadeInRight">
+            <div class="card card-dropshadow wow fadeInRight">
 
                 <article class="project-page" data-link="1">
                     <h3 class="project-title">Shadow Poll</h3>
@@ -117,7 +114,7 @@
                         <span class="tags bg-blue color-white">Javascript</span>
                         <span class="tags bg-blue color-white">JQuery</span>
                     </p>
-                    <p class="project-description">Tasks //</p>
+                    <p class="project-description">Highlights //</p>
                     <ul class="project-highlights">
                         <li>Developed a web app using the Ruby on Rails MVC web framework to dynamically generate the content of each page.</li>
                         <li>Created custom forms for polls which allow users to add/remove any number of nested resources of a poll as they want (limited to 15) by dynamically adding the nested forms.</li>
@@ -144,7 +141,7 @@
                         <span class="tags bg-blue color-white">load balancer</span>
                         <span class="tags bg-blue color-white">zookeeper</span>
                     </p>
-                    <p class="project-description">Tasks //</p>
+                    <p class="project-description">Highlights //</p>
                     <ul class="project-highlights">
                         <li>Managed the EC2 virtual machines’ CPU activities by auto scaling and using the load balancer to enhance availability.</li>
                         <li>Organized a system using CloudWatch where problems in the virtual machines would generate a notification and log it in SQS.</li>
@@ -166,7 +163,7 @@
                         <span class="tags bg-blue color-white">Event-based</span>
                         <span class="tags bg-blue color-white">Image Processing</span> 
                     </p>
-                    <p class="project-description">Tasks //</p>
+                    <p class="project-description">Highlights //</p>
                     <ul class="project-highlights">
                         <li>Implemented the algorithm to create Hybrid Images.</li>
                         <li>Designed the user interface using Java's Swing Library which allows users to upload their own pair of photos to create a hybridized image.</li>
@@ -188,7 +185,7 @@
                         <span class="tags bg-blue color-white">JQuery</span>
                         <span class="tags bg-blue color-white">Bootstrap</span>
                     </p>
-                    <p class="project-description">Tasks //</p>
+                    <p class="project-description">Highlights //</p>
                     <ul class="project-highlights">
                         <li>Developed front-end (HTML, CSS, and Javascript) of the site.</li>
                         <li>Used JQuery to allow users to display or hide elements on the page.</li>
@@ -218,8 +215,8 @@
 
         <div class="content">
             
-            <img class="profileImg wow bounceIn" src="images/profile.png" alt="Profile Picture">
-            <h3 class=""><span>Hi, I am Andy Tang and</span> <span>I write software.</span></h3>
+            <img class="profile-img wow bounceIn" src="images/profile.png" alt="Profile Picture">
+            <h3><span>Hi, I am Andy Tang and</span> <span>I write software.</span></h3>
             
             <div class="bio wow fadeInUp">
                 <p>I graduated from Simon Fraser University with a Bachelor of Science in Computing Science in 2016. 
@@ -236,7 +233,7 @@
         
     <!-- Contacts page -->
 	<section class="bg-grey" id="contact">
-        <div class="content footer">
+        <div class="content footer text-center">
             
             <h3 class="form-header">CONTACT ME</h3>
             

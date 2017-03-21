@@ -3,7 +3,7 @@
     
     /* navbar */
     .navbar{
-        padding: 0 5% !important;
+        padding: 0 5%;
     }
     
    .navbar-menu {
@@ -15,8 +15,8 @@
    }
     
     .profileImg{
-        width: 150px !important;
-        height: 150px !important;
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -30,7 +30,7 @@
     
     /* Project Page */
     
-    .infobar{
+    .card{
         display: block;
         width: 100%;
     }
@@ -57,7 +57,7 @@
     /* About page */
     
     .bio{
-        margin: 5% !important;
+        margin: 5%;
     }
 }
 

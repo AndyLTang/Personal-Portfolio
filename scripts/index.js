@@ -33,9 +33,9 @@ $(document).ready(function(){
     var $navlinks = $('.navbar-link');
     var $navmenu = $('.navbar-menu');
     var $navitem = $('.navbar-item');
-    var $logo = $('.branding');
+    var $navlogo = $('.navbar-logo');
     var $nextbutton = $('.button');
-    var $infobar = $('.infobar');
+    var $card = $('.card');
     
 	function scrollTo(anchor_id){
 		var tag = $(anchor_id);
@@ -65,24 +65,24 @@ $(document).ready(function(){
     /* Change transparent/opaque navbar */
     function changeNavbar(){
         $(window).scroll(function(){
-            var navbar = 'navbar--inverted';
-            var navLink = 'navbar-link--inverted';
-            var navMenu = 'navbar-menu--inverted';
-            var branding = 'branding--inverted';
+            var invertBar = 'navbar--inverted';
+            var invertLink = 'navbar-link--inverted';
+            var invertMenu = 'navbar-menu--inverted';
+            var invertLogo = 'navbar-logo--inverted';
 
             // if window is at the top, show transparent navbar
             if ($(document).scrollTop() <= 2){
-                removeClassFromElem(navbar, $nav);
-                removeClassFromElem(navLink, $navlinks);
-                removeClassFromElem(navMenu, $navmenu);
-                removeClassFromElem(branding, $logo);
+                removeClassFromElem(invertBar, $nav);
+                removeClassFromElem(invertLink, $navlinks);
+                removeClassFromElem(invertMenu, $navmenu);
+                removeClassFromElem(invertLogo, $navlogo);
             } 
             // otherwise, show opaque navbar
             else {
-                addClassToElem(navbar, $nav);
-                addClassToElem(navLink, $navlinks);
-                addClassToElem(navMenu, $navmenu);
-                addClassToElem(branding, $logo);
+                addClassToElem(invertBar, $nav);
+                addClassToElem(invertLink, $navlinks);
+                addClassToElem(invertMenu, $navmenu);
+                addClassToElem(invertLogo, $navlogo);
             }   
         });
     }
@@ -160,7 +160,7 @@ $(document).ready(function(){
     function switchProjectBg(){
         $('.tile-wrapper').click(function(){
             //find the current article and remove it
-            $infobar.find('.current').removeClass('current').animate({opacity:0}, 'slow').hide();
+            $card.find('.current').removeClass('current').animate({opacity:0}, 'slow').hide();
 
             //change current to the article according to clicked image
             var selection = $(this).attr('data-link');
@@ -168,16 +168,16 @@ $(document).ready(function(){
 
             switch (selection){
                 case '1':
-                    $infobar[0].style.backgroundImage = 'url("' + preloadImgs[0].src + '")';
+                    $card[0].style.backgroundImage = 'url("' + preloadImgs[0].src + '")';
                     break;
                 case '2':
-                    $infobar[0].style.backgroundImage = 'url("' + preloadImgs[1].src + '")';
+                    $card[0].style.backgroundImage = 'url("' + preloadImgs[1].src + '")';
                     break;
                 case '3':
-                    $infobar[0].style.backgroundImage = 'url("' + preloadImgs[2].src + '")';
+                    $card[0].style.backgroundImage = 'url("' + preloadImgs[2].src + '")';
                     break;
                 case '4':
-                    $infobar[0].style.backgroundImage = 'url("' + preloadImgs[3].src + '")';
+                    $card[0].style.backgroundImage = 'url("' + preloadImgs[3].src + '")';
                     break;
                 default:
                     alert('error!');

@@ -2,7 +2,7 @@
 
 /* === Left hand side === */
 
-.infobar{
+.card{
     display: table-cell;
     width: 45%;
     background: url("../images/project0.png");
@@ -11,10 +11,6 @@
     text-align: left;
     vertical-align: top;
     transition: all 0.5s linear;
-}
-
-.infobar-instruction{
-    margin-bottom: 1em;
 }
 
 .project-page{
@@ -26,7 +22,7 @@
 }
 
 .project-title{
-    margin: 0em 1em;
+    margin: 0 1em;
     text-align: center;
 }
 
@@ -50,8 +46,7 @@
 .tiles{
     display: table-cell;
     width: 50%;
-    padding-left: 2em;
-    padding-right: 1em;
+    padding-right: 2em;
     animation-name: fadeInRight;
 }
 
@@ -87,7 +82,6 @@
     display: table-cell;
     height: 25%;
     width: 25%;
-    padding: 0.5em;
 }
 
 .tile-wrapper{
@@ -100,7 +94,6 @@
     width: 100%;
     height: 100%;
     transition: all .5s ease;
-    vertical-align: middle;
 }
 
 .tile-img:hover {
