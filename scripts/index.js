@@ -1,156 +1,167 @@
-$(document).ready(function(){
-    
-    var mobileWindow = true;
-    
-    /* detect screen size */
-    if($(window).width() > 666){
+var MOBILE_RES = 666;
+
+/* Determine window size */
+var mobileWindow = true;
+
+if($(window).width() > MOBILE_RES){
+    mobileWindow = false;
+}else{
+    mobileWindow = true;
+}
+
+/* When window resizes, check if resolution is mobile size */
+$(window).resize(function(){
+    if($(window).width() > MOBILE_RES){
         mobileWindow = false;
-    }else{
+    } else{
         mobileWindow = true;
     }
+});
+
+/* Image preloading projects images */
+var preloadImgs = new Array();
+for(i=0; i < 4; i++){
+    var tmpImg = new Image();
+    tmpImg.src = "images/project-bg-" + (i+1) + ".png";
+    preloadImgs[i] = tmpImg;
+}
+
+$(document).ready(function(){
     
-    $(window).resize(function(){
-        if($(window).width() > 666){
-            mobileWindow = false;
-        } else{
-            mobileWindow = true;
-        }
-    });
+    /* Selector cache */
+    var $nav = $('.navbar');
+    var $navlinks = $('.navbar-link');
+    var $navmenu = $('.navbar-menu');
+    var $navitem = $('.navbar-item');
+    var $logo = $('.branding');
+    var $nextbutton = $('.button');
+    var $infobar = $('.infobar');
     
 	function scrollTo(anchor_id){
 		var tag = $(anchor_id);
 		$('html,body').stop().animate({scrollTop: tag.offset().top +2}, 'slow');
 	}
     
-    /* Image preloading */
-    var preloadImgs = new Array();
-    for(i=0; i < 4; i++){
-        var tmpImg = new Image();
-        tmpImg.src = "images/project-bg-" + (i+1) + ".png";
-        preloadImgs[i] = tmpImg;
+    function bindScrollTo(link){
+        link.click(function(){
+            /* Scroll to location on page*/
+            var ref = $(this).attr("href");
+            scrollTo(ref);
+
+            /* Stop link from jumping to the anchor first */
+            event.preventDefault();
+            event.stopPropagation();
+        }); //end click
     }
     
+    function addClassToElem(elemClass, elem){
+        elem.addClass(elemClass);
+    }
     
-    /* Change navbar behaviour when scrolled */
-    var $nav = $('.navbar');
-    var $navlinks = $('.navbar-link');
-    var $navmenu = $('.navbar-menu');
-    var $brandname= $('.branding');
+    function removeClassFromElem(elemClass, elem){
+        elem.removeClass(elemClass);
+    }
     
-    $(window).scroll(function(){
-        if ($(document).scrollTop() <= 2){
-            $nav.removeClass('navbar--inverted');
-            $navlinks.removeClass('navbar-link--inverted');
-            $navmenu.removeClass('navbar-menu--inverted');
-            $brandname.removeClass('branding--inverted');
-        } else {
-            $nav.addClass('navbar--inverted');
-            $navlinks.addClass('navbar-link--inverted');
-            $navmenu.addClass('navbar-menu--inverted');
-            $brandname.addClass('branding--inverted');
-        }   
-    });
-    
-    
-    /* Toggle hamburger menu */
-    var $navitem = $('.navbar-item');
-    
-    $navmenu.click(function(){
-        if (!$navmenu.hasClass('rotated')){
-            $navmenu.addClass('rotated');
-        } else {
-            $navmenu.removeClass('rotated');
-        }
-       $navitem.slideToggle('fast'); 
-    });
-    
-    $navlinks.click(function(){
-        if (mobileWindow == true){
-            $navmenu.removeClass('rotated');
-            $navitem.slideToggle('fast');
-        }
-    })
-    
-    
-    /* Bind links to scrollTo */
-	$navlinks.click(function(){
-		/* Scroll to location on page*/
-		var link = $(this).attr("href");
-		scrollTo(link);
+    /* Change transparent/opaque navbar */
+    function changeNavbar(){
+        $(window).scroll(function(){
+            var navbar = 'navbar--inverted';
+            var navLink = 'navbar-link--inverted';
+            var navMenu = 'navbar-menu--inverted';
+            var branding = 'branding--inverted';
 
-		/* Stop link from jumping to the anchor first */
-		event.preventDefault();
-  		event.stopPropagation();
-	}); //end click
+            // if window is at the top, show transparent navbar
+            if ($(document).scrollTop() <= 2){
+                removeClassFromElem(navbar, $nav);
+                removeClassFromElem(navLink, $navlinks);
+                removeClassFromElem(navMenu, $navmenu);
+                removeClassFromElem(branding, $logo);
+            } 
+            // otherwise, show opaque navbar
+            else {
+                addClassToElem(navbar, $nav);
+                addClassToElem(navLink, $navlinks);
+                addClassToElem(navMenu, $navmenu);
+                addClassToElem(branding, $logo);
+            }   
+        });
+    }
     
-    /* Bind buttons to scrollTo */
-    var $nextbuttons = $('.button');
-    $nextbuttons.click(function(){
-        /* Scroll to location on page*/
-		var link = $(this).attr("href");
-		scrollTo(link);
-
-		/* Stop link from jumping to the anchor first */
-		event.preventDefault();
-  		event.stopPropagation();
-    });
-
-    
-    /* Responsive Navigation */
-    var $responsivenav = $('#collapsed');
-    $responsivenav.click(function(){
-        $("nav #links li:not(:first-child)").slideToggle('fast');
-    });
-    
-    
-	/* Navigation highlight */
-    $(".navbar-link[href='#intro']").addClass('active');
-    var aChildren = $(".navbar-item").children(".navbar-link");
-	var aArray = [];
-	for (var i=0; i < aChildren.length; i++){
-		var aChild = aChildren[i];
-		var ahref = $(aChild).attr('href');
-		aArray.push(ahref);
-	}
-    
-	$(window).scroll(function(){
-        var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
-        var windowHeight = $(window).height(); // get the height of the window
-        var docHeight = $(document).height();
-
-        for (var i=0; i < aArray.length; i++) {
-            var theID = aArray[i];
-            var divPos = $(theID).offset().top; // get the offset of the div from the top of page
-            var divHeight = $(theID).height(); // get the height of the div in question
-            if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                $("a[href='" + theID + "']").addClass("active");
+    /* Toggle hamburger menu icon */
+    function toggleMenu(){
+        $navmenu.click(function(){
+            if ($navmenu.hasClass('rotated')){
+                removeClassFromElem('rotated', $navmenu);
             } else {
-                $("a[href='" + theID + "']").removeClass("active");
+                addClassToElem('rotated', $navmenu);
             }
 
+            $navitem.slideToggle('fast'); 
+        });
+
+        $navlinks.click(function(){
+            if (mobileWindow == true){
+                removeClassFromElem('rotated', $navmenu);
+                $navitem.slideToggle('fast');
+            }
+        });
+    }
+    
+    /* Navigation highlight */
+    function navHighlighting(){
+        $("a[href='#intro']").addClass('active');
+        var aChildren = $(".navbar-item").children(".navbar-link");
+        var aArray = [];
+        for (var i=0; i < aChildren.length; i++){
+            var aChild = aChildren[i];
+            var ahref = $(aChild).attr('href');
+            aArray.push(ahref);
         }
 
+        $(window).scroll(function(){
+            // get the offset of the window from the top of page
+            var windowPos = $(window).scrollTop(); 
 
-        // if window is at bottom of page, set active to last link
-        if(windowPos + windowHeight == docHeight) {
-            if (!$(".navbar-item:last-child a").hasClass("active")) {
-                var navActiveCurrent = $(".active").attr("href");
-                $("a[href='" + navActiveCurrent + "']").removeClass("active");
-                $(".navbar-item:last-child a").addClass("active");
+            // get the height of the window
+            var windowHeight = $(window).height(); 
+            var docHeight = $(document).height();
+
+            for (var i=0; i < aArray.length; i++) {
+                var theID = aArray[i];
+
+                // get the offset of the div from the top of page
+                var divPos = $(theID).offset().top; 
+
+                // get the height of the div
+                var divHeight = $(theID).height();
+
+                var ref = $("a[href='" + theID + "']");
+                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                    addClassToElem("active", ref);
+                } else {
+                    removeClassFromElem("active", ref);
+                }
+
             }
-        } 
-    });
 
+            // if window is at bottom of page, set active to last link
+            if(windowPos + windowHeight == docHeight) {
+                if (!$(".navbar-item:last-child a").hasClass("active")) {
+                    var navActiveCurrent = $(".active").attr("href");
+                    $("a[href='" + navActiveCurrent + "']").removeClass("active");
+                    $(".navbar-item:last-child a").addClass("active");
+                }
+            } 
+        });
+
+    }
     
-    /* Projects */
-    var $project = $('.projects-bg');
-    var $infobar = $('.infobar');
-    
-    $('.tile-wrapper').click(
-        function(){
+    /* Fade project background when a tile is clicked on */
+    function switchProjectBg(){
+        $('.tile-wrapper').click(function(){
             //find the current article and remove it
             $infobar.find('.current').removeClass('current').animate({opacity:0}, 'slow').hide();
-            
+
             //change current to the article according to clicked image
             var selection = $(this).attr('data-link');
             $("article[data-link=" + selection + "]").addClass('current').show().animate({opacity:1}, 'slow');
@@ -172,37 +183,46 @@ $(document).ready(function(){
                     alert('error!');
                     break;
             }
-        }
-    );
-    
-    
-    /* Contact Form */
-    var $contactForm = $('.form');
-    $contactForm.submit(function(e){
-        var addr = 'andy' + '.' + 'l' + '.' + 'tang' + '@' + 'outlook' + '.' + 'com';
-        var fulladdr = '//formspree' + '.' + 'io/' + addr;
-        $contactForm.attr('action', fulladdr);
-        
-        e.preventDefault();
-        $.ajax({
-            url: fulladdr,
-            method: 'POST',
-            data: $(this).serialize(),
-            dataType: 'json',
-            beforeSend: function() {
-                $contactForm.find(".form-response").text("Sending your message...");
-                },
-            success: function(data) {
-                $contactForm.find(".form-response").text("Message sent!");
-                $contactForm.find(".form-submit").css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 300);
-                $contactForm.find(".form-submit").prop("disabled", true);
-                },
-            error: function(err) {
-                $contactForm.find(".response").text("Oops, something went wrong.");
-                }
         });
-    });
+    }
     
+    /* Submit form to formspree to email */
+    function submitForm(){
+        var $contactForm = $('.form');
+        $contactForm.submit(function(e){
+            var addr = 'andy' + '.' + 'l' + '.' + 'tang' + '@' + 'outlook' + '.' + 'com';
+            var fulladdr = '//formspree' + '.' + 'io/' + addr;
+            $contactForm.attr('action', fulladdr);
+
+            e.preventDefault();
+            $.ajax({
+                url: fulladdr,
+                method: 'POST',
+                data: $(this).serialize(),
+                dataType: 'json',
+                beforeSend: function() {
+                    $contactForm.find(".form-response").text("Sending your message...");
+                    },
+                success: function(data) {
+                    $contactForm.find(".form-response").text("Message sent!");
+                    $contactForm.find(".form-submit").css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 300);
+                    $contactForm.find(".form-submit").prop("disabled", true);
+                    },
+                error: function(err) {
+                    $contactForm.find(".response").text("Oops, something went wrong.");
+                    }
+            });
+        });
+    }
+    
+    /* Bind events to functions */
+    bindScrollTo($navlinks);
+    bindScrollTo($nextbutton);
+    changeNavbar();
+    toggleMenu();
+    navHighlighting();
+    switchProjectBg();
+    submitForm();
     
 }); 
 //EOF
