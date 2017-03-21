@@ -14,9 +14,10 @@
       display: none;
    }
     
-    .profileImg{
+    .profile-img{
         width: 150px;
         height: 150px;
+        border: 6px solid #444;
     }
 }
 
