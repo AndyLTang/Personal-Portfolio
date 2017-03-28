@@ -73,16 +73,16 @@ $(document).ready(function(){
             // if window is at the top, show transparent navbar
             if ($(document).scrollTop() <= 2){
                 removeClassFromElem(invertBar, $nav);
-                removeClassFromElem(invertLink, $navlinks);
+                //removeClassFromElem(invertLink, $navlinks);
                 removeClassFromElem(invertMenu, $navmenu);
-                removeClassFromElem(invertLogo, $navlogo);
+                //removeClassFromElem(invertLogo, $navlogo);
             } 
             // otherwise, show opaque navbar
             else {
                 addClassToElem(invertBar, $nav);
-                addClassToElem(invertLink, $navlinks);
+                //addClassToElem(invertLink, $navlinks);
                 addClassToElem(invertMenu, $navmenu);
-                addClassToElem(invertLogo, $navlogo);
+                //addClassToElem(invertLogo, $navlogo);
             }   
         });
     }
