@@ -1,5 +1,6 @@
 /* === Media Queries === */
-@media (max-width: 665px ) {
+
+@media (max-width: 800px){
     
     /* navbar */
     .navbar{
@@ -7,10 +8,10 @@
     }
     
    .navbar-menu {
-        display: inline-block;
+      display: inline-block;
     }
     
-   .navbar-item {
+   .collapse {
       display: none;
    }
     
@@ -19,9 +20,6 @@
         height: 150px;
         border: 6px solid #444;
     }
-}
-
-@media (max-width: 1000px){
     
     /* Leave enough space for navbar */
     .page{
@@ -62,8 +60,7 @@
     }
 }
 
-
-@media (min-width: 666px){
+@media (min-width: 801px){
     .navbar-menu {
         display: none;
     }

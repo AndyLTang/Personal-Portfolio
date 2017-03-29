@@ -174,3 +174,7 @@ a:hover{
     color: grey;
     text-align: center;
 }
+
+/* === Float div ===*/
+.float-left{ float: left; }
+.float-right{ float: right; }

@@ -1,4 +1,4 @@
-var MOBILE_RES = 666;
+var MOBILE_RES = 800;
 
 /* Determine window size */
 var mobileWindow = true;
@@ -30,10 +30,10 @@ $(document).ready(function(){
     
     /* Selector cache */
     var $nav = $('.navbar');
-    var $navlinks = $('.navbar-link');
     var $navmenu = $('.navbar-menu');
     var $navitem = $('.navbar-item');
-    var $navlogo = $('.navbar-logo');
+    var $navlinks = $('.navbar-link');
+    var $collapse = $('.collapse');
     var $nextbutton = $('.button');
     var $card = $('.card');
     
@@ -66,23 +66,20 @@ $(document).ready(function(){
     function changeNavbar(){
         $(window).scroll(function(){
             var invertBar = 'navbar--inverted';
-            var invertLink = 'navbar-link--inverted';
             var invertMenu = 'navbar-menu--inverted';
-            var invertLogo = 'navbar-logo--inverted';
+            var invertLink = 'navbar-link--inverted';
 
             // if window is at the top, show transparent navbar
             if ($(document).scrollTop() <= 2){
                 removeClassFromElem(invertBar, $nav);
-                //removeClassFromElem(invertLink, $navlinks);
                 removeClassFromElem(invertMenu, $navmenu);
-                //removeClassFromElem(invertLogo, $navlogo);
+                //removeClassFromElem(invertLink, $navlinks);
             } 
             // otherwise, show opaque navbar
             else {
                 addClassToElem(invertBar, $nav);
-                //addClassToElem(invertLink, $navlinks);
                 addClassToElem(invertMenu, $navmenu);
-                //addClassToElem(invertLogo, $navlogo);
+                //addClassToElem(invertLink, $navlinks);
             }   
         });
     }
@@ -96,13 +93,13 @@ $(document).ready(function(){
                 addClassToElem('rotated', $navmenu);
             }
 
-            $navitem.slideToggle('fast'); 
+            $collapse.slideToggle('fast'); 
         });
 
         $navlinks.click(function(){
             if (mobileWindow == true){
                 removeClassFromElem('rotated', $navmenu);
-                $navitem.slideToggle('fast');
+                $collapse.slideToggle('fast');
             }
         });
     }
@@ -110,7 +107,7 @@ $(document).ready(function(){
     /* Navigation highlight */
     function navHighlighting(){
         $("a[href='#intro']").addClass('active');
-        var aChildren = $(".navbar-item").children(".navbar-link");
+        var aChildren = $(".link");
         var aArray = [];
         for (var i=0; i < aChildren.length; i++){
             var aChild = aChildren[i];
