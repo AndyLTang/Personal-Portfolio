@@ -15,8 +15,14 @@
     background: rgba(34,34,34,0.9); /* #222 at 90% opacity */
 }
 
-.invert{
-    filter: invert(100%);
+.navbar-icon{
+    display: inline-block;
+}
+
+.icon{
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
 }
 
 .navbar-list{

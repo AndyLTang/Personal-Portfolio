@@ -53,6 +53,10 @@ a:hover{
 
 /* === Structure Styles === */
 
+.container{
+    padding: 0 10% 5%;
+}
+
 .section{
     display: table;
     width: 100%;

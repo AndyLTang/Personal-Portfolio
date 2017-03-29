@@ -55,6 +55,10 @@
     
     /* About page */
     
+    .container{
+        padding: 0 5%;
+    }
+    
     .bio{
         margin: 5%;
     }

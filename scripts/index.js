@@ -67,19 +67,16 @@ $(document).ready(function(){
         $(window).scroll(function(){
             var invertBar = 'navbar--inverted';
             var invertMenu = 'navbar-menu--inverted';
-            var invertLink = 'navbar-link--inverted';
 
             // if window is at the top, show transparent navbar
             if ($(document).scrollTop() <= 2){
                 removeClassFromElem(invertBar, $nav);
                 removeClassFromElem(invertMenu, $navmenu);
-                //removeClassFromElem(invertLink, $navlinks);
             } 
             // otherwise, show opaque navbar
             else {
                 addClassToElem(invertBar, $nav);
                 addClassToElem(invertMenu, $navmenu);
-                //addClassToElem(invertLink, $navlinks);
             }   
         });
     }
@@ -143,10 +140,10 @@ $(document).ready(function(){
 
             // if window is at bottom of page, set active to last link
             if(windowPos + windowHeight == docHeight) {
-                if (!$(".navbar-item:last-child a").hasClass("active")) {
+                if (!$(".link:last").hasClass("active")) {
                     var navActiveCurrent = $(".active").attr("href");
                     $("a[href='" + navActiveCurrent + "']").removeClass("active");
-                    $(".navbar-item:last-child a").addClass("active");
+                    $(".link:last").addClass("active");
                 }
             } 
         });
