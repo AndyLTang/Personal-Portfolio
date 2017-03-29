@@ -27,7 +27,6 @@
 }
 
 .project-description{
-    margin-left: 1em;
     margin-bottom: 1em;
 }
 
@@ -37,7 +36,7 @@
 
 .project-highlights > li {
     list-style-position: inside;
-    padding-left: 2em;
+    padding-left: 1em;
     text-indent: -2em;   
 }
 

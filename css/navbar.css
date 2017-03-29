@@ -81,12 +81,12 @@
 }
 
 /* === Javascript highlight link when on same page === */
-.navbar-link .active{
+.navbar-link.active{
     color: white;
     box-shadow: inset 0 -4px 0 0 white;
 }
 
-.navbar-link--inverted .active{
+.navbar-link--inverted.active{
     color:  #4682b4;
     box-shadow: inset 0 -4px 0 0 #4682b4;
 }
