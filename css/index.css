@@ -136,16 +136,6 @@ a:hover{
     margin: 2em auto;
 }
 
-.divider-vert{
-    width: 1px;
-    height: 10%;
-    margin: 2em auto;
-}
-
-.divider-vert--white{
-    border-left: thin solid white;
-}
-
 .divider-horiz--white{
     border-bottom: thin solid white;
 }
@@ -162,7 +152,6 @@ a:hover{
 .bg-grey { background: #333; }
 .bg-darkgrey { background: #222; }
 .bg-blue { background: #4682b4; }
-.bg-white { background: white; }
 
 .color-grey { color: #444; }
 .color-blue { color: #4682b4; }
@@ -172,13 +161,16 @@ a:hover{
 .weight200 { font-weight: 200; }
 .weight300 { font-weight: 300; }
 
+/* === Float div ===*/
+.float-left{ float: left; }
+.float-right{ float: right; }
+
+/* === Padding === */
+.padding-bottom{ padding-bottom: 80px; }
+
 /* === Footer === */
 .copyright{
     padding: 1em;
     color: grey;
     text-align: center;
 }
-
-/* === Float div ===*/
-.float-left{ float: left; }
-.float-right{ float: right; }

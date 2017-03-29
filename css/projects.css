@@ -46,7 +46,7 @@
 .tiles{
     display: table-cell;
     width: 50%;
-    padding-right: 0em;
+    padding-right: 0;
     animation-name: fadeInRight;
 }
 

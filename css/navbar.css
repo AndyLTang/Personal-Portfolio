@@ -11,7 +11,8 @@
 }
 
 .navbar--inverted{
-    background: rgba(34,34,34,0.9); /* #222 at 90% opacity */
+    background: #222;
+    background: rgba(34,34,34,0.9);  /* #222 at 90% opacity */
 }
 
 .navbar-icon{
@@ -80,12 +81,12 @@
 }
 
 /* === Javascript highlight link when on same page === */
-.navbar-link.active{
+.navbar-link .active{
     color: white;
     box-shadow: inset 0 -4px 0 0 white;
 }
 
-.navbar-link--inverted.active{
+.navbar-link--inverted .active{
     color:  #4682b4;
     box-shadow: inset 0 -4px 0 0 #4682b4;
 }
