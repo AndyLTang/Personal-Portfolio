@@ -1,12 +1,18 @@
 /* === Media Queries === */
 
 @media (max-width: 800px){
-    
-    /* navbar */
-    .navbar{
-        padding: 0 5%;
+       
+    .container{
+        padding: 0;
     }
     
+    /* Leave enough space for navbar */
+    .page{
+        padding: 5%;
+        padding-top: 80px;
+    }
+    
+    /* navbar */
    .navbar-menu {
       display: inline-block;
     }
@@ -21,13 +27,20 @@
         border: 6px solid #444;
     }
     
-    /* Leave enough space for navbar */
-    .page{
-        padding: 5%;
-        padding-top: 80px;
+    /* Project Page */
+    .tiles{
+        display: block;
+        width: 100%;
     }
     
-    /* Project Page */
+    .tiles-row{
+        display: inline-block;
+        width: 49%; /* not 50% to prevent tiles from wrapping */
+    }
+    
+    .tiles-cell{
+        height: 20%;
+    }
     
     .card{
         display: block;
@@ -36,28 +49,11 @@
     
     .project-page{
         overflow: hidden;
+        padding: 1em;
     }
     
-    .tiles{
-        display: block;
-        width: 100%;
-        padding: 0;
-    }
-    
-    .tiles-row{
-        display: inline-block;
-        width: 49%;
-    }
-    
-    .tiles-cell{
-        height: 20%;
-    }
     
     /* About page */
-    
-    .container{
-        padding: 0 5%;
-    }
     
     .bio{
         margin: 5%;

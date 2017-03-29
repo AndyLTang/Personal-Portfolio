@@ -2,7 +2,6 @@
 
 .navbar{
 	position: fixed;
-    padding: 0 14%;
 	width: 100%;
     z-index: 1;
     white-space: nowrap;
