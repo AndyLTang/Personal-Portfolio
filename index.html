@@ -78,38 +78,208 @@
 
             <div class="content clearfix">
 
+                <!-- Project thumbnails -->
                 <div class=" col-6">
-                    <div class="p1 thumbnail card">
-                        <div class="description" data-link="1">
-                            <h3>ShadowPoll Web App</h3>
+                    <div class="project thumbnail thumbnail-bg1 card" data-link="0">
+                        <div class="thumbnail-description">
+                            <h3 class="color-white">ShadowPoll Web App</h3>
                         </div>
                     </div>
                 </div>
 
                 <div class=" col-6">
-                    <div class="p1 thumbnail card">
-                        <div class="description" data-link="2">
-                            <h3>Amazon Web Services</h3>
+                    <div class="project thumbnail thumbnail-bg2 card" data-link="1">
+                        <div class="thumbnail-description">
+                            <h3 class="color-white">Amazon Web Services</h3>
                         </div>
                     </div>
                 </div>
 
                 <div class=" col-6">
-                    <div class="p1 thumbnail card">
-                        <div class="description" data-link="3">
-                            <h3>Hybrid Images</h3>
+                    <div class="project thumbnail thumbnail-bg3 card" data-link="2">
+                        <div class="thumbnail-description">
+                            <h3 class="color-white">Hybrid Images</h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-6">
-                    <div class="p1 thumbnail card">
-                        <div class="description" data-link="4">
-                            <h3>SFU Channel</h3>
+                    <div class="project thumbnail thumbnail-bg4 card" data-link="3">
+                        <div class="thumbnail-description">
+                            <h3 class="color-white">SFU Channel</h3>
                         </div>
                     </div>
                 </div>
-
+    
+                <!-- Project display in lightbox -->
+                <div class="modal">
+                    <div class="modal-content">
+                        
+                        <!-- left display -->
+                        <div class="col-8 bg-grey">
+                          <img src="images/project-bg-1.png">
+                        </div>
+                        
+                        <!-- right sidebar -->
+                        <div class="col-4 align-left">
+                          <span class="close">&times;</span>
+                            
+                          <article class="project-page">
+                              <h3 class="project-title">Shadow Poll</h3>
+                              <hr class="divider-horiz divider-horiz--grey">
+                                <p class="project-description">About // A web app written in Ruby on Rails that allows users to create accounts to generate, view, and vote on polls to share with other players in a game called Shadowverse.</p>
+                                <p class="project-description">Link // <a href="http://www.shadowpoll.net/">ShadowPoll.net</a></p>
+                                <p class="project-description">Date // Feb 2017 - Current</p>
+                                <p class="project-description">Technologies // 
+                                    <span class="tags bg-blue color-white">Ruby on Rails</span>
+                                    <span class="tags bg-blue color-white">Devise</span>
+                                    <span class="tags bg-blue color-white">MVC</span>
+                                    <span class="tags bg-blue color-white">HTML</span>
+                                    <span class="tags bg-blue color-white">CSS</span>
+                                    <span class="tags bg-blue color-white">Bootstrap</span>
+                                    <span class="tags bg-blue color-white">Javascript</span>
+                                    <span class="tags bg-blue color-white">JQuery</span>
+                                </p>
+                                <p class="project-description">Highlights //</p>
+                                <ul class="project-highlights">
+                                    <li>Developed a web app using the Ruby on Rails MVC web framework to dynamically generate the content of each page.</li>
+                                    <li>Created custom forms for polls which allow users to add/remove any number of nested resources of a poll as they want (limited to 15) by dynamically adding the nested forms.</li>
+                                    <li>Incorporated the Devise gem to allow users to create accounts to prevent bots from spamming the polls.</li>
+                                    <li>Seeded the necessary data in the database by parsing a JSON file as well as removing any invalid entries before adding it as a record.</li>
+                                </ul>
+                          </article>
+                            
+                        </div> <!-- end sidebar -->
+                        
+                    </div> <!-- end modal content -->
+                </div> <!-- end project 1 -->
+                
+                <div class="modal">
+                    <div class="modal-content">
+                        
+                        <!-- left display -->
+                        <div class="col-8 bg-grey">
+                          <img src="images/project-bg-2.png">
+                        </div>
+                        
+                        <!-- right sidebar -->
+                        <div class="col-4 align-left">
+                            
+                            <span class="close">&times;</span>
+                            
+                            <article class="project-page">
+                                <h3 class="project-title">Amazon Web Services</h3>
+                                <hr class="divider-horiz divider-horiz--grey">
+                                <p class="project-description">About // A RESTful web service deployed using Amazon Web Services to simulate a server processing client requests and handling erroneous cases. </p>
+                                <p class="project-description">Date // Jun - Aug 2016</p>
+                                <p class="project-description">Technologies // 
+                                    <span class="tags bg-blue color-white">AWS</span>
+                                    <span class="tags bg-blue color-white">EC2</span>
+                                    <span class="tags bg-blue color-white">Python</span> 
+                                    <span class="tags bg-blue color-white">boto</span> 
+                                    <span class="tags bg-blue color-white">DynamoDB</span>
+                                    <span class="tags bg-blue color-white">SQS</span>
+                                    <span class="tags bg-blue color-white">CloudWatch</span>
+                                    <span class="tags bg-blue color-white">REST API</span>
+                                    <span class="tags bg-blue color-white">auto scaling</span>
+                                    <span class="tags bg-blue color-white">load balancer</span>
+                                    <span class="tags bg-blue color-white">zookeeper</span>
+                                </p>
+                                <p class="project-description">Highlights //</p>
+                                <ul class="project-highlights">
+                                    <li>Managed the EC2 virtual machines’ CPU activities by auto scaling and using the load balancer to enhance availability.</li>
+                                    <li>Organized a system using CloudWatch where problems in the virtual machines would generate a notification and log it in SQS.</li>
+                                    <li>Wrote a RESTful web service supporting JSON to perform tasks such as storing, editing, and deleting records in DynamoDB. </li>
+                                    <li>Implemented a scheduling algorithm with zookeeper to keep the message order consistent across EC2 instances by detecting duplicated and out-of-order messages.</li>
+                                </ul>
+                            </article>
+                            
+                        </div> <!-- end sidebar -->
+                        
+                    </div> <!-- end modal content -->
+                </div> <!-- end project 2 -->
+                
+                <div class="modal">
+                    <div class="modal-content">
+                        
+                        <!-- left display -->
+                        <div class="col-8 bg-grey">
+                          <img src="images/project-bg-3.png">
+                        </div>
+                        
+                        <!-- right sidebar -->
+                        <div class="col-4 align-left">
+                            
+                            <span class="close">&times;</span>
+                            
+                            <article class="project-page">
+                                <h3 class="project-title">Hybrid Image</h3>
+                                <hr class="divider-horiz divider-horiz--grey">
+                                <p class="project-description">About // A graphical Java application which allows users to upload a pair of pictures in order to create the hybrid image illusion effect.</p>
+                                <p class="project-description">Link // <a href="https://github.com/AndyLTang/Hybrid-Image">Git Repo</a></p>
+                                <p class="project-description">Date // Mar - Apr 2016</p>
+                                <p class="project-description">Technologies // 
+                                    <span class="tags bg-blue color-white">Java</span>
+                                    <span class="tags bg-blue color-white">Object Oriented</span> 
+                                    <span class="tags bg-blue color-white">Eclipse Project</span> 
+                                    <span class="tags bg-blue color-white">Java Swing</span>
+                                    <span class="tags bg-blue color-white">GUI</span>
+                                    <span class="tags bg-blue color-white">Event-based</span>
+                                    <span class="tags bg-blue color-white">Image Processing</span>
+                                </p>
+                                <p class="project-description">Highlights //</p>
+                                <ul class="project-highlights">
+                                    <li>Implemented the algorithm to create Hybrid Images.</li>
+                                    <li>Designed the user interface using Java's Swing Library which allows users to upload their own pair of photos to create a hybridized image.</li>
+                                    <li>Incorporated ActionListeners to correctly update the associated images.</li>
+                                    <li>Improved the effectiveness of the illusion by experimenting with various high and low pass filters.</li>
+                                </ul>
+                            </article>
+                            
+                        </div> <!-- end sidebar -->
+                        
+                    </div> <!-- end modal content -->
+                </div> <!-- end project 3 -->
+                
+                <div class="modal">
+                    <div class="modal-content">
+                        
+                        <!-- left display -->
+                        <div class="col-8 bg-grey">
+                          <img src="images/project-bg-4.png">
+                        </div>
+                        
+                        <!-- right sidebar -->
+                        <div class="col-4 align-left">
+                            
+                            <span class="close">&times;</span>
+                            
+                            <article class="project-page">
+                                <h3 class="project-title">SFU Channel</h3>
+                                <hr class="divider-horiz divider-horiz--grey">
+                                <p class="project-description">About // A messaging board site for Simon Fraser University where students of all faculties can join and chat in different topics since most discussion boards were confined to students within the same course.</p>
+                                <p class="project-description">Date // Jun - Aug 2015</p>
+                                <p class="project-description">Technologies // 
+                                    <span class="tags bg-blue color-white">MVC</span> 
+                                    <span class="tags bg-blue color-white">HTML</span>
+                                    <span class="tags bg-blue color-white">CSS</span>
+                                    <span class="tags bg-blue color-white">Javascript</span>
+                                    <span class="tags bg-blue color-white">JQuery</span>
+                                    <span class="tags bg-blue color-white">Bootstrap</span>
+                                </p>
+                                <p class="project-description">Highlights //</p>
+                                <ul class="project-highlights">
+                                    <li>Developed front-end (HTML, CSS, and Javascript) of the site.</li>
+                                    <li>Used JQuery to allow users to display or hide elements on the page.</li>
+                                    <li>Animated elements to improve the aesthetics of the site.</li>
+                                </ul>
+                            </article>
+                            
+                        </div> <!-- end sidebar -->
+                        
+                    </div> <!-- end modal content -->
+                </div> <!-- end project 4 -->
+                
             </div> <!-- end content -->       
 
             <a href="#about" class="button border--grey">Next Section</a>

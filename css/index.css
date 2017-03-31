@@ -34,7 +34,7 @@ h2{
 
 h3{
     font-size: 1.5em;
-    color: white;
+    color: #4682b4;
 }
 
 span{
@@ -142,10 +142,6 @@ a:hover{
     border-bottom: thin solid #444;
 }
 
-.card-dropshadow{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
 /* === Colors === */
 .bg-grey { background: #333; }
 .bg-darkgrey { background: #222; }
@@ -158,6 +154,9 @@ a:hover{
 /* === Typography === */
 .weight200 { font-weight: 200; }
 .weight300 { font-weight: 300; }
+
+
+.align-left{ text-align: left; }
 
 /* === Float div ===*/
 .float-left{ float: left; }
