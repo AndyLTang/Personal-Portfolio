@@ -150,36 +150,6 @@ $(document).ready(function(){
 
     }
     
-    /* Fade project background when a tile is clicked on */
-    function switchProjectBg(){
-        $('.tile-wrapper').click(function(){
-            //find the current article and remove it
-            $card.find('.current').removeClass('current').animate({opacity:0}, 'slow').hide();
-
-            //change current to the article according to clicked image
-            var selection = $(this).attr('data-link');
-            $("article[data-link=" + selection + "]").addClass('current').show().animate({opacity:1}, 'slow');
-
-            switch (selection){
-                case '1':
-                    $card[0].style.backgroundImage = 'url("' + preloadImgs[0].src + '")';
-                    break;
-                case '2':
-                    $card[0].style.backgroundImage = 'url("' + preloadImgs[1].src + '")';
-                    break;
-                case '3':
-                    $card[0].style.backgroundImage = 'url("' + preloadImgs[2].src + '")';
-                    break;
-                case '4':
-                    $card[0].style.backgroundImage = 'url("' + preloadImgs[3].src + '")';
-                    break;
-                default:
-                    alert('error!');
-                    break;
-            }
-        });
-    }
-    
     /* Submit form to formspree to email */
     function submitForm(){
         var $contactForm = $('.form');
