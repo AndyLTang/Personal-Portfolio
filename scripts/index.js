@@ -150,6 +150,24 @@ $(document).ready(function(){
 
     }
     
+    /* Modal project page */
+    function modalProject(){
+        var $projects = $('.project');
+        var $close = $('.close');
+        var $modal = $('.modal');
+        
+        $projects.click(function() {
+            var selection = $(this).attr('data-link');
+
+            $modal[selection].style.display = 'block';
+        });
+        
+        $close.click(function(){
+            $modal.css({'display':'none'});
+        })
+
+    }
+    
     /* Submit form to formspree to email */
     function submitForm(){
         var $contactForm = $('.form');
@@ -185,7 +203,7 @@ $(document).ready(function(){
     changeNavbar();
     toggleMenu();
     navHighlighting();
-    switchProjectBg();
+    modalProject();
     submitForm();
     
 }); 
