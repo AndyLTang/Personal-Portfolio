@@ -2,17 +2,6 @@
 
 /* === Left hand side === */
 
-.card{
-    display: table-cell;
-    width: 50%;
-    background: url("../images/project0.png");
-    background-size: cover;
-    background-position: center center;
-    text-align: left;
-    vertical-align: top;
-    transition: all 0.5s linear;
-}
-
 .project-page{
     display: none;
     height: 100%;
@@ -42,62 +31,28 @@
 
 /* === Right hand side === */
 
-.tiles{
-    display: table-cell;
-    width: 50%;
-    padding-right: 0;
-    animation-name: fadeInRight;
+[class*="col-"] {
+    float: left;
+    padding: 0 1em;
 }
 
-@keyframes fadeInRight{
-0%{
-    opacity: 0;
-    transform: translateX(100px);
-}
-100%{
-    opacity: 1;
-    transform: translateX(0);
-    }
+.thumbnail{
+    background-size: cover;
+    background-position: center;
 }
 
-@keyframes fadeInLeft{
-0%{
-    opacity: 0;
-    transform: translateX(-100px);
-}
-100%{
-    opacity: 1;
-    transform: translateX(0);
-    }
+.p1{
+    background-image: url('../images/project-tile-3.png');
 }
 
-.tiles-row{
-    display: table-row;
-    height: 50%;
-    width: 100%;
+.card{
+    height: 24em;
+    margin-top: 2em;
 }
 
-.tiles-cell{
-    display: table-cell;
-    height: 25%;
-    width: 25%;
-}
-
-.tile-wrapper{
-    display: block;
-    overflow: hidden;
-}
-
-.tile-img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    transition: all .5s ease;
-}
-
-.tile-img:hover {
-    transform: scale(1.5);
-    filter: grayscale(100%);
+.description{
+    background-color: rgba(34,34,34, 0.5);
+    padding: 1em;
 }
 
 .tags {
