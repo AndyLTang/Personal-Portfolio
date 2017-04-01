@@ -28,28 +28,8 @@
     }
     
     /* Project Page */
-    .tiles{
-        display: block;
+    .col-6{
         width: 100%;
-    }
-    
-    .tiles-row{
-        display: inline-block;
-        width: 49%; /* not 50% to prevent tiles from wrapping */
-    }
-    
-    .tiles-cell{
-        height: 20%;
-    }
-    
-    .card{
-        display: block;
-        width: 100%;
-    }
-    
-    .project-page{
-        overflow: hidden;
-        padding: 1em;
     }
     
     

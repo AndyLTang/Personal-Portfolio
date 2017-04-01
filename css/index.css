@@ -147,6 +147,7 @@ a:hover{
 .bg-darkgrey { background: #222; }
 .bg-blue { background: #4682b4; }
 
+.color-lightgrey { color: #bbb; }
 .color-grey { color: #444; }
 .color-blue { color: #4682b4; }
 .color-white { color: white; }
@@ -154,7 +155,6 @@ a:hover{
 /* === Typography === */
 .weight200 { font-weight: 200; }
 .weight300 { font-weight: 300; }
-
 
 .align-left{ text-align: left; }
 
