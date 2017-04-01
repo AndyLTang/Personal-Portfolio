@@ -179,6 +179,18 @@ a:hover{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+/* === Table === */
+.height100{ height: 100%;}
+
+.display-table{
+    display: table;
+}
+
+.display-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
 /* === Clearfix === */
 .clearfix:after {
   content: "";
