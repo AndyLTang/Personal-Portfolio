@@ -100,11 +100,18 @@ a:hover{
     transition: box-shadow 1s, color 1s;
 }
 
+.button:visited{
+    color: #444
+}
+
 .button:hover {
     color: white;
     box-shadow: inset 200px 0 0 0 #444;
 }
 
+.button--invert:visited{
+    color: white;
+}
 .button--invert:link{
     color: white;
 }
@@ -183,6 +190,10 @@ a:hover{
 /* === Table === */
 .height100{ height: 100%;}
 .width100{ width: 100%; }
+
+.display-inlineblk{
+    display: inline-block;
+}
 
 .display-table{
     display: table;
