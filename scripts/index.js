@@ -155,17 +155,34 @@ $(document).ready(function(){
         var $projects = $('.project');
         var $close = $('.close');
         var $modal = $('.modal');
+        var $body = $('body');
         
         $projects.click(function() {
             var selection = $(this).attr('data-link');
 
             $modal[selection].style.display = 'block';
+            
+            $body.addClass('noscroll');
         });
         
+        // make X button close lightbox
         $close.click(function(){
             $modal.css({'display':'none'});
+            $body.removeClass('noscroll');
         })
 
+        // close lightbox if user clicks outside of lightbox
+        $modal.click(function(e){
+            $(this).fadeOut("fast", function(){
+                $(this).css({'display':'none'})
+            });
+            $body.removeClass('noscroll');
+        });
+        
+        // prevent clicking through lightbox and closing when clicking on lightbox contents
+        $('.modal-content').click(function(e){
+           e.stopPropagation(); 
+        });
     }
     
     /* Submit form to formspree to email */

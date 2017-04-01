@@ -199,6 +199,11 @@ a:hover{
   clear: both;
 }
 
+/* === Scroll === */
+.noscroll{
+    overflow: hidden;
+}
+
 /* === Footer === */
 .copyright{
     padding: 1em;
