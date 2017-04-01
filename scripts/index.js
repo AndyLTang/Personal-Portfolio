@@ -180,6 +180,15 @@ $(document).ready(function(){
             $nav.removeClass('padding-scrollbar');
         });
         
+        // allow escape key to close lightbox
+        $(document).keyup(function(e){
+            if (e.keyCode == 27){
+                $modal.css({'display':'none'});
+                $body.removeClass('noscroll');
+                $nav.removeClass('padding-scrollbar');
+            }
+        });
+        
         // prevent clicking through lightbox and closing when clicking on lightbox contents
         $('.modal-content').click(function(e){
            e.stopPropagation(); 
