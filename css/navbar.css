@@ -7,7 +7,6 @@
     white-space: nowrap;
 	background: transparent;
     transition: background 0.5s;
-    text-align: right;
 }
 
 .navbar--inverted{
@@ -37,6 +36,7 @@
 }
 
 .navbar-list{
+    display: inline-block;
     list-style-type: none;
 }
 

@@ -157,6 +157,7 @@ a:hover{
 .weight300 { font-weight: 300; }
 
 .align-left{ text-align: left; }
+.align-right{ text-align: right; }
 
 /* === Float div ===*/
 .float-left{ float: left; }
@@ -202,6 +203,11 @@ a:hover{
 /* === Scroll === */
 .noscroll{
     overflow: hidden;
+    padding-right: 17px;
+}
+
+.padding-scrollbar{
+    padding-right: 17px;
 }
 
 /* === Footer === */

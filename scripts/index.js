@@ -163,20 +163,21 @@ $(document).ready(function(){
             $modal[selection].style.display = 'block';
             
             $body.addClass('noscroll');
+            $nav.addClass('padding-scrollbar');
         });
         
         // make X button close lightbox
         $close.click(function(){
             $modal.css({'display':'none'});
             $body.removeClass('noscroll');
+            $nav.removeClass('padding-scrollbar');
         })
 
         // close lightbox if user clicks outside of lightbox
         $modal.click(function(e){
-            $(this).fadeOut("fast", function(){
-                $(this).css({'display':'none'})
-            });
+            $(this).css({'display':'none'});
             $body.removeClass('noscroll');
+            $nav.removeClass('padding-scrollbar');
         });
         
         // prevent clicking through lightbox and closing when clicking on lightbox contents
