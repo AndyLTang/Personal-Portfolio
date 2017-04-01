@@ -147,6 +147,7 @@ a:hover{
 .bg-darkgrey { background: #222; }
 .bg-blue { background: #4682b4; }
 
+.color-lightgrey { color: #bbb; }
 .color-grey { color: #444; }
 .color-blue { color: #4682b4; }
 .color-white { color: white; }
@@ -154,7 +155,6 @@ a:hover{
 /* === Typography === */
 .weight200 { font-weight: 200; }
 .weight300 { font-weight: 300; }
-
 
 .align-left{ text-align: left; }
 
@@ -178,6 +178,18 @@ a:hover{
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+/* === Table === */
+.height100{ height: 100%;}
+
+.display-table{
+    display: table;
+}
+
+.display-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
 
 /* === Clearfix === */
 .clearfix:after {
