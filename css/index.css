@@ -147,7 +147,7 @@ a:hover{
 .bg-darkgrey { background: #222; }
 .bg-blue { background: #4682b4; }
 
-.color-lightgrey { color: #bbb; }
+.color-lightgrey { color: #ddd; }
 .color-grey { color: #444; }
 .color-blue { color: #4682b4; }
 .color-white { color: white; }
@@ -181,6 +181,7 @@ a:hover{
 
 /* === Table === */
 .height100{ height: 100%;}
+.width100{ width: 100%; }
 
 .display-table{
     display: table;

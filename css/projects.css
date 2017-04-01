@@ -64,6 +64,12 @@
 .thumbnail-description{
     background-color: rgba(34,34,34, 0.5);
     padding: 1em;
+    max-height: 6em;
+    transition: max-height 0.5s;
+}
+
+.thumbnail-description:hover{
+    max-height: 100%;
 }
 
 .tags {

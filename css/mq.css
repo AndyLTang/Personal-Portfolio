@@ -40,6 +40,10 @@
         display: none;
     }
     
+    .modal-content{
+        width: 90%;
+    }
+    
     
     /* About page */
     
