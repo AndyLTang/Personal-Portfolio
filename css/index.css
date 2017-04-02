@@ -99,7 +99,7 @@ a:hover{
 .button:link {
     display: block;
     width: 8em;
-    margin: 2em auto;
+    margin: 2em auto 1em auto;
     padding: 1em;
     text-align: center; 
     text-decoration: none;

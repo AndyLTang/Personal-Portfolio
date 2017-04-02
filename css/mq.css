@@ -6,6 +6,11 @@
         padding: 0;
     }
     
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+    
     /* Leave enough space for navbar */
     .page{
         padding: 5%;
@@ -21,11 +26,6 @@
       display: none;
    }
     
-    .profile-img{
-        width: 150px;
-        height: 150px;
-        border: 6px solid #444;
-    }
     
     /* Project Page */
     .col-6{
@@ -49,6 +49,12 @@
     
     .bio{
         margin: 5%;
+    }
+    
+    .profile-img{
+        width: 150px;
+        height: 150px;
+        border: 6px solid #444;
     }
 }
 
