@@ -5,11 +5,7 @@
 .project-page{
     height: 720px;
     overflow-y: scroll;
-    padding: 2em 1em;
-}
-
-.project-description{
-    margin-bottom: 1em;
+    padding: 1em 1em 4em 0;
 }
 
 .project-highlights{

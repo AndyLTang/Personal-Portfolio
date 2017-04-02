@@ -144,7 +144,7 @@
                               
                               <h4>ABOUT</h4>
                                 <p class="project-description">
-                                    A web app written in Ruby on Rails that allows users to create accounts to generate, view, and vote on polls to share with other players in a game called Shadowverse.
+                                    A web app written in Ruby on Rails that allows users to create accounts to generate, view, and vote on polls to share with other players for a game called Shadowverse.
                                 </p>
                               
                               <h4>LINKS</h4>
@@ -157,21 +157,25 @@
                               <h4>TECHNOLOGIES</h4>
                                 <p class="project-description"> 
                                     <span class="tags bg-blue color-white">Ruby on Rails</span>
-                                    <span class="tags bg-blue color-white">Devise</span>
+                                    <span class="tags bg-blue color-white">RubyGems</span>
                                     <span class="tags bg-blue color-white">MVC</span>
                                     <span class="tags bg-blue color-white">HTML</span>
                                     <span class="tags bg-blue color-white">CSS</span>
                                     <span class="tags bg-blue color-white">Bootstrap</span>
                                     <span class="tags bg-blue color-white">Javascript</span>
-                                    <span class="tags bg-blue color-white">JQuery</span>
+                                    <span class="tags bg-blue color-white">jQuery</span>
+                                    <span class="tags bg-blue color-white">JSON</span>
+                                    <span class="tags bg-blue color-white">AWS</span>
+                                    <span class="tags bg-blue color-white">EC2</span>
+                                    <span class="tags bg-blue color-white">Route 53</span>
                                 </p>
                               
                               <h4>HIGHLIGHTS</h4>
                                 <ul class="project-highlights">
                                     <li>Developed a web app using the Ruby on Rails MVC web framework to dynamically generate the content of each page.</li>
                                     <li>Created custom forms for polls which allow users to add/remove any number of nested resources of a poll as they want (limited to 15) by dynamically adding the nested forms.</li>
-                                    <li>Incorporated the Devise gem to allow users to create accounts to prevent bots from spamming the polls.</li>
-                                    <li>Seeded the necessary data in the database by parsing a JSON file as well as removing any invalid entries before adding it as a record.</li>
+                                    <li>Incorporated the Devise RubyGem to allow users to create accounts to prevent bots from spamming the polls.</li>
+                                    <li>Seeded data to the database by parsing a JSON file as well as removing any invalid entries before adding it as a record.</li>
                                 </ul>
                               
                           </article>
@@ -210,23 +214,25 @@
                                     <span class="tags bg-blue color-white">AWS</span>
                                     <span class="tags bg-blue color-white">EC2</span>
                                     <span class="tags bg-blue color-white">Python</span> 
-                                    <span class="tags bg-blue color-white">boto</span> 
+                                    <span class="tags bg-blue color-white">boto interface</span> 
                                     <span class="tags bg-blue color-white">DynamoDB</span>
                                     <span class="tags bg-blue color-white">SQS</span>
                                     <span class="tags bg-blue color-white">S3</span>
                                     <span class="tags bg-blue color-white">CloudWatch</span>
+                                    <span class="tags bg-blue color-white">CloudTrail</span>
                                     <span class="tags bg-blue color-white">REST API</span>
                                     <span class="tags bg-blue color-white">auto scaling</span>
                                     <span class="tags bg-blue color-white">load balancer</span>
                                     <span class="tags bg-blue color-white">zookeeper</span>
+                                    <span class="tags bg-blue color-white">JSON</span>
                                 </p>
                                 
                                 <h4>HIGHLIGHTS</h4>
                                 <ul class="project-highlights">
-                                    <li>Managed the EC2 virtual machines’ CPU activities by auto scaling and using the load balancer to enhance availability.</li>
+                                    <li>Managed the EC2 virtual machines’ CPU activities by using a load balancer to enhance availability.</li>
                                     <li>Organized a system using CloudWatch where problems in the virtual machines would generate a notification and log it in SQS.</li>
-                                    <li>Wrote a RESTful web service supporting JSON to perform tasks such as storing, editing, and deleting records in DynamoDB. </li>
-                                    <li>Implemented a scheduling algorithm with zookeeper to keep the message order consistent across EC2 instances by detecting duplicated and out-of-order messages.</li>
+                                    <li>Wrote a RESTful web service supporting JSON to perform tasks such as storing, editing, and deleting records in DynamoDB using Python.</li>
+                                    <li>Implemented the algorithm to ensure that erroneous/duplicate messages received and processed from simulated clients did not affect the consistency of the data among 2 availability zones.</li>
                                 </ul>
                                 
                             </article>
@@ -255,7 +261,7 @@
                                 <h3>Hybrid Image</h3>
                                 
                                 <h4>ABOUT</h4>
-                                <p class="project-description">A graphical Java application which allows users to upload a pair of pictures in order to create the hybrid image illusion effect.</p>
+                                <p class="project-description">A GUI Java application which allows users to upload a pair of pictures in order to create the hybrid image illusion effect.</p>
                                 
                                 <h4>LINK</h4>
                                 <p class="project-description">Repo: <a href="https://github.com/AndyLTang/Hybrid-Image">GitHub</a></p>
@@ -266,20 +272,22 @@
                                 <h4>TECHNOLOGIES</h4>
                                 <p class="project-description">
                                     <span class="tags bg-blue color-white">Java</span>
-                                    <span class="tags bg-blue color-white">Object Oriented</span> 
-                                    <span class="tags bg-blue color-white">Eclipse Project</span> 
-                                    <span class="tags bg-blue color-white">Java Swing</span>
-                                    <span class="tags bg-blue color-white">GUI</span>
+                                    <span class="tags bg-blue color-white">Object Oriented</span>
                                     <span class="tags bg-blue color-white">Event-based</span>
+                                    <span class="tags bg-blue color-white">Java Swing</span>
+                                    <span class="tags bg-blue color-white">MVC</span>
+                                    <span class="tags bg-blue color-white">Factory Method Pattern</span>
+                                    <span class="tags bg-blue color-white">GUI</span>
                                     <span class="tags bg-blue color-white">Image Processing</span>
+                                    <span class="tags bg-blue color-white">Eclipse</span>
                                 </p>
                                 
                                 <h4>HIGHLIGHTS</h4>
                                 <ul class="project-highlights">
-                                    <li>Implemented the algorithm to create Hybrid Images.</li>
-                                    <li>Designed the user interface using Java's Swing Library which allows users to upload their own pair of photos to create a hybridized image.</li>
-                                    <li>Incorporated ActionListeners to correctly update the associated images.</li>
-                                    <li>Improved the effectiveness of the illusion by experimenting with various high and low pass filters.</li>
+                                    <li>Implemented the algorithm to create Hybrid Images by taking filtering one image in a low pass filter and another in a high pass filter and dissolving both.</li>
+                                    <li>Created the user interface using the Java Swing library which allowed users to upload their own images to generate hybrid images.</li>
+                                    <li>Employed the Model View Controller design pattern to keep classes modular by separating business logic from the user interface.</li>
+                                    <li>Incorporated event listeners in the controller to correctly update the model and consequently the view.</li>
                                 </ul>
                                 
                             </article>
@@ -315,19 +323,19 @@
                                 
                                 <h4>TECHNOLOGIES</h4>
                                 <p class="project-description">
-                                    <span class="tags bg-blue color-white">MVC</span> 
+                                    <span class="tags bg-blue color-white">front-end</span> 
                                     <span class="tags bg-blue color-white">HTML</span>
                                     <span class="tags bg-blue color-white">CSS</span>
                                     <span class="tags bg-blue color-white">Javascript</span>
-                                    <span class="tags bg-blue color-white">JQuery</span>
+                                    <span class="tags bg-blue color-white">jQuery</span>
                                     <span class="tags bg-blue color-white">Bootstrap</span>
+                                    <span class="tags bg-blue color-white">Event-based</span>
                                 </p>
                                 
                                 <h4>HIGHLIGHTS</h4>
                                 <ul class="project-highlights">
-                                    <li>Developed front-end (HTML, CSS, and Javascript) of the site.</li>
-                                    <li>Used JQuery to allow users to display or hide elements on the page.</li>
-                                    <li>Animated elements to improve the aesthetics of the site.</li>
+                                    <li>Designed the front-end and user experience of the website using HTML and CSS.</li>
+                                    <li>Animated elements upon triggered DOM events using jQuery to enhance the user experience.</li>
                                 </ul>
                                 
                             </article>
