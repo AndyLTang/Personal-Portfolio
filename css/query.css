@@ -1,23 +1,24 @@
 /* === Media Queries === */
 
 @media (max-width: 820px){
-       
+    
     .container{
         padding: 0;
     }
     
-    .logo{
+    /* Shrink logo in intro */
+    .brand-logo{
         height: 100px;
         width: 100px;
     }
     
-    /* Leave enough space for navbar */
+    /* Leave enough space for navbar for each page*/
     .page{
         padding: 5%;
         padding-top: 80px;
     }
     
-    /* navbar */
+    /* Show Navbar Hamburger Menu */
    .navbar-menu {
       display: inline-block;
     }
@@ -26,28 +27,17 @@
       display: none;
    }
     
-    
     /* Project Page */
-    .col-6{
-        width: 100%;
-    }
-    
-    .col-4{
-        width: 100%;
-    }
-    
-    .col-8{
-        display: none;
-    }
+    .col-6{ width: 100%; }
+    .col-4{ width: 100%; }
+    .col-8{ display: none; }
     
     .modal-content{
         width: 90%;
     }
     
-    
     /* About page */
-    
-    .bio{
+    .profile-bio{
         margin: 5%;
     }
     
@@ -59,6 +49,7 @@
 }
 
 @media (min-width: 821px){
+    /* Hide Hamburger menu when not mobile */
     .navbar-menu {
         display: none;
     }

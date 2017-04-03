@@ -71,8 +71,6 @@ a:hover{
 }
 
 .page{
-    /* display: table; 
-    max-width: 1170px; */
     padding: 80px 0 0 0;
     margin: 0 auto;
 }
@@ -173,6 +171,10 @@ a:hover{
 
 .align-left{ text-align: left; }
 .align-right{ text-align: right; }
+.align-middle{
+    display: table-cell;
+    vertical-align: middle;
+}
 
 /* === Float div ===*/
 .float-right{ float: right; }
@@ -181,6 +183,10 @@ a:hover{
 .padding-bottom{ padding-bottom: 80px; }
 
 /* === Responsive Grid === */
+[class*="col-"] {
+    float: left;
+    padding: 0 1em;
+}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -194,16 +200,9 @@ a:hover{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-/* === Table === */
-.height100{ height: 100%;}
+/* === Width Height === */
 .width100{ width: 100%; }
-
-.display-table{ display: table; }
-
-.display-cell{
-    display: table-cell;
-    vertical-align: middle;
-}
+.height100{ height: 100%;}
 
 /* === Clearfix === */
 .clearfix:after {
@@ -215,7 +214,6 @@ a:hover{
 /* === Scroll === */
 .noscroll{
     overflow: hidden;
-    padding-right: 17px;
 }
 
 .padding-scrollbar{

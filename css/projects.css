@@ -1,31 +1,7 @@
 /* === Projects page styles === */
 
-/* === Left hand side === */
-
-.project-page{
-    height: 720px;
-    overflow-y: scroll;
-    padding: 1em 1em 4em 0;
-}
-
-.project-highlights{
-    margin: 0 1em;
-}
-
-.project-highlights > li {
-    list-style-position: inside;
-    padding-left: 1em;
-    text-indent: -2em;   
-}
-
-/* === Right hand side === */
-
-[class*="col-"] {
-    float: left;
-    padding: 0 1em;
-}
-
-.card{
+/* === Project Card === */
+.tile{
     height: 24em;
     margin-top: 2em;
 }
@@ -36,26 +12,18 @@
     cursor: pointer;
 }
 
-.thumbnail-bg1{
-    background-image: url('../images/tile-1.png');
-}
-
-.thumbnail-bg2{
-    background-image: url('../images/tile-2.png');
-}
-
-.thumbnail-bg3{
-    background-image: url('../images/tile-3.png');
-}
-
-.thumbnail-bg4{
-    background-image: url('../images/tile-4.png');
-}
+.thumbnail-bg1{ background-image: url('../images/project-bg-0.png'); }
+.thumbnail-bg2{ background-image: url('../images/project-bg-1.png'); }
+.thumbnail-bg3{ background-image: url('../images/project-bg-2.png'); }
+.thumbnail-bg4{ background-image: url('../images/project-bg-3.png'); }
 
 .thumbnail-description{
+    display: table;
     background-color: rgba(34,34,34, 0.5);
-    padding: 1em;
+    height: 100%;
+    width: 100%;
     max-height: 6em;
+    padding: 1em;
     transition: max-height 0.5s;
 }
 
@@ -63,22 +31,7 @@
     max-height: 100%;
 }
 
-.tags {
-    display: inline-block;
-    border-radius: 4px;
-    border: 1px solid #4682b4;
-    padding: 2px;
-    margin-bottom: 2px;
-}
-
-.resizable-img{
-    max-width: 100%;
-    height: auto; 
-    display: block;
-    margin: auto;
-}
-
-/* Modal */
+/* === Modal Lightbox === */
 .modal {
     display: none;
     position: fixed;
@@ -93,7 +46,6 @@
     background-color: rgba(0,0,0,0.4);
 }
 
-/* Modal Content */
 .modal-content {
     position: relative;
     background-color: white;
@@ -106,7 +58,7 @@
     animation-duration: 0.4s
 }
 
-/* Add Animation */
+/* === Slide down Animation === */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
@@ -117,7 +69,42 @@
     to {top:0; opacity:1}
 }
 
-/* The Close Button */
+/* === Project image display === */
+.project-display{
+  display: table;
+  height: 100%;
+}
+
+/* Let display image resize depending on window */
+.resizable-img{
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: auto;
+}
+
+/* === Right Sidebar === */
+.project-sidebar{
+    height: 720px;
+    overflow-y: scroll;
+    padding: 1em 1em 4em 0;
+}
+
+.project-highlights{
+    margin: 0 1em 0 2em;
+}
+
+.tags {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #4682b4;
+    background-color: #4682b4;
+    color: white;
+    padding: 2px;
+    margin-bottom: 2px;
+}
+
+/* === Close Button === */
 .close {
     margin-left: 0.5em;
     color: #4682b4;

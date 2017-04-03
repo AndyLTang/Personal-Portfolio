@@ -1,5 +1,4 @@
 /* === Navigation Bar Style === */
-
 .navbar{
 	position: fixed;
 	width: 100%;
@@ -14,6 +13,7 @@
     background: rgba(34,34,34,0.9);  /* #222 at 90% opacity */
 }
 
+/* === Navbar Icon === */
 .navbar-icon{
     display: inline-block;
     padding: 5px;
@@ -35,6 +35,7 @@
     border: 2px solid white;
 }
 
+/* === Navbar Lists === */
 .navbar-list{
     display: inline-block;
     list-style-type: none;
@@ -60,7 +61,6 @@
     transform: rotate(-90deg);
     transition: transform, 0.2s;
 }
-
 
 /* === Navbar Link styles === */
 .navbar-link{

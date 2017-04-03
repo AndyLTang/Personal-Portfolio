@@ -162,21 +162,21 @@ $(document).ready(function(){
 
             $modal[selection].style.display = 'block';
             
-            $body.addClass('noscroll');
+            $body.addClass('noscroll padding-scrollbar');
             $nav.addClass('padding-scrollbar');
         });
         
         // make X button close lightbox
         $close.click(function(){
             $modal.css({'display':'none'});
-            $body.removeClass('noscroll');
+            $body.removeClass('noscroll padding-scrollbar');
             $nav.removeClass('padding-scrollbar');
         })
 
         // close lightbox if user clicks outside of lightbox
         $modal.click(function(e){
             $(this).css({'display':'none'});
-            $body.removeClass('noscroll');
+            $body.removeClass('noscroll padding-scrollbar');
             $nav.removeClass('padding-scrollbar');
         });
         
@@ -184,7 +184,7 @@ $(document).ready(function(){
         $(document).keyup(function(e){
             if (e.keyCode == 27){
                 $modal.css({'display':'none'});
-                $body.removeClass('noscroll');
+                $body.removeClass('noscroll padding-scrollbar');
                 $nav.removeClass('padding-scrollbar');
             }
         });

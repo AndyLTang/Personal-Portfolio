@@ -16,7 +16,7 @@
     padding: 0 14%;
 }
 
-.logo{
+.brand-logo{
     border-radius: 50%;
     border: 3px white solid;
     margin: 1em;
@@ -29,9 +29,4 @@
 
 .brand-occupation{
     padding-bottom: 2em;
-}
-
-.vertical-align--middle{
-    display: table-cell;
-    vertical-align: middle;
 }
