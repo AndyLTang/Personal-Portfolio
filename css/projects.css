@@ -12,10 +12,10 @@
     cursor: pointer;
 }
 
-.thumbnail-bg1{ background-image: url('../images/tile-1.png'); }
-.thumbnail-bg2{ background-image: url('../images/tile-2.png'); }
-.thumbnail-bg3{ background-image: url('../images/tile-3.png'); }
-.thumbnail-bg4{ background-image: url('../images/tile-4.png'); }
+.thumbnail-bg1{ background-image: url('../images/project-bg-0.png'); }
+.thumbnail-bg2{ background-image: url('../images/project-bg-1.png'); }
+.thumbnail-bg3{ background-image: url('../images/project-bg-2.png'); }
+.thumbnail-bg4{ background-image: url('../images/project-bg-3.png'); }
 
 .thumbnail-description{
     display: table;
