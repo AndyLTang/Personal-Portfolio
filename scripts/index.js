@@ -3,31 +3,31 @@ var MOBILE_RES = 800;
 /* Determine window size */
 var mobileWindow = true;
 
-if($(window).width() > MOBILE_RES){
-    mobileWindow = false;
-}else{
-    mobileWindow = true;
+if ($(window).width() > MOBILE_RES) {
+  mobileWindow = false;
+} else {
+  mobileWindow = true;
 }
 
 /* When window resizes, check if resolution is mobile size */
-$(window).resize(function(){
-    if($(window).width() > MOBILE_RES){
-        mobileWindow = false;
-    } else{
-        mobileWindow = true;
-    }
+$(window).resize(function() {
+  if ($(window).width() > MOBILE_RES) {
+      mobileWindow = false;
+  } else {
+      mobileWindow = true;
+  }
 });
 
 /* Image preloading projects images */
 var preloadImgs = new Array();
-for(i=0; i < 4; i++){
+for (i=0; i < 4; i++){
     var tmpImg = new Image();
     tmpImg.src = "images/project-bg-" + (i+1) + ".png";
     preloadImgs[i] = tmpImg;
 }
 
 $(document).ready(function(){
-    
+
     /* Selector cache */
     var $nav = $('.navbar');
     var $navmenu = $('.navbar-menu');
@@ -36,12 +36,12 @@ $(document).ready(function(){
     var $collapse = $('.collapse');
     var $nextbutton = $('.button');
     var $card = $('.card');
-    
-	function scrollTo(anchor_id){
-		var tag = $(anchor_id);
-		$('html,body').stop().animate({scrollTop: tag.offset().top +2}, 'slow');
-	}
-    
+
+  function scrollTo(anchor_id){
+    var tag = $(anchor_id);
+    $('html,body').stop().animate({scrollTop: tag.offset().top +2}, 'slow');
+  }
+
     function bindScrollTo(link){
         link.click(function(){
             /* Scroll to location on page*/
@@ -53,34 +53,31 @@ $(document).ready(function(){
             event.stopPropagation();
         }); //end click
     }
-    
+
     function addClassToElem(elemClass, elem){
         elem.addClass(elemClass);
     }
-    
+
     function removeClassFromElem(elemClass, elem){
         elem.removeClass(elemClass);
     }
-    
+
     /* Change transparent/opaque navbar */
     function changeNavbar(){
         $(window).scroll(function(){
-            var invertBar = 'navbar--inverted';
-            var invertMenu = 'navbar-menu--inverted';
+            var transparentBar = 'navbar--transparent';
 
             // if window is at the top, show transparent navbar
             if ($(document).scrollTop() <= 2){
-                removeClassFromElem(invertBar, $nav);
-                removeClassFromElem(invertMenu, $navmenu);
-            } 
+                addClassToElem(transparentBar, $nav);
+            }
             // otherwise, show opaque navbar
             else {
-                addClassToElem(invertBar, $nav);
-                addClassToElem(invertMenu, $navmenu);
-            }   
+                removeClassFromElem(transparentBar, $nav);
+            }
         });
     }
-    
+
     /* Toggle hamburger menu icon */
     function toggleMenu(){
         $navmenu.click(function(){
@@ -90,7 +87,7 @@ $(document).ready(function(){
                 addClassToElem('rotated', $navmenu);
             }
 
-            $collapse.slideToggle('fast'); 
+            $collapse.slideToggle('fast');
         });
 
         $navlinks.click(function(){
@@ -100,7 +97,7 @@ $(document).ready(function(){
             }
         });
     }
-    
+
     /* Navigation highlight */
     function navHighlighting(){
         $("a[href='#intro']").addClass('active');
@@ -114,17 +111,17 @@ $(document).ready(function(){
 
         $(window).scroll(function(){
             // get the offset of the window from the top of page
-            var windowPos = $(window).scrollTop(); 
+            var windowPos = $(window).scrollTop();
 
             // get the height of the window
-            var windowHeight = $(window).height(); 
+            var windowHeight = $(window).height();
             var docHeight = $(document).height();
 
             for (var i=0; i < aArray.length; i++) {
                 var theID = aArray[i];
 
                 // get the offset of the div from the top of page
-                var divPos = $(theID).offset().top; 
+                var divPos = $(theID).offset().top;
 
                 // get the height of the div
                 var divHeight = $(theID).height();
@@ -145,27 +142,27 @@ $(document).ready(function(){
                     $("a[href='" + navActiveCurrent + "']").removeClass("active");
                     $(".link:last").addClass("active");
                 }
-            } 
+            }
         });
 
     }
-    
+
     /* Modal project page */
     function modalProject(){
         var $projects = $('.project');
         var $close = $('.close');
         var $modal = $('.modal');
         var $body = $('body');
-        
+
         $projects.click(function() {
             var selection = $(this).attr('data-link');
 
             $modal[selection].style.display = 'block';
-            
+
             $body.addClass('noscroll padding-scrollbar');
             $nav.addClass('padding-scrollbar');
         });
-        
+
         // make X button close lightbox
         $close.click(function(){
             $modal.css({'display':'none'});
@@ -179,7 +176,7 @@ $(document).ready(function(){
             $body.removeClass('noscroll padding-scrollbar');
             $nav.removeClass('padding-scrollbar');
         });
-        
+
         // allow escape key to close lightbox
         $(document).keyup(function(e){
             if (e.keyCode == 27){
@@ -188,13 +185,13 @@ $(document).ready(function(){
                 $nav.removeClass('padding-scrollbar');
             }
         });
-        
+
         // prevent clicking through lightbox and closing when clicking on lightbox contents
         $('.modal-content').click(function(e){
-           e.stopPropagation(); 
+           e.stopPropagation();
         });
     }
-    
+
     /* Submit form to formspree to email */
     function submitForm(){
         var $contactForm = $('.form');
@@ -223,7 +220,7 @@ $(document).ready(function(){
             });
         });
     }
-    
+
     /* Bind events to functions */
     bindScrollTo($navlinks);
     bindScrollTo($nextbutton);
@@ -232,6 +229,6 @@ $(document).ready(function(){
     navHighlighting();
     modalProject();
     submitForm();
-    
-}); 
+
+});
 //EOF

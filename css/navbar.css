@@ -1,16 +1,16 @@
 /* === Navigation Bar Style === */
 .navbar{
-	position: fixed;
-	width: 100%;
+    position: fixed;
+    width: 100%;
     z-index: 1;
     white-space: nowrap;
-	background: transparent;
+    background: #222;
+    background: rgba(34,34,34,0.9);  /* #222 at 90% opacity */
     transition: background 0.5s;
 }
 
-.navbar--inverted{
-    background: #222;
-    background: rgba(34,34,34,0.9);  /* #222 at 90% opacity */
+.navbar--transparent{
+    background: transparent;
 }
 
 /* === Navbar Icon === */
@@ -27,10 +27,10 @@
 
 .icon-outline{
     border: 2px solid transparent;
-    border-radius: 50%; 
+    border-radius: 50%;
     transition: border 0.5s;
 }
-    
+
 .icon-outline:hover{
     border: 2px solid white;
 }
@@ -65,9 +65,9 @@
 /* === Navbar Link styles === */
 .navbar-link{
     padding: 1.5em 0;
-	text-decoration: none;
-	box-shadow: inset 0 0 0 0 #444;
-	transition: color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #444;
+    transition: color 0.3s, box-shadow 0.3s;
 }
 
 .navbar-link:link, .navbar-link:visited{
@@ -80,16 +80,6 @@
     box-shadow: inset 0 -4px 0 0 white;
 }
 
-/* === Inverted navbar style === */
-.navbar-link--inverted:link, .navbar-link--inverted:visited{
-    color: #444;
-    box-shadow: inset 0 0 0 0 #4682b4;
-}
-
-.navbar-link--inverted:hover{
-    color: #4682b4;
-    box-shadow: inset 0 -4px 0 0 #4682b4;
-}
 
 /* === Javascript highlight link when on same page === */
 .navbar-link.active{
