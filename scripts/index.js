@@ -80,9 +80,15 @@ $(document).ready(function(){
 
     /* Toggle hamburger menu icon */
     function toggleMenu(){
+
+        // rotate menu icon when clicked
         $navmenu.click(function(){
+
+            // menu is already rotated, so rotate back
             if ($navmenu.hasClass('rotated')){
                 removeClassFromElem('rotated', $navmenu);
+
+            // menu is not rotated, so rotate icon
             } else {
                 addClassToElem('rotated', $navmenu);
             }
@@ -90,11 +96,15 @@ $(document).ready(function(){
             $collapse.slideToggle('fast');
         });
 
+        // if a link has been clicked, rotate the menu icon back and close
         $navlinks.click(function(){
+
+            // slide toggling only occurs during mobile view
             if (mobileWindow == true){
                 removeClassFromElem('rotated', $navmenu);
                 $collapse.slideToggle('fast');
             }
+
         });
     }
 
