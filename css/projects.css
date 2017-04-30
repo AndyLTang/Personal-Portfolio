@@ -12,10 +12,10 @@
     cursor: pointer;
 }
 
-.thumbnail-bg1{ background-image: url('../images/project-bg-0.png'); }
-.thumbnail-bg2{ background-image: url('../images/project-bg-1.png'); }
-.thumbnail-bg3{ background-image: url('../images/project-bg-2.png'); }
-.thumbnail-bg4{ background-image: url('../images/project-bg-3.png'); }
+.thumbnail-tile-1{ background-image: url('../images/project-tile-0.png'); }
+.thumbnail-tile-2{ background-image: url('../images/project-tile-1.png'); }
+.thumbnail-tile-3{ background-image: url('../images/project-tile-2.png'); }
+.thumbnail-tile-4{ background-image: url('../images/project-tile-3.png'); }
 
 .thumbnail-description{
     display: table;
@@ -60,7 +60,7 @@
 
 /* === Slide down Animation === */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
+    from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
 
@@ -78,7 +78,7 @@
 /* Let display image resize depending on window */
 .resizable-img{
     max-width: 100%;
-    height: auto; 
+    height: auto;
     display: block;
     margin: auto;
 }

@@ -1,0 +1,703 @@
+/* === About page style === */
+
+.profile-img{
+    width: 220px;
+    height: 220px;
+    margin-bottom: 0.5em;
+    border: 10px solid #444;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.profile-bio{
+    margin: 1em 20%;
+}/* === Contact Page Styles === */
+
+#contact{
+    display: table;
+    width: 100%;
+    padding: 4em 0;
+}
+
+/* === Heading === */
+
+.form-header{
+    margin: 0 auto;
+    letter-spacing: 10px;
+}
+ 
+/* === Textbox === */
+
+.form-textbox{
+    display: block;
+    width: 20em;
+    margin: auto;
+    margin-bottom: 1em;
+    padding: 1em;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 300;
+    box-shadow: none;
+    transition: box-shadow 0.5s, border 0.5s;
+}
+
+.form-textbox:hover, .form-textbox:hover{
+    box-shadow: inset 5px 0 0 0 #4682b4;
+    border-color: #4682b4;
+}
+
+.form-textbox:focus{
+    border: thin solid #4682b4;
+    box-shadow: inset 5px 0 0 0 #4682b4;
+    outline: none;
+}
+
+.form-textbox--large{
+    height: 8em;
+}
+
+/* === Submit button === */
+
+.form-submit{
+    padding: 1em;
+    font-size: inherit;
+    box-shadow: inset 0 0 0 0 white;
+    transition: box-shadow 1s, color 1s;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.form-submit:hover{
+    color: #444;
+    box-shadow: inset 105px 0 0 0 white;
+}
+
+/* === Response text after submit === */
+
+.form-response{
+    color: white;
+}/* ==== Base Styles === */
+
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    border: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	color: #444;
+    background-color: #f2f2f2;
+	font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+}
+
+h1{
+    font-size: 4.5rem;
+}
+
+h2{
+    font-size: 2em;
+    letter-spacing: 5px;
+    color: #4682b4;
+}
+
+h3{
+    font-size: 1.5em;
+    color: #4682b4;
+    text-align: center;
+}
+
+h4{
+    font-size: 1.2em;
+    color: #4682b4;
+    border-bottom: 1px solid #7eaacd; 
+    margin: 1em 0 0.5em 0;
+}
+
+span{
+    display: inline-block;
+}
+
+a:link, a:visited{
+    color: #4682b4;
+    font-weight: bold;
+    transition: color, 0.5s;
+}
+
+a:hover{
+    color: #7eaacd;
+}
+
+/* === Structure Styles === */
+
+.container{
+    padding: 0 12%;
+}
+
+.section{
+    display: table;
+    width: 100%;
+}
+
+.page{
+    padding: 80px 0 0 0;
+    margin: 0 auto;
+}
+
+.heading{
+    margin: 0 auto;
+    margin-bottom: 1em;
+    text-align: center;
+    vertical-align: top;
+}
+
+.content{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.height100{
+    height: 100%;
+}
+
+/* === Button Styles === */
+
+.button:link {
+    display: block;
+    width: 8em;
+    margin: 2em auto 1em auto;
+    padding: 1em;
+    text-align: center; 
+    text-decoration: none;
+    font-weight: 400;
+    color: #444;
+    transition: box-shadow 1s, color 1s;
+}
+
+.button:visited{
+    color: #444
+}
+
+.button:hover {
+    color: white;
+    box-shadow: inset 200px 0 0 0 #444;
+}
+
+.button--invert:visited{
+    color: white;
+}
+.button--invert:link{
+    color: white;
+}
+
+.button--invert:hover {
+    color: #444;
+    box-shadow: inset 200px 0 0 0 white;
+}
+
+.border--white{
+    color: white;
+    border: thin solid white;
+    background-color: transparent;
+}
+
+.border--grey{
+    color: #444;
+    border: thin solid #444;
+    background-color: transparent;
+}
+
+/* === Divider Styles === */
+
+.divider-horiz{
+    width: 100px;
+    height: 1px;
+    margin: 2em auto;
+}
+
+.divider-horiz--white{
+    border-bottom: thin solid white;
+}
+
+.divider-horiz--grey{
+    border-bottom: thin solid #444;
+}
+
+/* === Colors === */
+.bg-grey { background: #333; }
+.bg-darkgrey { background: #222; }
+.bg-blue { background: #4682b4; }
+
+.color-lightgrey { color: #ddd; }
+.color-grey { color: #444; }
+.color-blue { color: #4682b4; }
+.color-white { color: white; }
+
+/* === Typography === */
+.weight200 { font-weight: 200; }
+.weight300 { font-weight: 300; }
+
+.align-left{ text-align: left; }
+.align-right{ text-align: right; }
+.align-middle{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* === Float div ===*/
+.float-right{ float: right; }
+
+/* === Padding === */
+.padding-bottom{ padding-bottom: 80px; }
+
+/* === Responsive Grid === */
+[class*="col-"] {
+    float: left;
+    padding: 0 1em;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* === Width Height === */
+.width100{ width: 100%; }
+.height100{ height: 100%;}
+
+/* === Clearfix === */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* === Scroll === */
+.noscroll{
+    overflow: hidden;
+}
+
+.padding-scrollbar{
+    padding-right: 17px;
+}
+
+/* === Footer === */
+.copyright{
+    padding: 1em;
+    color: grey;
+    text-align: center;
+}/* === Intro Page styles === */
+
+#intro {
+    text-align: center;
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 80px 0;  
+}
+
+.intro-page{
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 0 14%;
+}
+
+.brand-logo{
+    border-radius: 50%;
+    border: 3px white solid;
+    margin: 1em;
+}
+
+.brand-name{
+    line-height: 90%;
+    margin: 0;
+}
+
+.brand-occupation{
+    padding-bottom: 2em;
+}/* === Navigation Bar Style === */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    white-space: nowrap;
+    background: #222;
+    background: rgba(34,34,34,0.9);  /* #222 at 90% opacity */
+    transition: background 0.5s;
+}
+
+.navbar--transparent{
+    background: transparent;
+}
+
+/* === Navbar Icon === */
+.navbar-icon{
+    display: inline-block;
+    padding: 5px;
+}
+
+.icon{
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+
+.icon-outline{
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: border 0.5s;
+}
+
+.icon-outline:hover{
+    border: 2px solid white;
+}
+
+/* === Navbar Lists === */
+.navbar-list{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navbar-item{
+    display: inline-block;
+    padding: 1.5em 1em;
+}
+
+.navbar-menu{
+    display: inline-block;
+    padding: 1em;
+    transition: transform, 0.2s;
+}
+
+.navbar-menu:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.rotated{
+    transform: rotate(-90deg);
+    transition: transform, 0.2s;
+}
+
+/* === Navbar Link styles === */
+.navbar-link{
+    padding: 1.5em 0;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #444;
+    transition: color 0.3s, box-shadow 0.3s;
+}
+
+.navbar-link:link, .navbar-link:visited{
+    color: white;
+    font-weight: normal;
+    box-shadow: inset 0 0 0 0 white;
+}
+
+.navbar-link:hover{
+    box-shadow: inset 0 -4px 0 0 white;
+}
+
+
+/* === Javascript highlight link when on same page === */
+.navbar-link.active{
+    color: white;
+    box-shadow: inset 0 -4px 0 0 white;
+}
+
+.navbar-link--inverted.active{
+    color:  #4682b4;
+    box-shadow: inset 0 -4px 0 0 #4682b4;
+}
+/* === Projects page styles === */
+
+/* === Project Card === */
+.tile{
+    height: 24em;
+    margin-top: 2em;
+}
+
+.thumbnail{
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.thumbnail-tile-1{ background-image: url('../images/project-tile-0.png'); }
+.thumbnail-tile-2{ background-image: url('../images/project-tile-1.png'); }
+.thumbnail-tile-3{ background-image: url('../images/project-tile-2.png'); }
+.thumbnail-tile-4{ background-image: url('../images/project-tile-3.png'); }
+
+.thumbnail-description{
+    display: table;
+    background-color: rgba(34,34,34, 0.5);
+    height: 100%;
+    width: 100%;
+    max-height: 6em;
+    padding: 1em;
+    transition: max-height 0.5s;
+}
+
+.thumbnail-description:hover{
+    max-height: 100%;
+}
+
+/* === Modal Lightbox === */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 5% 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    height: 720px;
+    width: 80%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* === Slide down Animation === */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* === Project image display === */
+.project-display{
+  display: table;
+  height: 100%;
+}
+
+/* Let display image resize depending on window */
+.resizable-img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* === Right Sidebar === */
+.project-sidebar{
+    height: 720px;
+    overflow-y: scroll;
+    padding: 1em 1em 4em 0;
+}
+
+.project-highlights{
+    margin: 0 1em 0 2em;
+}
+
+.tags {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #4682b4;
+    background-color: #4682b4;
+    color: white;
+    padding: 2px;
+    margin-bottom: 2px;
+}
+
+/* === Close Button === */
+.close {
+    margin-left: 0.5em;
+    color: #4682b4;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #7eaacd;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* === Media Queries === */
+
+@media (max-width: 820px){
+    
+    .container{
+        padding: 0;
+    }
+    
+    /* Shrink logo in intro */
+    .brand-logo{
+        height: 100px;
+        width: 100px;
+    }
+    
+    /* Leave enough space for navbar for each page*/
+    .page{
+        padding: 5%;
+        padding-top: 80px;
+    }
+    
+    /* Show Navbar Hamburger Menu */
+   .navbar-menu {
+      display: inline-block;
+    }
+    
+   .collapse {
+      display: none;
+   }
+    
+    /* Project Page */
+    .col-6{ width: 100%; }
+    .col-4{ width: 100%; }
+    .col-8{ display: none; }
+    
+    .modal-content{
+        width: 90%;
+    }
+    
+    /* About page */
+    .profile-bio{
+        margin: 5%;
+    }
+    
+    .profile-img{
+        width: 150px;
+        height: 150px;
+        border: 6px solid #444;
+    }
+}
+
+@media (min-width: 821px){
+    /* Hide Hamburger menu when not mobile */
+    .navbar-menu {
+        display: none;
+    }
+    
+    .navbar-item{
+        display: inline-block !important;
+    }
+}/* === Skills Page styles === */
+
+/* === Table Column style === */
+
+.table{
+    text-align: center;
+}
+
+.table-column{
+    display: inline-block;   
+    vertical-align: top;
+    width: 25%;
+    min-width: 14em;
+    white-space: nowrap;
+}
+
+.table-column ul{
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+    vertical-align: top;
+}
+
+.skill-icon{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+.skill-list{
+    width: 80%;
+}
+
+.skill-item{
+    position: relative;
+    width: 100%;
+    padding: 4px;
+}
+
+.skill-item:after{
+    content: "";
+    background: #03A9F4;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+}
+
+.width90{
+    width: 90%;
+}
+
+.width80{
+    width: 80%;
+}
+
+.width70{
+    width: 70%;
+}
+
+.width60{
+    width: 60%;
+}
+
+/* === Rotate Text === */
+
+.rotate-text-wrapper{
+    display: inline-block;
+    overflow: hidden;
+    width: 1.5em;
+    line-height: 1.5;
+    border-right: thin solid #444;
+    padding: 0 .5em 0 0;
+    margin: 0 .5em 0 0;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.rotate-text{
+    display: inline-block;
+    white-space: nowrap;
+    transform: translate(0,100%) rotate(270deg);
+    transform-origin: 0 0;
+}
+
+.rotate-text:after{
+    content:"";
+    float: left;
+    margin-top: 100%;
+}
